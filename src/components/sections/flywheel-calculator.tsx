@@ -147,6 +147,9 @@ export function FlywheelCalculator() {
   const [equityRaise2, setEquityRaise2] = useState(DEFAULTS.equityRaise2);
   const [equityMnav2, setEquityMnav2] = useState(DEFAULTS.equityMnav2);
 
+  // Valuation
+  const [valuationMnav, setValuationMnav] = useState(1.5);
+
   const results = useMemo(() => {
     // Baseline
     const baseSats = Math.round((currentBtc / (currentShares * 1e6)) * 1e8);
@@ -532,11 +535,51 @@ export function FlywheelCalculator() {
                 />
               </div>
 
+              {/* Valuation */}
+              <div className="mt-6 pt-4 border-t-2 border-ink-200">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-4">
+                  Implied Valuation
+                </h4>
+
+                <SliderInput
+                  label="Assumed mNAV Multiple"
+                  value={valuationMnav}
+                  onChange={setValuationMnav}
+                  min={0.5}
+                  max={4.0}
+                  step={0.1}
+                  unit="x"
+                />
+
+                <div className="mt-4">
+                  <ResultRow
+                    label="Implied Market Cap"
+                    value={`$${(results.newBtcNav * valuationMnav).toFixed(1)}B`}
+                  />
+                  <ResultRow
+                    label="Implied Share Price"
+                    value={`$${((results.newBtcNav * valuationMnav * 1e9) / (results.finalShares * 1e6)).toFixed(2)}`}
+                    highlight
+                  />
+                  <ResultRow
+                    label="Current Share Price"
+                    value="$2.13"
+                    sublabel="April 21, 2026"
+                  />
+                  <ResultRow
+                    label="Implied Return"
+                    value={`${((((results.newBtcNav * valuationMnav * 1e9) / (results.finalShares * 1e6)) / 2.13 - 1) * 100).toFixed(0)}%`}
+                    highlight
+                  />
+                </div>
+              </div>
+
               <p className="mt-4 text-[0.625rem] text-ink-300 leading-relaxed">
                 Preferred raises (MARS) increase BTC without adding shares.
                 Equity raises add shares but are BTC Yield accretive when mNAV
                 &gt; 1.0x because shares are sold at a premium to NAV. Set any
-                raise to $0 to skip that cycle.
+                raise to $0 to skip that cycle. Implied share price uses basic
+                shares (1.27B) for the current price comparison.
               </p>
             </div>
           </div>
