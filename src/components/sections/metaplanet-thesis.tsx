@@ -55,8 +55,8 @@ export function MetaplanetThesis() {
             in the world, and they are taking deliberate positions in Metaplanet&apos;s
             preferred instruments. The $10 trillion+ pool of Japanese institutional
             capital (life insurers, pensions, banks) that is actively repositioning
-            for a post-deflation world represents the next wave of demand, and MARS
-            is the instrument designed to capture it.
+            for a post-deflation world represents the next wave of demand, and
+            Metaplanet is positioned to capture it.
           </p>
         </div>
       </div>
