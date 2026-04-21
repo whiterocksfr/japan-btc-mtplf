@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink-950: #111318;
+  --color-ink-900: #1a1d24;
+  --color-ink-800: #24272f;
+  --color-ink-700: #353840;
+  --color-ink-600: #4a4d55;
+  --color-ink-500: #6b6e76;
+  --color-ink-400: #8e9099;
+  --color-ink-300: #b1b3ba;
+  --color-ink-200: #d4d5da;
+  --color-ink-100: #eaebee;
+  --color-ink-50: #f5f5f7;
+
+  --color-accent: #b8860b;
+  --color-accent-light: #d4a843;
+
+  --color-positive: #1a7a4c;
+  --color-negative: #b91c1c;
+
+  --color-chart-1: #2c5282;
+  --color-chart-2: #c27826;
+  --color-chart-3: #6b7280;
+
+  --font-serif: "Source Serif 4", "Georgia", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Menlo", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Institutional data table styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.data-table thead th {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-500);
+  padding: 0.625rem 0.75rem;
+  border-bottom: 2px solid var(--color-ink-200);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table thead th.num {
+  text-align: right;
+}
+
+.data-table tbody td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-ink-100);
+  vertical-align: top;
+}
+
+.data-table tbody td.num {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.data-table tbody td.label {
+  font-weight: 500;
+  color: var(--color-ink-700);
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr.highlight {
+  background: var(--color-ink-50);
+}
+
+.data-table tbody tr.highlight td {
+  font-weight: 600;
+}
+
+.data-table tfoot td {
+  padding: 0.625rem 0.75rem;
+  border-top: 2px solid var(--color-ink-200);
+  font-weight: 600;
+}
+
+/* Section divider */
+.section-divider {
+  width: 3rem;
+  height: 1px;
+  background: var(--color-ink-200);
+  margin: 0 auto;
+}
+
+/* Citation reference */
+.cite-ref {
+  font-size: 0.625rem;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--color-accent);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cite-ref:hover {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+}
+
+/* Minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-200);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-300);
+}

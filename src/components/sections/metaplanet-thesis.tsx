@@ -1,0 +1,122 @@
+import { SectionWrapper } from "@/components/ui/section-wrapper";
+import { StatCard } from "@/components/ui/stat-card";
+
+export function MetaplanetThesis() {
+  return (
+    <SectionWrapper id="metaplanet" variant="muted">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
+          The Investment Thesis
+        </div>
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-ink-900 leading-tight">
+          Metaplanet (TSE: 3350)
+        </h2>
+        <div className="mt-2 h-px w-12 bg-accent" />
+
+        <p className="mt-8 text-base leading-relaxed text-ink-600">
+          Metaplanet is functionally a <strong className="text-ink-800">regulatory-tax-demographic
+          arbitrage vehicle</strong> - the only clean way for Japanese retail to get
+          pure BTC exposure through tax-advantaged channels.
+        </p>
+      </div>
+
+      {/* Tax Arbitrage Table */}
+      <div className="max-w-5xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          Why Metaplanet Sits at the Exact Intersection
+        </h3>
+        <div className="overflow-x-auto">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Option for Japanese Retail BTC Exposure</th>
+                <th>Tax Treatment</th>
+                <th>NISA-Eligible</th>
+                <th>Accessibility</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">Direct BTC purchase</td>
+                <td><strong className="text-ink-800">55% max</strong> (miscellaneous income)</td>
+                <td>No</td>
+                <td>Exchanges only</td>
+              </tr>
+              <tr>
+                <td className="label">Japanese equities broadly</td>
+                <td>20%</td>
+                <td>Yes</td>
+                <td>Brokerages</td>
+              </tr>
+              <tr>
+                <td className="label">Foreign equity ETFs</td>
+                <td>20%</td>
+                <td>Yes</td>
+                <td>Brokerages</td>
+              </tr>
+              <tr>
+                <td className="label">Gold</td>
+                <td>Variable, high</td>
+                <td>Limited</td>
+                <td>Harder</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">Metaplanet (3350)</td>
+                <td><strong className="text-ink-800">20%</strong></td>
+                <td><strong className="text-ink-800">Yes</strong></td>
+                <td><strong className="text-ink-800">TSE standard listing</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Key Stats */}
+      <div className="max-w-5xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          Key Structural Features (as of April 21, 2026)
+        </h3>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          <StatCard label="BTC Holdings" value="40,177" sublabel="$3.05B NAV, avg cost $104,107" accent />
+          <StatCard label="Market Cap" value="$2.71B" sublabel="Enterprise Value: $3.10B" />
+          <StatCard label="BTC Yield YTD" value="+2.87%" sublabel="1,007.5 BTC accreted, $76.52M" />
+          <StatCard label="BSE Return" value="+1,684%" sublabel="Since BTC strategy adoption" accent />
+        </div>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            <strong className="text-ink-800">Tickers:</strong> 3350 (TSE), MPJPY (ADR), MTPLF (OTC), DN3 (Frankfurt)
+          </p>
+          <p>
+            <strong className="text-ink-800">Capital structure:</strong> EV mNAV 1.02x | Basic Shares 1.27B | Diluted Shares 1.62B | Sats/Basic Share 3,153 | 27th series stock acquisition rights with 350.3M convertible securities/options outstanding
+          </p>
+          <p>
+            <strong className="text-ink-800">MERCURY preferred equity</strong> (Class B Preferred Shares) - $148.2M notional, 4.90% dividend
+          </p>
+          <p>
+            <strong className="text-ink-800">CEO:</strong> Simon Gerovich (keynotes at Strategy World, Bitcoin for Corporations; fireside with Michael Saylor Dec 2025)
+          </p>
+          <p>
+            <strong className="text-ink-800">Subsidiaries:</strong> Bitcoin Japan Inc. (adoption/education), Bitcoin Magazine Japan (exclusive license), The Bitcoin Hotel (Royal Oak Gotanda, Tokyo)
+          </p>
+        </div>
+      </div>
+
+      {/* BTC per share growth */}
+      <div className="max-w-3xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          BTC Exposure per Share Growth
+        </h3>
+        <div className="space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            Share count has grown from 162.5M (April 2024) to 1.27B (March 2026) - a 7.8x increase. But satoshis per basic share grew from ~603 (at first purchase, 97.85 BTC) to <strong className="text-ink-800">3,153</strong> today (40,177 BTC) - a <strong className="text-ink-800">5.2x increase in BTC exposure per share</strong> despite the dilution. BTC accumulation has consistently outpaced share issuance.
+          </p>
+          <p>
+            Bitcoin treasury strategy: acquiring an average of <strong className="text-ink-800">54.15 BTC/day</strong>. Moving strike stock acquisition rights (warrants) enable capital raises at prices linked to the current share price, funding BTC accumulation without the fixed dividend obligations of preferred instruments.
+          </p>
+        </div>
+      </div>
+    </SectionWrapper>
+  );
+}
