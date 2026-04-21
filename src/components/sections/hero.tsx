@@ -23,6 +23,10 @@ export function Hero() {
           absolute scarcity and Japan's structural capital migration.
         </p>
 
+        <p className="mt-6 font-serif text-xl md:text-2xl italic text-accent/90 max-w-2xl">
+          One of the most asymmetric macro setups of the decade.
+        </p>
+
         <div className="mt-12 flex flex-wrap items-center gap-8 text-sm text-ink-400">
           <div>
             <span className="text-ink-500 font-medium">Last Updated</span>{" "}
@@ -30,35 +34,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <HeroStat label="Bitcoin S2F" value="~122" detail="2x gold's ratio" />
-          <HeroStat label="Japan Cash Pool" value="$7.4T" detail="49.1% of household assets" />
-          <HeroStat label="Metaplanet BTC" value="40,177" detail="+1,684% BSE return" />
-          <HeroStat label="STRC Proof" value="$8.5B" detail="9.5% BTC Yield YTD" />
-        </div>
       </div>
     </SectionWrapper>
-  );
-}
-
-function HeroStat({
-  label,
-  value,
-  detail,
-}: {
-  label: string;
-  value: string;
-  detail: string;
-}) {
-  return (
-    <div className="border-t border-ink-700 pt-3">
-      <div className="text-[0.625rem] font-semibold uppercase tracking-wider text-ink-500">
-        {label}
-      </div>
-      <div className="mt-1 font-mono text-xl font-bold text-white tabular-nums">
-        {value}
-      </div>
-      <div className="mt-0.5 text-xs text-ink-500">{detail}</div>
-    </div>
   );
 }
