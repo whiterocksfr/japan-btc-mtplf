@@ -733,6 +733,67 @@ export function CapitalStructure() {
         </Callout>
       </div>
 
+      {/* Additional Structural Signals */}
+      <div className="max-w-4xl mx-auto mt-10">
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-4">
+          Additional Structural Signals
+        </h4>
+        <div className="space-y-3">
+          <div className="border border-ink-100 rounded-sm p-4">
+            <p className="text-sm leading-relaxed text-ink-600">
+              <strong className="text-ink-800">90%+ alternatives adoption:</strong> Over
+              90% of Japanese institutional investors have already incorporated
+              alternative investments into their portfolios. GPIF (world&apos;s largest
+              pension, $1.87T) is actively building an alternatives database as it
+              expands exposure. The institutional infrastructure for alternative yield
+              products is already in place - MARS enters a market that is ready for it.
+            </p>
+            <p className="mt-1 text-xs text-ink-400">
+              Source: <a href="https://www.aima.org/article/golden-opportunities-in-japan-a-new-era-for-global-asset-managers.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">AIMA - Golden Opportunities in Japan</a>
+            </p>
+          </div>
+          <div className="border border-ink-100 rounded-sm p-4">
+            <p className="text-sm leading-relaxed text-ink-600">
+              <strong className="text-ink-800">Domestic market dominance:</strong> Foreign
+              investors hold only 4% of outstanding Japanese bonds. This is an
+              overwhelmingly domestic market, which means the $10T+ institutional
+              TAM is almost entirely Japanese capital - concentrated, accessible,
+              and operating under the same yield-starvation pressure.
+            </p>
+            <p className="mt-1 text-xs text-ink-400">
+              Source: <a href="https://www.oecd.org/en/publications/asia-capital-markets-report-2025_02172cdc-en/full-report/corporate-debt-markets_7b3ae2b1.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">OECD Asia Capital Markets Report 2025</a>
+            </p>
+          </div>
+          <div className="border border-ink-100 rounded-sm p-4">
+            <p className="text-sm leading-relaxed text-ink-600">
+              <strong className="text-ink-800">Authorized scale:</strong> At the December
+              2025 EGM, shareholders approved doubling authorized shares to ~555
+              million per class for both MARS (Class A) and MERCURY (Class B). This
+              signals that Metaplanet&apos;s board and shareholder base are planning for
+              preferred issuance at a scale far beyond the initial $151M MERCURY
+              placement.
+            </p>
+            <p className="mt-1 text-xs text-ink-400">
+              Source: <a href="https://metaplanet.jp/en/disclosures" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Metaplanet EGM Resolutions (December 22, 2025)</a>
+            </p>
+          </div>
+          <div className="border border-ink-100 rounded-sm p-4">
+            <p className="text-sm leading-relaxed text-ink-600">
+              <strong className="text-ink-800">Asia-Pacific TAM beyond Japan:</strong> Emerging
+              East Asia local currency bonds outstanding total $26.3 trillion. Asian
+              corporate debt (bonds, syndicated loans, and private credit) stands at
+              $13.9 trillion. If MARS and MERCURY gain traction with Japanese institutions,
+              the broader Asia-Pacific institutional market represents an additional
+              layer of demand - particularly as Metaplanet&apos;s Project NOVA positions the
+              company as infrastructure for institutional Bitcoin adoption across the region.
+            </p>
+            <p className="mt-1 text-xs text-ink-400">
+              Sources: <a href="https://asianbondsonline.adb.org" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">ADB AsianBondsOnline</a>, <a href="https://www.oecd.org/en/publications/asia-capital-markets-report-2025_02172cdc-en/full-report/corporate-debt-markets_7b3ae2b1.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">OECD Asia Capital Markets 2025</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Structural Advantages */}
       <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
