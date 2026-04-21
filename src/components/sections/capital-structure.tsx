@@ -557,7 +557,183 @@ export function CapitalStructure() {
         </p>
       </div>
 
-      {/* 4 Structural Advantages */}
+      {/* Institutional Demand */}
+      <div className="max-w-4xl mx-auto mt-16">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
+          Institutional Demand: Who Is Buying and Who Will Buy
+        </h3>
+        <p className="text-sm text-ink-500 mb-8">
+          MERCURY was placed privately with institutional investors in December 2025.
+          The buyer profile and the scale of Japan&apos;s institutional capital pool
+          reveal the potential demand trajectory for both MERCURY and MARS.
+        </p>
+
+        {/* MERCURY Buyers */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          Confirmed MERCURY Investors (December 2025 Placement)
+        </h4>
+        <div className="overflow-x-auto mb-6">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Investor</th>
+                <th>Profile</th>
+                <th className="num">Firm AUM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">SMALLCAP World Fund (Capital Group)</td>
+                <td>$2.9T global asset manager. Also holds 11.45% Metaplanet common equity (~$500M) via Capital Research and Management</td>
+                <td className="num">$81.6B fund</td>
+              </tr>
+              <tr>
+                <td className="label">Anson Funds Management</td>
+                <td>Toronto/Dallas alternative asset manager. Multi-strategy: long/short, special situations, event-driven. Named Multi-Strategy Fund of the Year, HedgeWeek Americas 2024</td>
+                <td className="num">$2B+</td>
+              </tr>
+              <tr>
+                <td className="label">Ghisallo Capital Management</td>
+                <td>Boston-based hedge fund. Founded by Michael Germino (former Head of Trading, Soros Fund Management). Multi-asset global macro. Expanded to Hong Kong</td>
+                <td className="num">$3.4B</td>
+              </tr>
+              <tr>
+                <td className="label">Nautical Funding Ltd.</td>
+                <td>Offshore investment vehicle</td>
+                <td className="num">Undisclosed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm leading-relaxed text-ink-600 mb-2">
+          The placement was arranged by <strong className="text-ink-800">Goldman Sachs Japan</strong> and <strong className="text-ink-800">Cantor Fitzgerald</strong>. Total raised: &yen;21.25B (~$151M) at 4.9% fixed dividend. The caliber of these participants - Capital Group ($2.9T AUM), a Soros-pedigreed macro fund with an Asia expansion, and Goldman Sachs as arranger - signals that institutional-grade capital views Metaplanet&apos;s preferred instruments as credible, investable, and appropriately structured.
+        </p>
+        <p className="text-xs text-ink-400 mb-8">
+          Sources: Yahoo Finance, Coinpedia, TipRanks (December 2025 filings)
+        </p>
+
+        {/* Common Equity Holders */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          Major Common Equity Holders (Context)
+        </h4>
+        <p className="text-sm leading-relaxed text-ink-600 mb-4">
+          The institutional interest extends beyond preferred shares. Metaplanet&apos;s common equity shareholder base includes <strong className="text-ink-800">Fidelity</strong> (National Financial Services, 12.9% stake, ~$816M - largest shareholder) and <strong className="text-ink-800">Capital Group</strong> (11.45%, ~$500M), along with Vanguard and iShares via index holdings. These are among the largest asset managers in the world taking meaningful positions in a TSE-listed Bitcoin treasury company.
+        </p>
+
+        {/* TAM */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3 mt-10">
+          Total Addressable Market: Japanese Institutional Capital
+        </h4>
+        <p className="text-sm leading-relaxed text-ink-600 mb-6">
+          The MERCURY placement was $151M. The addressable pool of institutional
+          capital in Japan that could participate in future MERCURY and MARS
+          offerings is measured in trillions, not millions.
+        </p>
+
+        <div className="overflow-x-auto mb-6">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Institutional Segment</th>
+                <th className="num">AUM / Assets</th>
+                <th>Yield-Seeking Trend</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">Life Insurance Companies</td>
+                <td className="num">~$2.7T</td>
+                <td>Actively seeking higher-yield credit and alternatives. AAA holdings declining from 73% to 68% of portfolios (2019-2023) - moving down the credit spectrum</td>
+              </tr>
+              <tr>
+                <td className="label">GPIF (Gov&apos;t Pension)</td>
+                <td className="num">$1.87T</td>
+                <td>World&apos;s largest pension fund. Building alternatives database. Over 90% of Japanese institutional investors now incorporate alternatives</td>
+              </tr>
+              <tr>
+                <td className="label">Total Pension Reserves</td>
+                <td className="num">~$3.2T</td>
+                <td>Corporate DB and DC pensions exploring alternative yield sources</td>
+              </tr>
+              <tr>
+                <td className="label">Megabanks (MUFG, SMFG, Mizuho)</td>
+                <td className="num">~$6.5T+</td>
+                <td>Cautiously seeking higher-yielding opportunities beyond JGBs</td>
+              </tr>
+              <tr>
+                <td className="label">Regional Banks (~100)</td>
+                <td className="num">~$3.2T</td>
+                <td>Historically JGB-heavy; seeking diversification as yields normalize</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">Total Japanese Institutional</td>
+                <td className="num">$10T+</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-xs text-ink-400 mb-8">
+          Sources: <a href="https://www.seiho.or.jp/english/statistics/trend/pdf/2024.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Life Insurance Association of Japan Fact Book 2024</a>, <a href="https://www.gpif.go.jp/en/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">GPIF</a>, <a href="https://www.rieti.go.jp/en/columns/s24_0017.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">RIETI</a>, <a href="https://www.aima.org/article/golden-opportunities-in-japan-a-new-era-for-global-asset-managers.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">AIMA</a>, company filings
+        </p>
+
+        {/* The Demand Thesis */}
+        <div className="space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            <a href="https://www.morganstanley.com/insights/articles/japan-economic-outlook-2025-pivotal-for-investors" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Morgan Stanley&apos;s Japan research</a> identifies
+            specific behavioral shifts across each institutional category that
+            create demand for exactly the kind of instrument MARS and MERCURY
+            represent:
+          </p>
+        </div>
+
+        <div className="mt-4 space-y-3 mb-8">
+          <div className="border border-ink-100 rounded-sm p-4">
+            <h5 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-1">Life Insurance Companies ($2.7T)</h5>
+            <p className="text-sm leading-relaxed text-ink-600">
+              Seeking higher-yield products, specifically credit and alternative
+              investments, to deploy cash efficiently in the new positive-rate
+              environment. A 4.9% MERCURY or 1-8% MARS preferred, backed by
+              Bitcoin with hundreds of years of coverage, fits the exact product
+              profile these firms are hunting - structured credit with yield
+              significantly above JGBs.
+            </p>
+          </div>
+          <div className="border border-ink-100 rounded-sm p-4">
+            <h5 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-1">Depository Institutions ($9.7T combined)</h5>
+            <p className="text-sm leading-relaxed text-ink-600">
+              With positive interest rates, bond investment is a lower priority
+              as banks earn sufficient income from core lending. Surplus capital
+              previously parked in JGBs is looking for deployment. BTC-backed
+              preferred securities offer yield without the duration risk of
+              long-dated government bonds.
+            </p>
+          </div>
+          <div className="border border-ink-100 rounded-sm p-4">
+            <h5 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-1">Investment Trusts (Growing Household Demand)</h5>
+            <p className="text-sm leading-relaxed text-ink-600">
+              The growing weight of household investors entering markets through
+              NISA is driving demand for diversified products, particularly
+              those with exposure to non-yen assets. Metaplanet&apos;s common stock
+              serves this directly - a TSE-listed, NISA-eligible vehicle with
+              Bitcoin exposure. As MARS and MERCURY potentially list on the TSE,
+              they could enter investment trust portfolios as yield instruments.
+            </p>
+          </div>
+        </div>
+
+        <Callout>
+          MERCURY&apos;s 4.9% yield is roughly 2.5x the 10-year JGB (1.95%) and
+          more than 10x Japanese bank deposit rates. In a market where $10
+          trillion in institutional capital is actively repositioning for a
+          post-deflation world, the addressable demand for BTC-backed yield
+          instruments is orders of magnitude larger than what Metaplanet has
+          issued to date.
+        </Callout>
+      </div>
+
+      {/* Structural Advantages */}
       <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Why Metaplanet&apos;s Preferred Program Is Structurally Advantaged
