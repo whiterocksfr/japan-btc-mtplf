@@ -222,6 +222,9 @@ export function EverythingCode() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.federalreserve.gov/releases/h41/current/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Federal Reserve H.4.1</a>, <a href="https://fred.stlouisfed.org/series/WALCL" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">FRED WALCL</a>, <a href="https://www.congress.gov/crs-product/IF12147" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Congressional Research Service</a>
+        </p>
 
         <p className="mt-6 text-base leading-relaxed text-ink-600">
           Each crisis produces a larger response. Each &quot;normalization&quot; unwinds

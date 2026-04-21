@@ -67,6 +67,9 @@ export function BitcoinFoundation() {
             <StatCard label="Gold S2F" value="~60" sublabel="219,891t / 3,672t annual" />
             <StatCard label="Bitcoin S2F" value="~122" sublabel="20.02M / 164K annual" accent />
           </div>
+          <p className="mt-2 text-xs text-ink-400">
+            Sources: <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">World Gold Council</a>, <a href="https://charts.bitbo.io/stock-to-flow/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Bitbo Stock-to-Flow Chart</a>
+          </p>
         </div>
 
         {/* Halving Schedule Table */}
@@ -126,6 +129,9 @@ export function BitcoinFoundation() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.swanbitcoin.com/education/bitcoin-halving-dates/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Swan Bitcoin</a>, <a href="https://www.coinwarz.com/bitcoin-halving" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CoinWarz</a>, <a href="https://www.cnbc.com/2024/04/19/bitcoin-network-completes-fourth-ever-halving-of-rewards-to-miners.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CNBC (April 2024)</a>
+        </p>
       </div>
 
       {/* Game Theory */}
@@ -162,6 +168,9 @@ export function BitcoinFoundation() {
 
         <p className="mt-8 text-base leading-relaxed text-ink-600">
           The Nash equilibrium: the cost of holding 1-5% BTC and being wrong equals modest portfolio drag. The cost of holding 0% BTC and being wrong about a paradigm shift in global money equals career-defining miss, fiduciary risk, and permanent underperformance versus peers who allocated. The ratchet does not turn backward.
+        </p>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-establishes-the-strategic-bitcoin-reserve-and-u-s-digital-asset-stockpile/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">White House (March 2025)</a>, <a href="https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">SEC (January 2024)</a>, <a href="https://fortune.com/crypto/2025/06/09/blackrock-bitcoin-etf-fastest-70-billion/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Fortune</a>, <a href="https://www.congress.gov/bill/119th-congress/senate-bill/954" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Congress.gov</a>
         </p>
       </div>
 
@@ -211,6 +220,9 @@ export function BitcoinFoundation() {
             </table>
           </div>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.ishares.com/us/insights/bitcoin-volatility-trends" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BlackRock/iShares</a>, <a href="https://www.fidelitydigitalassets.com/research-and-insights/closer-look-bitcoins-volatility" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Fidelity Digital Assets</a>, <a href="https://www.nydig.com/research/charting-drawdowns-during-up-cycles" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">NYDIG</a>
+        </p>
       </div>
 
       {/* Gold Comparison */}
@@ -261,6 +273,9 @@ export function BitcoinFoundation() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">World Gold Council</a>, <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-gold.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">USGS Gold Mineral Commodity Summary 2025</a>
+        </p>
       </div>
     </SectionWrapper>
   );

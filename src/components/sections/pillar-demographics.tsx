@@ -55,6 +55,9 @@ export function PillarDemographics() {
             return, and where the cohort of women of childbearing age is itself shrinking with each
             passing year.
           </p>
+          <p className="mt-2 text-xs text-ink-400">
+            Sources: <a href="https://www.nippon.com/en/japan-data/h02717/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Nippon.com (Feb 2026)</a>, <a href="https://asia.nikkei.com/economy/demography/japan-s-number-of-babies-born-marks-record-low-for-10th-straight-year" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Nikkei Asia</a>
+          </p>
         </div>
       </div>
 
@@ -100,6 +103,10 @@ export function PillarDemographics() {
             </tbody>
           </table>
         </div>
+
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.macrotrends.net/global-metrics/countries/jpn/japan/birth-rate" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Macrotrends Japan Birth Rate</a>, <a href="https://www.nippon.com/en/japan-data/h02522/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Nippon.com</a>
+        </p>
 
         <p className="mt-6 text-sm text-ink-500">
           Note: The 2025 figure of 705,809 is preliminary and includes births to foreign residents.

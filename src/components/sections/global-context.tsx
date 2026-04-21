@@ -81,6 +81,9 @@ export function GlobalContext() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Source: Historical data compiled from <a href="https://fred.stlouisfed.org/series/GFDEGDQ188S" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">FRED</a>, <a href="https://www.cbo.gov/publication/60870" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CBO</a>, <a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2025/index.htm" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BOJ</a>, <a href="https://www.federalreserve.gov/releases/h41/current/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Federal Reserve</a>
+        </p>
       </div>
 
       {/* US Stats */}
@@ -103,6 +106,9 @@ export function GlobalContext() {
 
           <p>
             The Federal Reserve expanded its balance sheet from $0.9T pre-2008 to $8.9T at peak (2022) - a 10x expansion. QT has unwound only ~25% of the peak. The pattern mirrors the BOJ exactly: announce normalization, execute partially, slow the pace, pause.
+          </p>
+          <p className="mt-2 text-xs text-ink-400">
+            Sources: <a href="https://fred.stlouisfed.org/series/GFDEGDQ188S" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">FRED</a>, <a href="https://www.cbo.gov/publication/60870" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CBO Budget Outlook 2025-2035</a>, <a href="https://budget.house.gov/press-release/interest-costs-surpass-national-defense-and-medicare-spending" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">House Budget Committee</a>, <a href="https://www.cdc.gov/nchs/products/databriefs/db535.htm" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CDC NCHS Data Brief 535</a>
           </p>
         </div>
       </div>
@@ -142,6 +148,9 @@ export function GlobalContext() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.federalreserve.gov/releases/h41/current/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Federal Reserve H.4.1</a>, <a href="https://fred.stlouisfed.org/series/WALCL" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">FRED WALCL</a>, <a href="https://www.statista.com/statistics/1121448/fed-balance-sheet-timeline/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Statista</a>
+        </p>
       </div>
 
       {/* CB Convergence */}
@@ -179,6 +188,9 @@ export function GlobalContext() {
 
         <p className="text-base leading-relaxed text-ink-600">
           A 1% reallocation from global M2 = $1T (half of Bitcoin&apos;s market cap). A 2% reallocation = Bitcoin&apos;s entire current market cap. The reallocation pressure is structural and accelerating - every major central bank is in the same debasement trap. What happens in Japan today is a preview of what will happen in the US, Europe, and eventually China.
+        </p>
+        <p className="mt-2 text-xs text-ink-400">
+          Source: <a href="https://en.macromicro.me/series/4675/global-money-supply-m2" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">MacroMicro Global M2</a>
         </p>
       </div>
     </SectionWrapper>

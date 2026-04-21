@@ -64,6 +64,9 @@ export function PillarMonetary() {
             </div>
           </div>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.cnbc.com/2025/11/07/japanese-real-wages-takaichi-abenomics-inflation-boj-policy.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CNBC</a>, <a href="https://english.news.cn/20251207/7fa184aacf1e4074a3951fddc89e55c5/c.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Xinhua</a>, <a href="https://japan.kantei.go.jp/104/statement/202511/21kaiken.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">PM&apos;s Office Japan</a>
+        </p>
       </div>
 
       {/* BOJ SAYS vs DOES */}
@@ -128,6 +131,10 @@ export function PillarMonetary() {
             </tbody>
           </table>
         </div>
+
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://wolfstreet.com/2025/10/07/bank-of-japan-balance-sheet-qt-accelerates-148-billion-in-q3-407-billion-from-peak-will-sell-etfs-reits-sold-all-bank-stocks/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Wolf Street</a>, <a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2025/index.htm" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BOJ Monetary Policy Releases 2025</a>, <a href="https://www.boj.or.jp/en/statistics/sj/sjexp.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BOJ Statistics</a>
+        </p>
 
         <Callout>
           The BOJ decelerated QT - halving JGB purchase reduction from ¥400B/quarter to

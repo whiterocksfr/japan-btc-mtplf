@@ -86,6 +86,10 @@ export function PillarSavings() {
           </table>
         </div>
 
+        <p className="mt-2 text-xs text-ink-400">
+          Source: <a href="https://www.boj.or.jp/en/statistics/sj/sjexp.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BOJ Flow of Funds (September 2025)</a>, <a href="https://japantoday.com/category/business/Japan-household-assets-hit-record-%C2%A52-286-tril" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Japan Today</a>
+        </p>
+
         <p className="mt-4 text-sm text-ink-500">
           Cash as a share of household assets fell below 50% for the first time in 18 years.
         </p>
@@ -171,6 +175,9 @@ export function PillarSavings() {
             </table>
           </div>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Source: <a href="https://www.boj.or.jp/en/statistics/sj/sjexp.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BOJ Flow of Funds</a>, <a href="https://www.statista.com/statistics/1237816/japan-quarterly-household-financial-assets-by-type/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Statista</a>
+        </p>
       </div>
 
       {/* NISA */}
@@ -198,6 +205,9 @@ export function PillarSavings() {
             because they lacked tax incentives <em>and</em> the underlying economics still favored
             cash. Now both conditions are met simultaneously for the first time - a tax wrapper that
             rewards investment plus inflation that punishes cash.
+          </p>
+          <p className="mt-2 text-xs text-ink-400">
+            Source: <a href="https://internationalbanker.com/finance/japans-elusive-goal-of-savings-to-investments/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">International Banker</a>
           </p>
         </div>
       </div>
@@ -236,6 +246,9 @@ export function PillarSavings() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://www.morganstanley.com/insights/articles/japan-economic-outlook-2025-pivotal-for-investors" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Morgan Stanley Japan Economic Outlook 2025</a>, <a href="https://www.bloomberg.com/news/articles/2024-05-20/japan-s-rich-will-invest-1-4-trillion-more-by-2030-report-says" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Bloomberg</a>
+        </p>
       </div>
 
       {/* Why This Matters */}

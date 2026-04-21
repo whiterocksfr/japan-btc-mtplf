@@ -67,6 +67,10 @@ export function PillarImmigration() {
           </table>
         </div>
 
+        <p className="mt-2 text-xs text-ink-400">
+          Sources: <a href="https://japantoday.com/category/national/foreign-residents-in-japan-top-4-million-for-1st-time-in-2025" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Japan Today</a>, <a href="https://www.oecd.org/en/publications/2025/11/international-migration-outlook-2025_355ae9fd/full-report/japan_ccc89a8d.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">OECD International Migration Outlook 2025</a>, <a href="https://www.statista.com/statistics/687809/japan-foreign-residents-total-number/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Statista</a>
+        </p>
+
         <div className="max-w-3xl mx-auto mt-8 space-y-4 text-base leading-relaxed text-ink-600">
           <p>
             <strong className="text-ink-800">Key flow data (2024):</strong> 177,000 new long-term
@@ -136,6 +140,9 @@ export function PillarImmigration() {
               </li>
             </ul>
           </div>
+          <p className="mt-2 text-xs text-ink-400">
+            Sources: <a href="https://thediplomat.com/2025/08/beyond-sanseito-anti-immigrant-rhetoric-in-japans-upper-house-election/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">The Diplomat</a>, <a href="https://eastasiaforum.org/2025/08/29/unpacking-the-anti-immigrant-rhetoric-of-japans-rising-far-right/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">East Asia Forum</a>, <a href="https://www.cambridge.org/core/journals/asia-pacific-journal/article/have-japanese-voters-begun-to-care-about-migration/D694F5B18D388A600116405A65F0CE73" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Cambridge Asia-Pacific Journal</a>
+          </p>
         </div>
       </div>
 

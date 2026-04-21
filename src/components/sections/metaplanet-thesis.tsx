@@ -84,6 +84,10 @@ export function MetaplanetThesis() {
           <StatCard label="BSE Return" value="+1,684%" sublabel="Since BTC strategy adoption" accent />
         </div>
 
+        <p className="mb-4 text-xs text-ink-400">
+          Source: <a href="https://analytics.metaplanet.jp/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">analytics.metaplanet.jp</a> (April 21, 2026)
+        </p>
+
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
             <strong className="text-ink-800">Tickers:</strong> 3350 (TSE), MPJPY (ADR), MTPLF (OTC), DN3 (Frankfurt)

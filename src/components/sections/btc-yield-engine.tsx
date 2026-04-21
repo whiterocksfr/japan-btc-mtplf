@@ -205,6 +205,9 @@ export function BtcYieldEngine() {
             </tbody>
           </table>
         </div>
+        <p className="mt-2 text-xs text-ink-400">
+          Source: <a href="https://www.strategy.com/purchases" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">strategy.com/purchases</a> (each date links to its SEC 8-K filing)
+        </p>
       </div>
 
       {/* The Math Callout */}
