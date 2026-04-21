@@ -66,7 +66,7 @@ export function ExecutiveSummary() {
         <Layer
           number="3"
           title="The Purest Expression"
-          description="Japan has closed every escape valve except monetary debasement. Demographics can't recover (705K births, lowest since 1899). Immigration is politically sealed (79% public support for restrictions, Sanseito at 12.6% national vote). The BOJ is executing QT at one-third the Fed's pace and already slowing further - explicitly to 'create room for future quantitative expansion.' Meanwhile, $7.4T in Japanese household cash is losing ~$200B+ in purchasing power annually to persistent inflation. NISA has opened a tax-advantaged escape valve. Metaplanet (TSE: 3350) is the only NISA-eligible, tax-optimized, pure-play Bitcoin exposure available to Japanese retail."
+          description="Japan has closed every escape valve except monetary debasement. Demographics can't recover (705K births, lowest since 1899). Immigration is politically sealed (79% public support for restrictions, Sanseito at 12.6% national vote). The BOJ is executing QT at one-third the Fed's pace and already slowing further - explicitly to 'create room for future quantitative expansion.' Meanwhile, $7.4T in Japanese household cash is losing ~$200B+ in purchasing power annually to persistent inflation. Metaplanet (TSE: 3350) is the only TSE-listed, pure-play Bitcoin treasury company available to Japanese investors - with favorable tax treatment (20% vs 55% for direct crypto), NISA eligibility, and a capital structure engine designed to compound BTC-per-share without dilution."
         />
       </div>
     </SectionWrapper>

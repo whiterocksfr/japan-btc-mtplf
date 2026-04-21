@@ -564,18 +564,7 @@ export function CapitalStructure() {
 
         <div className="space-y-6">
           <div className="border-l-2 border-accent pl-6">
-            <div className="font-semibold text-ink-800 mb-1">1. NISA Eligibility</div>
-            <p className="text-sm leading-relaxed text-ink-600">
-              No Strategy preferred instrument (STRK, STRF, STRC, STRD) is available through
-              Japan&apos;s tax-advantaged investment system. Metaplanet common stock is. As MARS
-              gains TSE approval and potentially becomes exchange-listed, it could inherit
-              this structural advantage - giving Japanese retail tax-advantaged access to
-              BTC-backed yield that has no equivalent in the US market.
-            </p>
-          </div>
-
-          <div className="border-l-2 border-accent pl-6">
-            <div className="font-semibold text-ink-800 mb-1">2. Japanese Yield Starvation = Lower Cost of Capital</div>
+            <div className="font-semibold text-ink-800 mb-1">1. Japanese Yield Starvation = Lower Cost of Capital</div>
             <p className="text-sm leading-relaxed text-ink-600">
               This is the structural advantage that may matter most. STRC pays 11.50% to
               attract US investors who can get 3.7% from Treasuries. MARS can pay 1-8% and
@@ -594,7 +583,7 @@ export function CapitalStructure() {
           </div>
 
           <div className="border-l-2 border-accent pl-6">
-            <div className="font-semibold text-ink-800 mb-1">3. Leverage Headroom</div>
+            <div className="font-semibold text-ink-800 mb-1">2. Leverage Headroom</div>
             <p className="text-sm leading-relaxed text-ink-600">
               At 13% amplification ratio vs Strategy&apos;s 35%, Metaplanet has a long runway for
               capital structure expansion. Each successive preferred issuance at this coverage
@@ -603,7 +592,7 @@ export function CapitalStructure() {
           </div>
 
           <div className="border-l-2 border-accent pl-6">
-            <div className="font-semibold text-ink-800 mb-1">4. Yen Debasement Compounding</div>
+            <div className="font-semibold text-ink-800 mb-1">3. Yen Debasement Compounding</div>
             <p className="text-sm leading-relaxed text-ink-600">
               Strategy&apos;s obligations are denominated in USD. Metaplanet&apos;s are denominated in
               JPY. As the yen weakens, Metaplanet&apos;s BTC reserve (priced in appreciating
