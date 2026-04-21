@@ -163,6 +163,136 @@ export function ScenarioAnalysis() {
         </p>
       </div>
 
+      {/* Flywheel Scenario */}
+      <div className="max-w-4xl mx-auto mt-16">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
+          The Capital Flywheel: Multi-Cycle Compounding
+        </h3>
+        <p className="text-sm text-ink-500 mb-6">
+          The single-raise scenarios above understate the thesis because they
+          model one event in isolation. The real power is the flywheel - each
+          capital raise enables the next, and mNAV expansion unlocks accretive
+          equity raises that compound BTC-per-share. This is the cycle Strategy
+          has demonstrated through its moving strike warrant program and ATM
+          preferred issuance.
+        </p>
+
+        <div className="overflow-x-auto">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Cycle</th>
+                <th>Action</th>
+                <th className="num">Capital</th>
+                <th className="num">BTC Added</th>
+                <th className="num">Total BTC</th>
+                <th className="num">Shares</th>
+                <th className="num">Sats/Share</th>
+                <th className="num">BTC Yield</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">Baseline</td>
+                <td>Current state</td>
+                <td className="num">-</td>
+                <td className="num">-</td>
+                <td className="num">40,177</td>
+                <td className="num">1.27B</td>
+                <td className="num">3,153</td>
+                <td className="num">-</td>
+              </tr>
+              <tr>
+                <td className="label">Cycle 1</td>
+                <td>MARS raise (preferred, non-dilutive)</td>
+                <td className="num">$500M</td>
+                <td className="num">5,882</td>
+                <td className="num">46,059</td>
+                <td className="num">1.27B</td>
+                <td className="num">3,616</td>
+                <td className="num">+14.7%</td>
+              </tr>
+              <tr>
+                <td className="label">Cycle 2</td>
+                <td>mNAV expands to 1.5x; equity raise via warrants at premium</td>
+                <td className="num">$300M</td>
+                <td className="num">3,529</td>
+                <td className="num">49,588</td>
+                <td className="num">1.33B</td>
+                <td className="num">3,722</td>
+                <td className="num">+2.9%</td>
+              </tr>
+              <tr>
+                <td className="label">Cycle 3</td>
+                <td>Expanded NAV enables second MARS raise</td>
+                <td className="num">$750M</td>
+                <td className="num">8,824</td>
+                <td className="num">58,412</td>
+                <td className="num">1.33B</td>
+                <td className="num">4,384</td>
+                <td className="num">+17.8%</td>
+              </tr>
+              <tr>
+                <td className="label">Cycle 4</td>
+                <td>Further mNAV expansion; second equity raise at higher premium</td>
+                <td className="num">$500M</td>
+                <td className="num">5,882</td>
+                <td className="num">64,294</td>
+                <td className="num">1.40B</td>
+                <td className="num">4,585</td>
+                <td className="num">+4.6%</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">Cumulative</td>
+                <td>4 cycles, alternating preferred + equity</td>
+                <td className="num">$2.05B</td>
+                <td className="num">24,117</td>
+                <td className="num">64,294</td>
+                <td className="num">1.40B</td>
+                <td className="num">4,585</td>
+                <td className="num">+45.4%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-6 space-y-3 text-sm leading-relaxed text-ink-600">
+          <p>
+            <strong className="text-ink-800">How the flywheel works:</strong> MARS
+            raises are non-dilutive (preferred shares, no common share increase).
+            This grows BTC-per-share directly. As BTC-per-share grows and/or BTC
+            price appreciates, mNAV can expand above 1.0x. When mNAV exceeds 1.0x,
+            equity raises through the moving strike warrant program become
+            BTC-per-share accretive - because the equity is sold at a premium to
+            NAV, meaning more BTC is purchased per share issued than the dilution
+            costs. The expanded NAV from both raises then creates capacity for the
+            next, larger MARS issuance (leverage ratio stays low). Each cycle feeds
+            the next.
+          </p>
+          <p>
+            <strong className="text-ink-800">Strategy proved this at scale.</strong>{" "}
+            Strategy&apos;s moving strike warrant program and ATM preferred issuance
+            operated this exact flywheel - alternating between equity raises at
+            mNAV premium and STRC preferred raises, each cycle growing BTC holdings
+            while maintaining acceptable leverage. The result: 815,061 BTC accumulated,
+            9.5% BTC Yield YTD, $61.6B in reserves.
+          </p>
+          <p>
+            <strong className="text-ink-800">The compounding asymmetry:</strong> In
+            the illustrative scenario above, 4 cycles of alternating preferred and
+            equity raises produce +45.4% cumulative BTC Yield with only a 10%
+            increase in share count. The BTC growth rate (60%) far outpaces
+            dilution (10%) because preferred raises carry zero dilution and equity
+            raises are done at mNAV premiums. This is the engine that the Everything
+            Code thesis and Japan&apos;s structural capital migration are designed to fuel.
+          </p>
+        </div>
+
+        <p className="mt-2 text-xs text-ink-400">
+          Illustrative scenario using $85K BTC price assumption. Equity raise in Cycle 2 assumes mNAV 1.5x (shares issued at premium). Actual results depend on market conditions, BTC price, mNAV at time of issuance, and TSE approval of MARS.
+        </p>
+      </div>
+
       {/* mNAV / BTC Price Sensitivity */}
       <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
