@@ -4,7 +4,7 @@ import { Callout } from "@/components/ui/callout";
 export function EverythingCode() {
   return (
     <SectionWrapper id="everything-code" variant="muted">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Framework
         </div>
@@ -43,7 +43,7 @@ export function EverythingCode() {
       </div>
 
       {/* The Debt Supercycle */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           The Debt Supercycle
         </h3>
@@ -73,7 +73,7 @@ export function EverythingCode() {
       </div>
 
       {/* Demographics as Forcing Function */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           Demographics: The Irreversible Forcing Function
         </h3>
@@ -122,7 +122,7 @@ export function EverythingCode() {
       </div>
 
       {/* The Debasement Trap */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           The Debasement Trap: Why There Is No Exit
         </h3>
@@ -162,7 +162,7 @@ export function EverythingCode() {
       </div>
 
       {/* The Liquidity Cycle */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           The Liquidity Cycle: How Debasement Moves Markets
         </h3>
@@ -236,7 +236,7 @@ export function EverythingCode() {
       </div>
 
       {/* Why Scarce Assets Win */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           Why Scarce Assets Capture the Flows
         </h3>
@@ -263,7 +263,7 @@ export function EverythingCode() {
       </div>
 
       {/* The Halving-Liquidity Convergence */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           The Halving-Liquidity Convergence
         </h3>
@@ -294,7 +294,7 @@ export function EverythingCode() {
       </div>
 
       {/* The Exponential Age */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           The Exponential Age: Technology as Accelerant
         </h3>
@@ -407,7 +407,7 @@ export function EverythingCode() {
       </div>
 
       {/* Why Japan Is the Proof */}
-      <div className="max-w-3xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           Why Japan Is the Everything Code&apos;s Proof of Concept
         </h3>

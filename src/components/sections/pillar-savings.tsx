@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function PillarSavings() {
   return (
     <SectionWrapper id="pillar-savings" variant="muted">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Pillar 4
         </div>
@@ -24,7 +24,7 @@ export function PillarSavings() {
       </div>
 
       {/* Current Scale */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Current Scale (Sept 2025, BOJ Flow of Funds)
         </h3>
@@ -96,7 +96,7 @@ export function PillarSavings() {
       </div>
 
       {/* Inflation Regime Change */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The Inflation Regime Change
         </h3>
@@ -132,7 +132,7 @@ export function PillarSavings() {
       </div>
 
       {/* Allocation Shift */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The Allocation Shift Already in Motion
         </h3>
@@ -181,7 +181,7 @@ export function PillarSavings() {
       </div>
 
       {/* NISA */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           NISA - The Tax-Advantaged Escape Valve
         </h3>
@@ -213,7 +213,7 @@ export function PillarSavings() {
       </div>
 
       {/* Morgan Stanley Projections */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The Morgan Stanley Projections
         </h3>
@@ -252,7 +252,7 @@ export function PillarSavings() {
       </div>
 
       {/* Why This Matters */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Why This Matters for the Thesis
         </h3>

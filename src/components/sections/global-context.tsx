@@ -4,7 +4,7 @@ import { StatCard } from "@/components/ui/stat-card";
 export function GlobalContext() {
   return (
     <SectionWrapper id="global-context">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Global Context
         </div>
@@ -21,7 +21,7 @@ export function GlobalContext() {
       </div>
 
       {/* US-Japan Parallel */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The US-Japan Parallel: 15-20 Years Behind
         </h3>
@@ -87,7 +87,7 @@ export function GlobalContext() {
       </div>
 
       {/* US Stats */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Where the United States Stands Today
         </h3>
@@ -114,7 +114,7 @@ export function GlobalContext() {
       </div>
 
       {/* Fed Balance Sheet */}
-      <div className="max-w-5xl mx-auto mt-8">
+      <div className="max-w-4xl mx-auto mt-8">
         <div className="overflow-x-auto">
           <table className="data-table">
             <thead>
@@ -154,7 +154,7 @@ export function GlobalContext() {
       </div>
 
       {/* CB Convergence */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Global Central Bank Convergence
         </h3>
@@ -176,7 +176,7 @@ export function GlobalContext() {
       </div>
 
       {/* Global M2 */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Global M2: The Scale Mismatch
         </h3>

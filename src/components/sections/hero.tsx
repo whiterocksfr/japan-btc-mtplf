@@ -15,7 +15,7 @@ export function Hero() {
 
         <div className="mt-4 h-px w-16 bg-accent" />
 
-        <p className="mt-6 text-lg md:text-xl leading-relaxed text-ink-300 max-w-3xl">
+        <p className="mt-6 text-lg md:text-xl leading-relaxed text-ink-300 max-w-4xl">
           Bitcoin is the hardest monetary asset ever created - finite, decentralizing,
           and hardening on a fixed schedule while central banks globally are forced into
           permanent currency debasement. Japan has closed every escape valve except

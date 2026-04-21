@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function PillarDemographics() {
   return (
     <SectionWrapper id="pillar-demographics" variant="white">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Pillar 1
         </div>
@@ -28,7 +28,7 @@ export function PillarDemographics() {
       </div>
 
       {/* Key 2025 Numbers */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The 2025 Numbers
         </h3>
@@ -40,7 +40,7 @@ export function PillarDemographics() {
           <StatCard label="Marriages" value="505,656" sublabel="Historically low" />
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4 text-base leading-relaxed text-ink-600">
+        <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600">
           <p>
             <strong className="text-ink-800">705,809 births in 2025</strong> - the lowest total since
             records began in 1899, and the 10th consecutive year of decline. Natural population
@@ -62,7 +62,7 @@ export function PillarDemographics() {
       </div>
 
       {/* Historical Trajectory */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Historical Trajectory
         </h3>
@@ -116,7 +116,7 @@ export function PillarDemographics() {
       </div>
 
       {/* Why This Matters */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Why This Matters for the Thesis
         </h3>

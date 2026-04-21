@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function PillarImmigration() {
   return (
     <SectionWrapper id="pillar-immigration" variant="muted">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Pillar 2
         </div>
@@ -23,7 +23,7 @@ export function PillarImmigration() {
       </div>
 
       {/* Foreign Residents Table */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The Stealth Migration Program (Last 10 Years)
         </h3>
@@ -71,7 +71,7 @@ export function PillarImmigration() {
           Sources: <a href="https://japantoday.com/category/national/foreign-residents-in-japan-top-4-million-for-1st-time-in-2025" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Japan Today</a>, <a href="https://www.oecd.org/en/publications/2025/11/international-migration-outlook-2025_355ae9fd/full-report/japan_ccc89a8d.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">OECD International Migration Outlook 2025</a>, <a href="https://www.statista.com/statistics/687809/japan-foreign-residents-total-number/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Statista</a>
         </p>
 
-        <div className="max-w-3xl mx-auto mt-8 space-y-4 text-base leading-relaxed text-ink-600">
+        <div className="max-w-4xl mx-auto mt-8 space-y-4 text-base leading-relaxed text-ink-600">
           <p>
             <strong className="text-ink-800">Key flow data (2024):</strong> 177,000 new long-term
             and permanent immigrants (+8.6% YoY), with 63% classified as labor migrants. The
@@ -91,7 +91,7 @@ export function PillarImmigration() {
       </div>
 
       {/* 2025 Political Inflection */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The 2025 Political Inflection Point
         </h3>
@@ -102,7 +102,7 @@ export function PillarImmigration() {
           <StatCard label="NHK Poll" value="79%" sublabel="Support stronger measures" />
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-6">
           <div className="border border-ink-100 rounded-sm p-5">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
               July 2025 Upper House Election
@@ -147,7 +147,7 @@ export function PillarImmigration() {
       </div>
 
       {/* Government Response */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Government Response
         </h3>

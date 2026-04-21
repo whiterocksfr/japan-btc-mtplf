@@ -3,7 +3,7 @@ import { SectionWrapper } from "@/components/ui/section-wrapper";
 export function RisksCatalysts() {
   return (
     <SectionWrapper id="risks-catalysts" variant="white">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Risk Assessment
         </div>
@@ -14,7 +14,7 @@ export function RisksCatalysts() {
       </div>
 
       {/* Risk Scenarios */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <div className="overflow-x-auto">
           <table className="data-table">
             <thead>
@@ -89,7 +89,7 @@ export function RisksCatalysts() {
       </div>
 
       {/* Catalysts */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-8">
           Catalysts to Watch
         </h3>

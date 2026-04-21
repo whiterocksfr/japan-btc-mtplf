@@ -3,7 +3,7 @@ import { SectionWrapper } from "@/components/ui/section-wrapper";
 export function Synthesis() {
   return (
     <SectionWrapper id="synthesis" variant="white">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Synthesis
         </div>
@@ -22,7 +22,7 @@ export function Synthesis() {
       </div>
 
       {/* Full-Stack Flow Diagram */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <div className="space-y-0">
           {/* Step 1 */}
           <div className="rounded-t-lg border border-ink-200 bg-white p-6">
@@ -137,7 +137,7 @@ export function Synthesis() {
       </div>
 
       {/* Concluding paragraph */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <p className="text-base leading-relaxed text-ink-600">
           Each layer requires the one below it. Metaplanet requires the Japanese
           capital flow. The capital flow requires the closed escape valves. The

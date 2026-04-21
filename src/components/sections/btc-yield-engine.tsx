@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function BtcYieldEngine() {
   return (
     <SectionWrapper id="btc-yield-engine" variant="muted">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Non-Dilutive BTC Yield Engine
         </div>
@@ -22,7 +22,7 @@ export function BtcYieldEngine() {
       </div>
 
       {/* 2026 Purchase History Table */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Strategy&apos;s 2026 BTC Purchases - The STRC Acceleration
         </h3>
@@ -211,7 +211,7 @@ export function BtcYieldEngine() {
       </div>
 
       {/* The Math Callout */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <Callout>
           In the two weeks ending April 20, 2026, Strategy purchased 48,091 BTC for
           $3,543M. Diluted shares outstanding increased by just 2,163 - a 0.6% increase.
@@ -222,7 +222,7 @@ export function BtcYieldEngine() {
       </div>
 
       {/* YTD Summary */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Year-to-Date Summary (Jan 1 - Apr 20, 2026)
         </h3>
@@ -245,7 +245,7 @@ export function BtcYieldEngine() {
       </div>
 
       {/* The Reflexive Loop */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The Reflexive Loop (Updated with MARS Engine)
         </h3>

@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function BitcoinFoundation() {
   return (
     <SectionWrapper id="bitcoin-foundation" variant="muted">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Foundation
         </div>
@@ -28,7 +28,7 @@ export function BitcoinFoundation() {
       </div>
 
       {/* Absolute vs Relative Scarcity */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Absolute vs. Relative Scarcity
         </h3>
@@ -50,7 +50,7 @@ export function BitcoinFoundation() {
       </div>
 
       {/* Stock to Flow */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Stock-to-Flow: The Scissors Opening
         </h3>
@@ -135,7 +135,7 @@ export function BitcoinFoundation() {
       </div>
 
       {/* Game Theory */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Game Theory: The One-Way Adoption Door
         </h3>
@@ -175,7 +175,7 @@ export function BitcoinFoundation() {
       </div>
 
       {/* Volatility Compression */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Volatility Compression Across Cycles
         </h3>
@@ -226,7 +226,7 @@ export function BitcoinFoundation() {
       </div>
 
       {/* Gold Comparison */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Why Not Just Gold?
         </h3>

@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function PillarMonetary() {
   return (
     <SectionWrapper id="pillar-monetary" variant="white">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Pillar 3
         </div>
@@ -22,7 +22,7 @@ export function PillarMonetary() {
       </div>
 
       {/* Takaichi's Track Record */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Takaichi&apos;s Track Record
         </h3>
@@ -70,7 +70,7 @@ export function PillarMonetary() {
       </div>
 
       {/* BOJ SAYS vs DOES */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           What the BOJ Says vs What It Does
         </h3>
@@ -154,7 +154,7 @@ export function PillarMonetary() {
       </div>
 
       {/* Fiscal Dominance Box */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The Fiscal Dominance Box
         </h3>
@@ -185,7 +185,7 @@ export function PillarMonetary() {
       </div>
 
       {/* Two-Step Deception */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The &quot;Two-Step Deception&quot; Pattern
         </h3>

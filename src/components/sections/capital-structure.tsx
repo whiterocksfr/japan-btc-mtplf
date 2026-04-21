@@ -5,7 +5,7 @@ import { Callout } from "@/components/ui/callout";
 export function CapitalStructure() {
   return (
     <SectionWrapper id="capital-structure" variant="white">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Capital Structure Engine
         </div>
@@ -25,7 +25,7 @@ export function CapitalStructure() {
       </div>
 
       {/* Strategy Preferred Instruments */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Strategy&apos;s Capital Stack (April 21, 2026)
         </h3>
@@ -100,7 +100,7 @@ export function CapitalStructure() {
       </div>
 
       {/* Convertible Notes */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Strategy Convertible Notes
         </h3>
@@ -171,7 +171,7 @@ export function CapitalStructure() {
       </div>
 
       {/* Aggregate Metrics */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Aggregate Capital Structure
         </h3>
@@ -243,7 +243,7 @@ export function CapitalStructure() {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto mt-8">
+      <div className="max-w-4xl mx-auto mt-8">
         <Callout>
           STRC alone raised $8.5B in face value in a single preferred instrument
           paying 11.50% annual dividends - backed by $61.6B in Bitcoin reserves.
@@ -254,12 +254,12 @@ export function CapitalStructure() {
       </div>
 
       {/* Metaplanet MARS/MERCURY */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Metaplanet&apos;s MARS and MERCURY: The Japanese Adaptation
         </h3>
 
-        <div className="max-w-3xl mx-auto space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+        <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600 mb-8">
           <p>
             Metaplanet is adapting Strategy&apos;s full preferred equity playbook for the
             Japanese market through two distinct instruments:
@@ -346,7 +346,7 @@ export function CapitalStructure() {
       </div>
 
       {/* MERCURY Details */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Current Preferred Details: MERCURY (Class B)
         </h3>
@@ -360,12 +360,12 @@ export function CapitalStructure() {
       </div>
 
       {/* Bitcoin Income Generation */}
-      <div className="max-w-5xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Bitcoin Income Generation: Self-Funding the Dividend
         </h3>
 
-        <div className="max-w-3xl mx-auto space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+        <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600 mb-8">
           <p>
             Metaplanet operates a <strong className="text-ink-800">Bitcoin Income Generation business</strong> using
             collateral-secured Bitcoin options (covered calls) to generate recurring operating
@@ -429,7 +429,7 @@ export function CapitalStructure() {
           </table>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4 text-base leading-relaxed text-ink-600">
+        <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600">
           <p>
             <strong className="text-ink-800">The dividend coverage math:</strong> Metaplanet&apos;s
             current MERCURY annual dividend commitment is $7.26M. The Bitcoin Income Generation
@@ -448,7 +448,7 @@ export function CapitalStructure() {
       </div>
 
       {/* MARS Catalyst */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           MARS (Class A) - The Thesis Accelerant
         </h3>
@@ -482,7 +482,7 @@ export function CapitalStructure() {
       </div>
 
       {/* Beyond Treasury: Project NOVA, JPYC, Bitcoin Japan */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Beyond Treasury: Building Japan&apos;s Bitcoin Infrastructure
         </h3>
@@ -555,7 +555,7 @@ export function CapitalStructure() {
       </div>
 
       {/* 4 Structural Advantages */}
-      <div className="max-w-3xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Why Metaplanet&apos;s Preferred Program Is Structurally Advantaged
         </h3>
