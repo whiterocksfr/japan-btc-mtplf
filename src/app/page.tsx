@@ -14,6 +14,7 @@ import { BtcYieldEngine } from "@/components/sections/btc-yield-engine";
 import { RisksCatalysts } from "@/components/sections/risks-catalysts";
 import { SourceAppendix } from "@/components/sections/source-appendix";
 import { TocSidebar } from "@/components/layout/toc-sidebar";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { SubscribeForm } from "@/components/layout/subscribe-form";
 import { Disclaimer } from "@/components/layout/disclaimer";
 
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <>
       <TocSidebar />
+      <MobileNav />
       <div className="xl:ml-52">
         <Hero />
         <ExecutiveSummary />
