@@ -5,6 +5,8 @@ import { SectionWrapper } from "@/components/ui/section-wrapper";
 
 // Defaults from analytics.metaplanet.jp (April 21, 2026)
 const LEVERAGE_CAP = 25; // Metaplanet's self-imposed 25% amplification cap
+const INCOME_GEN_ALLOCATION = 0.05; // ~5% of capital raises allocated to Bitcoin Income Generation (CSP collateral)
+const BTC_PURCHASE_ALLOCATION = 1 - INCOME_GEN_ALLOCATION; // ~95% goes to direct BTC purchases
 
 const DEFAULTS = {
   currentBtc: 40177,
@@ -163,7 +165,8 @@ export function FlywheelCalculator() {
     const baseSats = Math.round((currentBtc / (currentShares * 1e6)) * 1e8);
 
     // Cycle 1: MARS (preferred, non-dilutive)
-    const c1BtcAdded = marsRaise > 0 ? (marsRaise * 1e6) / marsPrice : 0;
+    // ~95% of capital goes to direct BTC purchases, ~5% to income generation (CSP collateral)
+    const c1BtcAdded = marsRaise > 0 ? (marsRaise * BTC_PURCHASE_ALLOCATION * 1e6) / marsPrice : 0;
     const c1TotalBtc = currentBtc + c1BtcAdded;
     const c1Shares = currentShares; // no change
     const c1Sats = Math.round((c1TotalBtc / (c1Shares * 1e6)) * 1e8);
@@ -174,7 +177,7 @@ export function FlywheelCalculator() {
     const c2NavPerShare = (c1TotalBtc * equityPrice) / (c1Shares * 1e6);
     const c2SharePrice = c2NavPerShare * equityMnav;
     const c2NewShares = equityRaise > 0 ? (equityRaise * 1e6) / c2SharePrice / 1e6 : 0;
-    const c2BtcAdded = equityRaise > 0 ? (equityRaise * 1e6) / equityPrice : 0;
+    const c2BtcAdded = equityRaise > 0 ? (equityRaise * BTC_PURCHASE_ALLOCATION * 1e6) / equityPrice : 0;
     const c2TotalBtc = c1TotalBtc + c2BtcAdded;
     const c2Shares = c1Shares + c2NewShares;
     const c2Sats = Math.round((c2TotalBtc / (c2Shares * 1e6)) * 1e8);
@@ -182,7 +185,7 @@ export function FlywheelCalculator() {
     const c2AnnualDiv = c1AnnualDiv; // equity has no dividend
 
     // Cycle 3: Second MARS (preferred, non-dilutive)
-    const c3BtcAdded = marsRaise2 > 0 ? (marsRaise2 * 1e6) / marsPrice2 : 0;
+    const c3BtcAdded = marsRaise2 > 0 ? (marsRaise2 * BTC_PURCHASE_ALLOCATION * 1e6) / marsPrice2 : 0;
     const c3TotalBtc = c2TotalBtc + c3BtcAdded;
     const c3Shares = c2Shares; // no change
     const c3Sats = Math.round((c3TotalBtc / (c3Shares * 1e6)) * 1e8);
@@ -193,7 +196,7 @@ export function FlywheelCalculator() {
     const c4NavPerShare = (c3TotalBtc * equityPrice2) / (c3Shares * 1e6);
     const c4SharePrice = c4NavPerShare * equityMnav2;
     const c4NewShares = equityRaise2 > 0 ? (equityRaise2 * 1e6) / c4SharePrice / 1e6 : 0;
-    const c4BtcAdded = equityRaise2 > 0 ? (equityRaise2 * 1e6) / equityPrice2 : 0;
+    const c4BtcAdded = equityRaise2 > 0 ? (equityRaise2 * BTC_PURCHASE_ALLOCATION * 1e6) / equityPrice2 : 0;
     const c4TotalBtc = c3TotalBtc + c4BtcAdded;
     const c4Shares = c3Shares + c4NewShares;
     const c4Sats = Math.round((c4TotalBtc / (c4Shares * 1e6)) * 1e8);
@@ -695,9 +698,11 @@ export function FlywheelCalculator() {
               <p className="mt-4 text-[0.625rem] text-ink-300 leading-relaxed">
                 Preferred raises (MARS) increase BTC without adding shares.
                 Equity raises add shares but are BTC Yield accretive when mNAV
-                &gt; 1.0x because shares are sold at a premium to NAV. Set any
-                raise to $0 to skip that cycle. Implied share price uses basic
-                shares (1.27B) for the current price comparison.
+                &gt; 1.0x. Set any raise to $0 to skip that cycle. Model
+                assumes ~95% of capital raised goes to direct BTC purchases
+                and ~5% is allocated to the Bitcoin Income Generation portfolio
+                (cash-secured put collateral) which generates recurring revenue
+                to help cover preferred dividend obligations.
               </p>
             </div>
           </div>
