@@ -16,10 +16,10 @@ export function PillarDemographics() {
         <div className="mt-2 h-px w-12 bg-accent" />
 
         <p className="mt-8 text-base leading-relaxed text-ink-600">
-          Japan&apos;s demographic decline is not a forecast - it is a measured reality accelerating
-          beyond every official projection. The 2025 numbers confirm that the population spiral
-          has reached a pace that no policy intervention can reverse on any timeline relevant to
-          fiscal planning or monetary policy.
+          Japan&apos;s demographic decline is accelerating beyond every official projection.
+          The 2025 numbers confirm that the population spiral has reached a pace that
+          no policy intervention can reverse on any timeline relevant to fiscal planning
+          or monetary policy.
         </p>
 
         <Callout>
@@ -51,10 +51,9 @@ export function PillarDemographics() {
           </p>
           <p>
             The fertility rate sits at approximately 1.20-1.37, ranging from 43% to 35% below the
-            2.1 replacement rate needed to maintain population. This is not a cyclical dip - it is a
-            structural feature of an economy where the cost of raising children exceeds the perceived
-            return, and where the cohort of women of childbearing age is itself shrinking with each
-            passing year.
+            2.1 replacement rate needed to maintain population. The cost of raising children
+            exceeds the perceived return, and the cohort of women of childbearing age is
+            itself shrinking with each passing year - compounding the decline structurally.
           </p>
           <p className="mt-2 text-xs text-ink-400">
             Sources: <a href="https://www.nippon.com/en/japan-data/h02717/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Nippon.com (Feb 2026)</a>, <a href="https://asia.nikkei.com/economy/demography/japan-s-number-of-babies-born-marks-record-low-for-10th-straight-year" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Nikkei Asia</a>

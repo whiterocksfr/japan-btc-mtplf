@@ -13,11 +13,35 @@ export function MetaplanetThesis() {
         </h2>
         <div className="mt-2 h-px w-12 bg-accent" />
 
-        <p className="mt-8 text-base leading-relaxed text-ink-600">
-          Metaplanet is functionally a <strong className="text-ink-800">regulatory-tax-demographic
-          arbitrage vehicle</strong> - the only clean way for Japanese retail to get
-          pure BTC exposure through tax-advantaged channels.
-        </p>
+        <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            Metaplanet occupies a unique position in global capital markets. It is
+            the only publicly listed, pure-play Bitcoin treasury company on the
+            Tokyo Stock Exchange - giving Japanese retail and institutional investors
+            access to BTC exposure through the same brokerage accounts they use for
+            any other Japanese equity, at a 20% capital gains tax rate instead of the
+            55% rate applied to direct cryptocurrency holdings.
+          </p>
+          <p>
+            But the tax arbitrage is only the entry point. Metaplanet is building a
+            full-stack Bitcoin platform for Japan: a capital structure engine (MARS +
+            MERCURY) designed to compound BTC-per-share without diluting common
+            shareholders, an income generation business using cash-secured puts to
+            fund dividends from operations, an education and media subsidiary (Bitcoin
+            Magazine Japan) onboarding a million Japanese into the Bitcoin ecosystem,
+            and a strategic stablecoin investment (JPYC) positioning the company at the
+            center of Japan&apos;s emerging digital asset infrastructure.
+          </p>
+          <p>
+            The thesis rests on the convergence of these structural advantages with
+            the macro forces documented in the preceding sections. Japan&apos;s $7.4
+            trillion household cash pool, yield-starved institutions, persistent
+            yen debasement, and the BOJ&apos;s inability to normalize monetary policy
+            all create demand for exactly what Metaplanet offers: a regulated,
+            tax-efficient, TSE-listed vehicle that converts yen-denominated capital
+            into Bitcoin exposure with institutional-grade governance.
+          </p>
+        </div>
       </div>
 
       {/* Tax Arbitrage Table */}

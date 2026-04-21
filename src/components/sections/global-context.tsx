@@ -15,9 +15,9 @@ export function GlobalContext() {
         <div className="mt-2 h-px w-12 bg-accent" />
 
         <p className="mt-8 text-base leading-relaxed text-ink-600">
-          Japan is not an outlier. It is the leading indicator. Every major central bank
-          is converging on the same policy endpoint that the BOJ reached years ago. Japan
-          simply arrived first, and shows us what the endgame looks like.
+          Japan is the leading indicator. Every major central bank is converging on
+          the same policy endpoint that the BOJ reached years ago. Japan simply arrived
+          first, and shows us what the endgame looks like.
         </p>
       </div>
 

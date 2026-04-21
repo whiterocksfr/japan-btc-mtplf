@@ -218,9 +218,9 @@ export function BtcYieldEngine() {
         <Callout>
           In the two weeks ending April 20, 2026, Strategy purchased 48,091 BTC for
           $3,543M. Diluted shares outstanding increased by just 2,163 - a 0.6% increase.
-          BTC holdings increased by 6.3% in that same period. This is not theory.
-          This is $3.5 billion in two weeks, documented in SEC 8-K filings, producing
-          6.2% BTC Yield in a single quarter, with 0.6% dilution.
+          BTC holdings increased by 6.3% in that same period - $3.5 billion in
+          two weeks, documented in SEC 8-K filings, producing 6.2% BTC Yield in a
+          single quarter, with 0.6% dilution.
         </Callout>
       </div>
 

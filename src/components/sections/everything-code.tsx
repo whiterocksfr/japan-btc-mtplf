@@ -30,15 +30,15 @@ export function EverythingCode() {
           self-reinforcing loop at the heart of the modern global financial system.
           The core insight: once sovereign debt passes a critical threshold relative
           to GDP, the political and economic system locks into a cycle where currency
-          debasement is not a policy choice - it is the only mathematically viable
-          outcome. Every other option (austerity, default, sustained real tightening)
-          is either politically impossible or economically catastrophic.
+          debasement becomes the only mathematically viable outcome. Every other
+          option (austerity, default, sustained real tightening) is either politically
+          impossible or economically catastrophic.
         </p>
 
         <p className="mt-4 text-base leading-relaxed text-ink-600">
-          Understanding this framework is essential because it explains why Japan&apos;s
-          situation is not an anomaly but a preview - and why Bitcoin and Metaplanet
-          sit at the precise intersection of the forces it describes.
+          Understanding this framework is essential because Japan&apos;s situation
+          is a preview of where every developed economy is headed - and Bitcoin
+          and Metaplanet sit at the precise intersection of the forces it describes.
         </p>
       </div>
 
@@ -112,7 +112,7 @@ export function EverythingCode() {
         </div>
 
         <p className="mt-6 text-base leading-relaxed text-ink-600">
-          This is not theory. Japan&apos;s fertility dropped below replacement in 1975.
+          Japan&apos;s fertility dropped below replacement in 1975.
           Fifty years later, the BOJ holds rates near zero with ~260% debt-to-GDP
           and cannot escape. The US fertility dropped below replacement around 2007-2010.
           The Fed is now on the same trajectory, just earlier on the curve. Every
@@ -156,8 +156,7 @@ export function EverythingCode() {
         </div>
 
         <Callout>
-          The Everything Code is not a prediction that governments will choose
-          debasement. It is the observation that they have no other choice.
+          Governments will debase because they have no other choice.
         </Callout>
       </div>
 

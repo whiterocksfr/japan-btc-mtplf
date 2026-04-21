@@ -491,9 +491,10 @@ export function CapitalStructure() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            Metaplanet is not just a Bitcoin treasury company. Through <strong className="text-ink-800">Project
+            Beyond its treasury operations, Metaplanet is building institutional
+            Bitcoin and stablecoin infrastructure in Japan. Through <strong className="text-ink-800">Project
             NOVA</strong> and its subsidiary ecosystem, the company is positioning itself as
-            integral infrastructure for institutional Bitcoin and stablecoin adoption in Japan.
+            a central platform for Japan&apos;s digital asset adoption.
           </p>
         </div>
 

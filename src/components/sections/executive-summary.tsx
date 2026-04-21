@@ -60,7 +60,7 @@ export function ExecutiveSummary() {
         <Layer
           number="2"
           title="The Global Backdrop"
-          description="Every major central bank is converging on the same policy endpoint: permanent accommodation. The US (debt/GDP ~123%, $970B annual interest payments exceeding defense spending, fertility at 1.60), Europe (ECB easing, Italy at 138% debt/GDP), and China (fertility 1.09, $1.4T stimulus packages) are all on Japan's trajectory - just 10-20 years behind. This is not a Japan-specific phenomenon. It is a structural feature of late-stage sovereign debt economies. Japan simply arrived first."
+          description="Every major central bank is converging on the same policy endpoint: permanent accommodation. The US (debt/GDP ~123%, $970B annual interest payments exceeding defense spending, fertility at 1.60), Europe (ECB easing, Italy at 138% debt/GDP), and China (fertility 1.09, $1.4T stimulus packages) are all on Japan's trajectory - just 10-20 years behind. The pattern is structural to late-stage sovereign debt economies. Japan simply arrived first."
         />
 
         <Layer
