@@ -4,11 +4,15 @@ import { useState, useMemo } from "react";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 
 // Defaults from analytics.metaplanet.jp (April 21, 2026)
+const LEVERAGE_CAP = 25; // Metaplanet's self-imposed 25% amplification cap
+
 const DEFAULTS = {
   currentBtc: 40177,
   currentBasicShares: 1274, // millions
   currentDilutedShares: 1624, // millions
   currentMercuryDiv: 7.26, // $M annual
+  currentDebt: 247, // $M
+  currentPreferred: 148.21, // $M (MERCURY)
   btcPrice: 85000,
   marsRaise: 500, // $M
   marsRate: 5.0, // %
@@ -196,6 +200,39 @@ export function FlywheelCalculator() {
     const c4Yield = ((c4Sats - c3Sats) / c3Sats) * 100;
     const c4AnnualDiv = c3AnnualDiv;
 
+    // Leverage & Amplification per cycle
+    const debt = DEFAULTS.currentDebt; // debt stays constant (MARS is preferred, not debt)
+    const basePref = DEFAULTS.currentPreferred;
+    const baseNav = (currentBtc * marsPrice) / 1e6; // $M
+    const baseLeverage = (debt / baseNav) * 100;
+    const baseAmplification = ((debt + basePref) / baseNav) * 100;
+
+    const c1Pref = basePref + marsRaise;
+    const c1Nav = (c1TotalBtc * marsPrice) / 1e6;
+    const c1Leverage = (debt / c1Nav) * 100;
+    const c1Amplification = ((debt + c1Pref) / c1Nav) * 100;
+
+    const c2Pref = c1Pref; // equity doesn't add preferred
+    const c2Nav = (c2TotalBtc * equityPrice) / 1e6;
+    const c2Leverage = (debt / c2Nav) * 100;
+    const c2Amplification = ((debt + c2Pref) / c2Nav) * 100;
+
+    const c3Pref = c2Pref + marsRaise2;
+    const c3Nav = (c3TotalBtc * marsPrice2) / 1e6;
+    const c3Leverage = (debt / c3Nav) * 100;
+    const c3Amplification = ((debt + c3Pref) / c3Nav) * 100;
+
+    const c4Pref = c3Pref; // equity doesn't add preferred
+    const c4Nav = (c4TotalBtc * equityPrice2) / 1e6;
+    const c4Leverage = (debt / c4Nav) * 100;
+    const c4Amplification = ((debt + c4Pref) / c4Nav) * 100;
+
+    // Remaining capacity under 25% cap
+    const finalNav = c4Nav;
+    const maxAmplification = (LEVERAGE_CAP / 100) * finalNav; // $M
+    const currentObligations = debt + c4Pref;
+    const remainingCapacity = Math.max(0, maxAmplification - currentObligations);
+
     // Cumulative
     const totalBtcAdded = c4TotalBtc - currentBtc;
     const totalCapital =
@@ -204,13 +241,14 @@ export function FlywheelCalculator() {
     const dilutionPct =
       ((c4Shares - currentShares) / currentShares) * 100;
     const btcGrowthPct = (totalBtcAdded / currentBtc) * 100;
-    // Use the latest BTC price for final valuation (highest cycle price or explicit)
     const finalBtcPrice = equityPrice2;
     const newBtcNav = (c4TotalBtc * finalBtcPrice) / 1e9;
     const coverageYears = (c4TotalBtc * finalBtcPrice) / (c4AnnualDiv * 1e6);
 
     return {
       baseSats,
+      baseLeverage,
+      baseAmplification,
       cycles: [
         {
           label: "Cycle 1: MARS Preferred",
@@ -220,6 +258,8 @@ export function FlywheelCalculator() {
           sats: c1Sats,
           yield: c1Yield,
           annualDiv: c1AnnualDiv,
+          leverage: c1Leverage,
+          amplification: c1Amplification,
         },
         {
           label: "Cycle 2: Equity at Premium",
@@ -229,6 +269,8 @@ export function FlywheelCalculator() {
           sats: c2Sats,
           yield: c2Yield,
           annualDiv: c2AnnualDiv,
+          leverage: c2Leverage,
+          amplification: c2Amplification,
         },
         {
           label: "Cycle 3: MARS Preferred",
@@ -238,6 +280,8 @@ export function FlywheelCalculator() {
           sats: c3Sats,
           yield: c3Yield,
           annualDiv: c3AnnualDiv,
+          leverage: c3Leverage,
+          amplification: c3Amplification,
         },
         {
           label: "Cycle 4: Equity at Premium",
@@ -247,6 +291,8 @@ export function FlywheelCalculator() {
           sats: c4Sats,
           yield: c4Yield,
           annualDiv: c4AnnualDiv,
+          leverage: c4Leverage,
+          amplification: c4Amplification,
         },
       ],
       totalBtcAdded,
@@ -260,6 +306,10 @@ export function FlywheelCalculator() {
       finalAnnualDiv: c4AnnualDiv,
       newBtcNav,
       coverageYears,
+      finalLeverage: c4Leverage,
+      finalAmplification: c4Amplification,
+      remainingCapacity,
+      exceedsCap: c4Amplification > LEVERAGE_CAP,
     };
   }, [
     btcPrice,
@@ -570,6 +620,37 @@ export function FlywheelCalculator() {
                   value={`${results.coverageYears.toFixed(0)} years`}
                   highlight
                 />
+              </div>
+
+              {/* Leverage & Amplification */}
+              <div className="mt-4 pt-3 border-t border-ink-200">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-3">
+                  Leverage & Amplification
+                </h4>
+                <ResultRow
+                  label="Leverage Ratio"
+                  value={`${results.finalLeverage.toFixed(1)}%`}
+                  sublabel="Debt / BTC NAV"
+                />
+                <ResultRow
+                  label="Amplification Ratio"
+                  value={`${results.finalAmplification.toFixed(1)}%`}
+                  sublabel={`(Debt + Pref) / BTC NAV`}
+                  highlight={results.exceedsCap}
+                />
+                <ResultRow
+                  label={`25% Cap`}
+                  value={results.exceedsCap ? "EXCEEDED" : `$${fmt(Math.round(results.remainingCapacity))}M remaining`}
+                  sublabel="Self-imposed amplification limit"
+                  highlight={results.exceedsCap}
+                />
+                {results.exceedsCap && (
+                  <p className="text-xs text-red-600 mt-2 font-medium">
+                    This scenario exceeds Metaplanet&apos;s 25% amplification cap.
+                    Reduce MARS raise amounts or increase equity raises to bring
+                    amplification below the cap.
+                  </p>
+                )}
               </div>
 
               {/* Valuation */}
