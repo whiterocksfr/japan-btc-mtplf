@@ -39,21 +39,6 @@ export function Hero() {
               The Everything Code by Raoul Pal
             </a>
           </div>
-          <div>
-            <span className="text-ink-500 font-medium">Research</span>{" "}
-            <a
-              href="https://www.globalmacroinvestor.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ink-300 hover:text-accent transition-colors"
-            >
-              Global Macro Investor
-            </a>
-          </div>
-          <div>
-            <span className="text-ink-500 font-medium">Status</span>{" "}
-            <span className="text-ink-300">Active</span>
-          </div>
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
