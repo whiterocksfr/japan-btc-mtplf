@@ -357,13 +357,6 @@ export function CapitalStructure() {
           <StatCard label="Coverage" value="420 yr" sublabel="BTC NAV / annual dividends" accent />
         </div>
 
-        <div className="space-y-4 text-base leading-relaxed text-ink-600">
-          <p>
-            Full name: Metaplanet Convertible for Return &amp; Yield. BTC Rating: 7.72x
-            (BTC NAV is 7.72x the preferred notional). Duration: Perpetual.
-            Status: Private placement. Source: Metaplanet AGM 2026 and analytics.metaplanet.jp.
-          </p>
-        </div>
       </div>
 
       {/* Bitcoin Income Generation */}
