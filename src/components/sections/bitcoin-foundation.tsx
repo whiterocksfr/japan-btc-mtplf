@@ -15,7 +15,8 @@ export function BitcoinFoundation() {
         <div className="mt-2 h-px w-12 bg-accent" />
 
         <p className="mt-8 text-base leading-relaxed text-ink-600">
-          The Everything Code framework predicts capital migration out of debasing currencies
+          Raoul Pal&apos;s Everything Code framework (Global Macro Investor / Real Vision)
+          predicts capital migration out of debasing currencies
           into scarce assets. But &quot;scarce&quot; does a lot of work in that sentence. Real estate
           is scarce. Gold is scarce. Fine art is scarce. The question is: why Bitcoin above
           all of them?

@@ -10,6 +10,7 @@ export const SITE = {
 export const SECTIONS = [
   { id: "hero", label: "Overview" },
   { id: "executive-summary", label: "Executive Summary" },
+  { id: "everything-code", label: "The Everything Code" },
   { id: "bitcoin-foundation", label: "Bitcoin: The Foundation" },
   { id: "global-context", label: "Global Context" },
   { id: "pillar-demographics", label: "1. Demographics" },

@@ -11,6 +11,45 @@ export function ExecutiveSummary() {
       </h2>
       <div className="mt-2 h-px w-12 bg-accent" />
 
+      <div className="mt-8 border border-ink-100 rounded-sm p-5 bg-ink-50/50">
+        <p className="text-sm leading-relaxed text-ink-600">
+          This thesis is built on{" "}
+          <strong className="text-ink-800">The Everything Code</strong>, a macro
+          framework developed by{" "}
+          <a
+            href="https://www.realvision.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent font-medium hover:underline"
+          >
+            Raoul Pal
+          </a>
+          , founder of{" "}
+          <a
+            href="https://www.globalmacroinvestor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent font-medium hover:underline"
+          >
+            Global Macro Investor
+          </a>{" "}
+          (GMI) and co-founder of{" "}
+          <a
+            href="https://www.realvision.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent font-medium hover:underline"
+          >
+            Real Vision
+          </a>
+          . The Everything Code posits that when sovereign debt passes a critical
+          threshold, central banks are structurally forced into permanent currency
+          debasement - and that scarce assets, particularly Bitcoin, capture the
+          resulting capital flows. The analysis below applies this framework to Japan
+          as the most advanced case study and to Metaplanet as its optimal capture vehicle.
+        </p>
+      </div>
+
       <div className="mt-12 space-y-10">
         <Layer
           number="1"

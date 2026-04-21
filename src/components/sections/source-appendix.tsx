@@ -2,6 +2,14 @@ import { SectionWrapper } from "@/components/ui/section-wrapper";
 
 const SOURCE_CATEGORIES = [
   {
+    title: "Framework Attribution",
+    sources: [
+      { label: "Raoul Pal - The Everything Code (Global Macro Investor)", url: "https://www.globalmacroinvestor.com" },
+      { label: "Real Vision - Macro Research & Financial Media", url: "https://www.realvision.com" },
+      { label: "Raoul Pal on X (primary Everything Code discussion)", url: "https://x.com/RaoulGMI" },
+    ],
+  },
+  {
     title: "Bitcoin - Protocol & Supply",
     sources: [
       { label: "Bitcoin Whitepaper - Satoshi Nakamoto (2008)", url: "https://bitcoin.org/bitcoin.pdf" },

@@ -30,7 +30,25 @@ export function Hero() {
           </div>
           <div>
             <span className="text-ink-500 font-medium">Framework</span>{" "}
-            <span className="text-ink-300">Raoul Pal's Everything Code</span>
+            <a
+              href="https://www.realvision.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink-300 hover:text-accent transition-colors"
+            >
+              The Everything Code by Raoul Pal
+            </a>
+          </div>
+          <div>
+            <span className="text-ink-500 font-medium">Research</span>{" "}
+            <a
+              href="https://www.globalmacroinvestor.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink-300 hover:text-accent transition-colors"
+            >
+              Global Macro Investor
+            </a>
           </div>
           <div>
             <span className="text-ink-500 font-medium">Status</span>{" "}

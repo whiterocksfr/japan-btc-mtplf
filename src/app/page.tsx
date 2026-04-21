@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { ExecutiveSummary } from "@/components/sections/executive-summary";
+import { EverythingCode } from "@/components/sections/everything-code";
 import { BitcoinFoundation } from "@/components/sections/bitcoin-foundation";
 import { GlobalContext } from "@/components/sections/global-context";
 import { PillarDemographics } from "@/components/sections/pillar-demographics";
@@ -22,6 +23,7 @@ export default function Home() {
       <div className="xl:ml-52">
         <Hero />
         <ExecutiveSummary />
+        <EverythingCode />
         <BitcoinFoundation />
         <GlobalContext />
         <PillarDemographics />
