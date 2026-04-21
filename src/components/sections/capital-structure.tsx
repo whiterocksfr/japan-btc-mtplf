@@ -265,7 +265,7 @@ export function CapitalStructure() {
             Japanese market through two distinct instruments:
           </p>
           <p>
-            <strong className="text-ink-800">MARS (Metaplanet Authorized Redeemable Shares)</strong> -
+            <strong className="text-ink-800">MARS (Metaplanet Adjustable Rate Security)</strong> -
             the STRC equivalent. Non-convertible preferred income instrument designed to raise
             large-scale capital from yield-seeking investors and channel it directly into BTC
             accumulation without diluting common shareholders&apos; BTC-per-share exposure.
