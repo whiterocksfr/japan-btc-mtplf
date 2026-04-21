@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { StatCard } from "@/components/ui/stat-card";
 import { Callout } from "@/components/ui/callout";
+import { MetaplanetVsStrategyChart } from "@/components/charts/metaplanet-vs-strategy-chart";
 
 export function CapitalStructure() {
   return (
@@ -343,6 +344,7 @@ export function CapitalStructure() {
             </tbody>
           </table>
         </div>
+        <MetaplanetVsStrategyChart />
       </div>
 
       {/* MERCURY Details */}

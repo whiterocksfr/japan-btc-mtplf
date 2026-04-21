@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { StatCard } from "@/components/ui/stat-card";
 import { Callout } from "@/components/ui/callout";
+import { BtcYieldChart } from "@/components/charts/btc-yield-chart";
 
 export function BtcYieldEngine() {
   return (
@@ -208,6 +209,8 @@ export function BtcYieldEngine() {
         <p className="mt-2 text-xs text-ink-400">
           Source: <a href="https://www.strategy.com/purchases" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">strategy.com/purchases</a> (each date links to its SEC 8-K filing)
         </p>
+
+        <BtcYieldChart />
       </div>
 
       {/* The Math Callout */}

@@ -1,5 +1,6 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { StatCard } from "@/components/ui/stat-card";
+import { FedBalanceSheetChart } from "@/components/charts/fed-balance-sheet-chart";
 
 export function GlobalContext() {
   return (
@@ -151,6 +152,8 @@ export function GlobalContext() {
         <p className="mt-2 text-xs text-ink-400">
           Sources: <a href="https://www.federalreserve.gov/releases/h41/current/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Federal Reserve H.4.1</a>, <a href="https://fred.stlouisfed.org/series/WALCL" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">FRED WALCL</a>, <a href="https://www.statista.com/statistics/1121448/fed-balance-sheet-timeline/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Statista</a>
         </p>
+
+        <FedBalanceSheetChart />
       </div>
 
       {/* CB Convergence */}

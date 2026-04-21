@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { StatCard } from "@/components/ui/stat-card";
 import { Callout } from "@/components/ui/callout";
+import { HalvingInflationChart } from "@/components/charts/halving-inflation-chart";
 
 export function BitcoinFoundation() {
   return (
@@ -132,6 +133,8 @@ export function BitcoinFoundation() {
         <p className="mt-2 text-xs text-ink-400">
           Sources: <a href="https://www.swanbitcoin.com/education/bitcoin-halving-dates/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Swan Bitcoin</a>, <a href="https://www.coinwarz.com/bitcoin-halving" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CoinWarz</a>, <a href="https://www.cnbc.com/2024/04/19/bitcoin-network-completes-fourth-ever-halving-of-rewards-to-miners.html" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">CNBC (April 2024)</a>
         </p>
+
+        <HalvingInflationChart />
       </div>
 
       {/* Game Theory */}

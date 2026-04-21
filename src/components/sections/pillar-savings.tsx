@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { StatCard } from "@/components/ui/stat-card";
 import { Callout } from "@/components/ui/callout";
+import { SavingsAllocationChart } from "@/components/charts/savings-allocation-chart";
 
 export function PillarSavings() {
   return (
@@ -178,6 +179,8 @@ export function PillarSavings() {
         <p className="mt-2 text-xs text-ink-400">
           Source: <a href="https://www.boj.or.jp/en/statistics/sj/sjexp.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">BOJ Flow of Funds</a>, <a href="https://www.statista.com/statistics/1237816/japan-quarterly-household-financial-assets-by-type/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">Statista</a>
         </p>
+
+        <SavingsAllocationChart />
       </div>
 
       {/* NISA */}
