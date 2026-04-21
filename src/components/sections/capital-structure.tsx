@@ -617,7 +617,7 @@ export function CapitalStructure() {
           Major Common Equity Holders (Context)
         </h4>
         <p className="text-sm leading-relaxed text-ink-600 mb-4">
-          The institutional interest extends beyond preferred shares. Metaplanet&apos;s common equity shareholder base includes <strong className="text-ink-800">Fidelity</strong> (National Financial Services, 12.9% stake, ~$816M - largest shareholder) and <strong className="text-ink-800">Capital Group</strong> (11.45%, ~$500M), along with Vanguard and iShares via index holdings. These are among the largest asset managers in the world taking meaningful positions in a TSE-listed Bitcoin treasury company.
+          The interest extends beyond preferred shares. Metaplanet&apos;s common equity shareholder base includes <strong className="text-ink-800">Capital Group</strong> (11.45% stake, ~$500M - a deliberate institutional position from a $2.9T asset manager), significant US retail demand through Fidelity brokerage accounts (12.9% custodial position via National Financial Services), and index exposure through Vanguard and iShares. Capital Group&apos;s position is particularly notable because they are also a MERCURY preferred investor through their SMALLCAP World Fund - a dual common/preferred holder with deep conviction.
         </p>
 
         {/* TAM */}
