@@ -265,15 +265,18 @@ export function CapitalStructure() {
             Japanese market through two distinct instruments:
           </p>
           <p>
-            <strong className="text-ink-800">MARS (Metaplanet Adjustable Rate Security)</strong> -
-            the STRC equivalent. Non-convertible preferred income instrument designed to raise
-            large-scale capital from yield-seeking investors and channel it directly into BTC
-            accumulation without diluting common shareholders&apos; BTC-per-share exposure.
+            <strong className="text-ink-800">MARS (Metaplanet Adjustable Rate Securities) - Class A Preferred</strong> -
+            the STRC equivalent. Adjustable-rate preferred with a dividend range of <strong className="text-ink-800">1% to 8%</strong>,
+            designed to raise large-scale capital from yield-seeking investors and channel it
+            directly into BTC accumulation without diluting common shareholders&apos;
+            BTC-per-share exposure. Compared to STRC&apos;s fixed 11.50%, MARS&apos;s lower adjustable
+            rate means significantly less dividend burden per dollar raised - a structural
+            cost-of-capital advantage.
           </p>
           <p>
-            <strong className="text-ink-800">MERCURY</strong> - the STRK equivalent. Convertible
-            preferred with equity upside for investors willing to accept a lower dividend in
-            exchange for potential conversion into common shares.
+            <strong className="text-ink-800">MERCURY (Metaplanet Convertible for Return &amp; Yield) - Class B Preferred</strong> -
+            the STRK equivalent. Convertible preferred at a fixed <strong className="text-ink-800">4.9% dividend</strong>,
+            offering equity upside through conversion into common shares.
           </p>
         </div>
 
@@ -345,7 +348,7 @@ export function CapitalStructure() {
       {/* MERCURY Details */}
       <div className="max-w-5xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
-          Current Preferred Details: MERCURY
+          Current Preferred Details: MERCURY (Class B)
         </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
@@ -356,8 +359,102 @@ export function CapitalStructure() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            BTC Rating: 7.72x (BTC NAV is 7.72x the preferred notional). Duration: Perpetual.
-            Status: Private placement.
+            Full name: Metaplanet Convertible for Return &amp; Yield. BTC Rating: 7.72x
+            (BTC NAV is 7.72x the preferred notional). Duration: Perpetual.
+            Status: Private placement. Source: Metaplanet AGM 2026 and analytics.metaplanet.jp.
+          </p>
+        </div>
+      </div>
+
+      {/* Bitcoin Income Generation */}
+      <div className="max-w-5xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          Bitcoin Income Generation: Self-Funding the Dividend
+        </h3>
+
+        <div className="max-w-3xl space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+          <p>
+            Metaplanet operates a <strong className="text-ink-800">Bitcoin Income Generation business</strong> using
+            collateral-secured Bitcoin options (covered calls) to generate recurring operating
+            revenue. This business is operationally segregated from long-term BTC holdings -
+            the company&apos;s long-term Bitcoin is not subject to derivative exposure and is
+            intended to be held on a perpetual basis.
+          </p>
+          <p>
+            The income generation revenue is accelerating rapidly:
+          </p>
+        </div>
+
+        <div className="overflow-x-auto mb-8">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Quarter</th>
+                <th className="num">Revenue (JPY M)</th>
+                <th className="num">Revenue (~USD M)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">Q4 FY2024</td>
+                <td className="num">691.6</td>
+                <td className="num">~$4.6</td>
+              </tr>
+              <tr>
+                <td className="label">Q1 FY2025</td>
+                <td className="num">770.3</td>
+                <td className="num">~$5.1</td>
+              </tr>
+              <tr>
+                <td className="label">Q2 FY2025</td>
+                <td className="num">1,130.6</td>
+                <td className="num">~$7.5</td>
+              </tr>
+              <tr>
+                <td className="label">Q3 FY2025</td>
+                <td className="num">2,438.0</td>
+                <td className="num">~$16.3</td>
+              </tr>
+              <tr>
+                <td className="label">Q4 FY2025</td>
+                <td className="num">4,241.8</td>
+                <td className="num">~$28.3</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">Q1 FY2026</td>
+                <td className="num">2,969.3</td>
+                <td className="num">~$19.8</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td className="label">Trailing 12 Months</td>
+                <td className="num">10,779.7</td>
+                <td className="num">~$71.9</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div className="max-w-3xl space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            <strong className="text-ink-800">The dividend coverage math:</strong> Metaplanet&apos;s
+            current MERCURY annual dividend commitment is $7.26M. The Bitcoin Income Generation
+            business produced ~$71.9M in trailing twelve-month revenue - <strong className="text-ink-800">nearly
+            10x the annual dividend obligation</strong>. This means Metaplanet can potentially fund
+            all preferred dividends entirely from operating cash flow generated by its options
+            income, without selling any long-term Bitcoin holdings.
+          </p>
+          <p>
+            As MARS scales, this income stream becomes even more critical. If MARS raises
+            capital at a 1-8% adjustable dividend rate (significantly below STRC&apos;s 11.50%),
+            and the Bitcoin Income Generation business continues at its current pace, Metaplanet
+            could have a self-funding capital structure where options income covers dividend
+            obligations while all raised capital flows directly into BTC accumulation.
+          </p>
+          <p className="text-xs text-ink-400">
+            Source: &quot;Notice Regarding the Q1 FY2026 Results of the Bitcoin Income Generation
+            Business&quot; (Metaplanet Inc., April 2, 2026, metaplanet.jp/en/disclosures)
           </p>
         </div>
       </div>
@@ -365,7 +462,7 @@ export function CapitalStructure() {
       {/* MARS Catalyst */}
       <div className="max-w-3xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
-          MARS - The Thesis Accelerant
+          MARS (Class A) - The Thesis Accelerant
         </h3>
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
@@ -373,26 +470,100 @@ export function CapitalStructure() {
             MARS has been approved by Metaplanet&apos;s board of directors and shareholders
             (via EGM December 2025 and AGM March 2026 resolutions) and is currently <strong className="text-ink-800">pending
             Tokyo Stock Exchange approval</strong>, expected in 2026. Once approved, MARS becomes the
-            direct STRC parallel - a non-convertible preferred income instrument designed to
-            raise large-scale capital from yield-seeking investors and convert it directly into
-            BTC accumulation without diluting common shareholders.
+            direct STRC parallel - an adjustable-rate preferred income instrument at <strong className="text-ink-800">1% to 8%
+            dividend</strong> (vs STRC&apos;s fixed 11.50%), designed to raise large-scale capital and
+            convert it directly into BTC accumulation without diluting common shareholders.
           </p>
           <p>
-            Strategy proved with STRC that a single non-convertible preferred instrument can
-            raise $8.5B at scale, fund billions in BTC purchases, and produce 9.5% BTC Yield
-            YTD with negligible common share dilution. MARS is designed to bring this exact
-            engine to the Japanese market. <strong className="text-ink-800">TSE approval of MARS is one of the
-            highest-conviction near-term catalysts for this thesis.</strong>
+            Strategy proved with STRC that a single preferred instrument can raise $8.5B at
+            scale, fund billions in BTC purchases, and produce 9.5% BTC Yield YTD with negligible
+            common share dilution. MARS is designed to bring this exact engine to the Japanese
+            market - at a significantly lower cost of capital. <strong className="text-ink-800">TSE approval of MARS
+            is the highest-conviction near-term catalyst for this thesis.</strong>
           </p>
           <p>
             <strong className="text-ink-800">Strategic leverage headroom:</strong> At 13%
             amplification ratio vs Strategy&apos;s 35%, Metaplanet could nearly triple its capital
-            structure obligations and still be less leveraged than Strategy. In dollar terms,
-            Metaplanet has capacity to issue roughly $600-700M in additional preferred
-            instruments before reaching Strategy&apos;s leverage ratio - and every dollar raised
+            structure obligations and still be less leveraged than Strategy. Every dollar raised
             buys more BTC, which expands NAV, which creates capacity for more issuance.
           </p>
+          <p className="text-xs text-ink-400">
+            Source: Metaplanet AGM 2026 Presentation (March 25, 2026, metaplanet.jp/en/presentations)
+          </p>
         </div>
+      </div>
+
+      {/* Beyond Treasury: Project NOVA, JPYC, Bitcoin Japan */}
+      <div className="max-w-3xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          Beyond Treasury: Building Japan&apos;s Bitcoin Infrastructure
+        </h3>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            Metaplanet is not just a Bitcoin treasury company. Through <strong className="text-ink-800">Project
+            NOVA</strong> and its subsidiary ecosystem, the company is positioning itself as
+            integral infrastructure for institutional Bitcoin and stablecoin adoption in Japan.
+          </p>
+        </div>
+
+        <div className="mt-6 space-y-4">
+          <div className="border border-ink-100 rounded-sm p-5">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-2">
+              Project NOVA
+            </h4>
+            <p className="text-sm leading-relaxed text-ink-600">
+              Metaplanet&apos;s strategic framework for driving institutional Bitcoin adoption
+              in Japan. NOVA encompasses the company&apos;s broader mission to build out the
+              infrastructure, education, and financial products necessary for Japan&apos;s
+              transition to a Bitcoin standard - extending well beyond passive treasury
+              holdings into active ecosystem development.
+            </p>
+          </div>
+
+          <div className="border border-ink-100 rounded-sm p-5">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-2">
+              JPYC - Stablecoin Investment
+            </h4>
+            <p className="text-sm leading-relaxed text-ink-600">
+              Metaplanet has made a strategic investment in JPYC, a Japanese yen-pegged
+              stablecoin. This positions Metaplanet at the intersection of Bitcoin and
+              the emerging Japanese stablecoin infrastructure - with a stated &quot;Year Zero
+              2028&quot; target for broader integration of BTC and stablecoin rails in Japan.
+            </p>
+          </div>
+
+          <div className="border border-ink-100 rounded-sm p-5">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-2">
+              Bitcoin Japan Inc. &amp; Bitcoin Magazine Japan
+            </h4>
+            <p className="text-sm leading-relaxed text-ink-600">
+              Bitcoin Japan Inc. operates as Japan&apos;s premier Bitcoin-focused adoption entity,
+              providing education, strategic guidance, and on-chain data analytics
+              (bitcoin.jp). Bitcoin Magazine Japan operates under exclusive license to
+              onboard one million individuals and organizations into the Bitcoin ecosystem.
+              Together these subsidiaries build the demand side of the equation that
+              Metaplanet&apos;s treasury and capital instruments serve.
+            </p>
+          </div>
+
+          <div className="border border-ink-100 rounded-sm p-5">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-2">
+              The Bitcoin Hotel (Royal Oak Gotanda, Tokyo)
+            </h4>
+            <p className="text-sm leading-relaxed text-ink-600">
+              A Tokyo property being redeveloped as a shareholder gathering space and
+              Bitcoin community hub. Hosts workshops, events, and programs to increase
+              Bitcoin accessibility and adoption - physical infrastructure for the
+              Bitcoin standard in Japan.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-6 text-sm leading-relaxed text-ink-400">
+          Sources: Metaplanet AGM 2026 Presentation, metaplanet.jp/en/business-lines,
+          bitcoin.jp/en
+        </p>
       </div>
 
       {/* 4 Structural Advantages */}
@@ -414,14 +585,21 @@ export function CapitalStructure() {
           </div>
 
           <div className="border-l-2 border-accent pl-6">
-            <div className="font-semibold text-ink-800 mb-1">2. Japanese Yield Starvation</div>
+            <div className="font-semibold text-ink-800 mb-1">2. Japanese Yield Starvation = Lower Cost of Capital</div>
             <p className="text-sm leading-relaxed text-ink-600">
-              Japanese institutions and retail investors have endured near-zero yields for
-              decades. A MARS preferred paying a fixed dividend - backed by BTC with hundreds
-              of years of coverage - is extraordinary in a market where the 10Y JGB yields
-              ~1.95%. STRC pays 11.50% and raised $8.5B in the US. Imagine that yield offered
-              to a Japanese market where the alternative is a 1.95% government bond or -2.7%
-              real returns on cash.
+              This is the structural advantage that may matter most. STRC pays 11.50% to
+              attract US investors who can get 3.7% from Treasuries. MARS can pay 1-8% and
+              still generate enormous demand - because Japanese investors have endured
+              near-zero yields for decades. The 10Y JGB yields ~1.95%. Cash earns negative
+              real returns of -2.7%. Morgan Stanley&apos;s Japan Wealth Management report projects
+              that Japanese households and institutions are in the early stages of the largest
+              savings-to-investment shift in a generation, driven by persistent inflation
+              destroying cash purchasing power. In this environment, even a 3-5% BTC-backed
+              preferred with 420 years of coverage is extraordinary. MARS can raise capital
+              at roughly half the dividend cost of STRC - meaning every dollar raised
+              generates less dilution of operating income and more net BTC accumulation per
+              unit of preferred issued. This is a direct cost-of-capital advantage that
+              Strategy cannot replicate in the US market.
             </p>
           </div>
 
