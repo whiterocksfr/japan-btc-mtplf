@@ -290,6 +290,119 @@ export function EverythingCode() {
         </p>
       </div>
 
+      {/* The Exponential Age */}
+      <div className="max-w-3xl mx-auto mt-14">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
+          The Exponential Age: Technology as Accelerant
+        </h3>
+
+        <p className="text-base leading-relaxed text-ink-600">
+          Pal&apos;s framework extends beyond monetary debasement. Through his{" "}
+          <a
+            href="https://www.realvision.com/shows/the-exponential-age"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:underline"
+          >
+            Exponential Age
+          </a>{" "}
+          series on Real Vision, he argues that we are simultaneously entering
+          the greatest technology revolution in human history - and that this
+          revolution and the debasement cycle are not separate forces. They
+          reinforce each other.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed text-ink-600">
+          The thesis: artificial intelligence, blockchain, and exponential
+          computing are driving a productivity transformation comparable to the
+          industrial revolution. Each new technology wave - the internet, mobile,
+          cloud, AI - is adopted faster than the last. What took the internet a
+          decade to reach a billion users, AI is achieving in a fraction of that
+          time. Pal calls this the &quot;Fourth Paradigm Shift&quot; - a fundamental
+          restructuring of how economies produce value, process information, and
+          allocate resources.
+        </p>
+
+        <div className="mt-8 space-y-3">
+          <ExpAgeTheme
+            title="AI and Productivity"
+            detail="Artificial intelligence is creating a step-change in output per worker. Unlike previous automation waves that replaced manual labor, AI augments cognitive labor - analysis, decision-making, content creation, code generation. This has the potential to offset declining workforce demographics in developed economies, but it does not resolve the debt problem: productivity gains historically get consumed by new government spending rather than debt reduction."
+          />
+          <ExpAgeTheme
+            title="Network Effects and Metcalfe's Law"
+            detail="Pal frequently cites Metcalfe's Law - that a network's value scales with the square of its users - as the driver of both crypto and technology valuations. Bitcoin, Ethereum, and AI platforms are all network-effect businesses where adoption follows predictable S-curves. Early-stage adoption creates asymmetric returns because the value grows exponentially while most capital allocators are still evaluating linearly."
+          />
+          <ExpAgeTheme
+            title="Crypto as Technology, Not Just Money"
+            detail="Pal views the crypto ecosystem broadly - not just Bitcoin as a store of value, but the entire blockchain infrastructure (smart contracts, DeFi, tokenization, decentralized computing) as a technology revolution comparable to the early internet. Bitcoin is the monetary layer. The broader ecosystem is the application layer. Both benefit from the same adoption curves and liquidity dynamics."
+          />
+          <ExpAgeTheme
+            title="Resource Abundance"
+            detail="The Exponential Age thesis argues that exponential technology will drive resource abundance - energy costs declining through solar/nuclear, compute costs declining through AI/chips, information costs declining toward zero. This abundance transforms macro economics in ways that traditional models cannot capture, and creates investment opportunities in the platforms that enable it."
+          />
+        </div>
+
+        <h4 className="mt-8 text-sm font-semibold uppercase tracking-wider text-ink-500 mb-3">
+          How Debasement and Technology Reinforce Each Other
+        </h4>
+
+        <p className="text-base leading-relaxed text-ink-600">
+          The critical insight connecting the Everything Code to the Exponential
+          Age: central bank debasement pushes capital out of cash and into risk
+          assets. The best risk assets are technology companies and crypto
+          networks that are growing exponentially. The debasement provides the
+          capital flow. The technology provides the returns. The intersection
+          creates a self-reinforcing cycle where monetary expansion funds
+          technological adoption, and technological adoption creates the growth
+          narratives that attract more capital flow.
+        </p>
+
+        <h4 className="mt-8 text-sm font-semibold uppercase tracking-wider text-ink-500 mb-3">
+          The AI Productivity Hope - and Why It Doesn&apos;t Change the Outcome
+        </h4>
+
+        <p className="text-base leading-relaxed text-ink-600">
+          The most common counterargument to the debasement thesis is that AI
+          will deliver a productivity miracle large enough to grow economies out
+          of their debt traps. Markets are betting heavily on this outcome -
+          trillions in capital have flowed into AI infrastructure, semiconductor
+          companies, and cloud computing. The hope is that AI-driven productivity
+          gains will expand GDP fast enough to shrink debt ratios without requiring
+          debasement.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed text-ink-600">
+          Pal&apos;s response is precise: even if AI delivers everything its
+          proponents promise, it does not change the political economy. History
+          is unambiguous on this point. The greatest productivity boom in American
+          history (1945-1970, driven by electrification, automobiles, and
+          postwar industrialization) did not reduce government debt through
+          organic growth. It reduced debt through financial repression - holding
+          interest rates below inflation, which is debasement. Governments do
+          not use productivity windfalls to pay down debt. They use them to
+          fund new programs, expand entitlements, and fight new wars. The spending
+          always absorbs the growth.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed text-ink-600">
+          Japan proves this in real time. Japan is the world&apos;s third-largest
+          robotics adopter and a global leader in industrial automation. It has
+          not mattered. The productivity gains were consumed by an aging
+          population&apos;s healthcare and pension needs, and debt-to-GDP continued
+          climbing to 260%. Technology offsets some of the demographic drag but
+          does not reverse the fiscal ratchet.
+        </p>
+
+        <Callout>
+          AI may change the world. It will not change the debt math. The
+          debasement is the inevitable outcome regardless of how productive the
+          economy becomes - because the political system will always find new
+          ways to spend the surplus. Bitcoin and Metaplanet win in both
+          scenarios: if AI disappoints, debasement accelerates. If AI delivers,
+          governments spend the gains, and debasement continues at the same pace.
+        </Callout>
+      </div>
+
       {/* Why Japan Is the Proof */}
       <div className="max-w-3xl mx-auto mt-14">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
@@ -348,6 +461,21 @@ function ForceStep({
         <span className="font-semibold text-ink-800">{title}.</span>{" "}
         <span className="text-ink-600">{detail}</span>
       </div>
+    </div>
+  );
+}
+
+function ExpAgeTheme({
+  title,
+  detail,
+}: {
+  title: string;
+  detail: string;
+}) {
+  return (
+    <div className="border border-ink-100 rounded-sm p-4 bg-white">
+      <h5 className="text-sm font-semibold text-ink-800 mb-1">{title}</h5>
+      <p className="text-sm leading-relaxed text-ink-600">{detail}</p>
     </div>
   );
 }

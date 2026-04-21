@@ -7,6 +7,10 @@ const SOURCE_CATEGORIES = [
       { label: "Raoul Pal - The Everything Code (Global Macro Investor)", url: "https://www.globalmacroinvestor.com" },
       { label: "Real Vision - Macro Research & Financial Media", url: "https://www.realvision.com" },
       { label: "Raoul Pal on X (primary Everything Code discussion)", url: "https://x.com/RaoulGMI" },
+      { label: "The Exponential Age - Real Vision Show Series", url: "https://www.realvision.com/shows/the-exponential-age" },
+      { label: "The Fourth Paradigm Shift: Metaverse 2.0 (Real Vision)", url: "https://www.realvision.com/shows/the-exponential-age/videos/the-fourth-paradigm-shift-metaverse-2-0-drgE" },
+      { label: "Resource Abundance Will Transform Macro and Human Life (Real Vision)", url: "https://www.realvision.com/shows/the-exponential-age/videos/resource-abundance-will-transform-macro-and-human-life-vx3r" },
+      { label: "A Framework for the Future: Identifying Tech's Trailblazers (Real Vision)", url: "https://www.realvision.com/shows/the-exponential-age/videos/a-framework-for-the-future-identifying-techs-trailblazers-EL2O" },
     ],
   },
   {
