@@ -43,6 +43,21 @@ export function MetaplanetThesis() {
             tax-efficient, TSE-listed vehicle that converts yen-denominated capital
             into Bitcoin exposure with institutional-grade governance.
           </p>
+          <p>
+            The institutional validation is already visible. Metaplanet&apos;s shareholder
+            base includes Fidelity (12.9% stake, ~$816M - the largest single holder),
+            Capital Group ($2.9 trillion AUM, 11.45% stake), and index exposure through
+            Vanguard and iShares. The MERCURY preferred placement was arranged by Goldman
+            Sachs Japan and Cantor Fitzgerald, with participation from Capital Group&apos;s
+            SMALLCAP World Fund, Ghisallo Capital (founded by the former Head of Trading
+            at Soros Fund Management), and Anson Funds (HedgeWeek Americas Multi-Strategy
+            Fund of the Year). These are among the most sophisticated capital allocators
+            in the world, and they are taking meaningful positions - both in Metaplanet&apos;s
+            common equity and in its preferred instruments. The $10 trillion+ pool of
+            Japanese institutional capital (life insurers, pensions, banks) that is
+            actively repositioning for a post-deflation world represents the next wave
+            of demand, and MARS is the instrument designed to capture it.
+          </p>
         </div>
       </div>
 
