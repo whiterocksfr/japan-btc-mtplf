@@ -21,6 +21,7 @@ export const SECTIONS = [
   { id: "metaplanet", label: "Metaplanet Thesis" },
   { id: "capital-structure", label: "Capital Structure" },
   { id: "btc-yield-engine", label: "BTC Yield Engine" },
+  { id: "scenario-analysis", label: "Scenario Analysis" },
   { id: "risks-catalysts", label: "Risks & Catalysts" },
   { id: "sources", label: "Sources" },
 ] as const;

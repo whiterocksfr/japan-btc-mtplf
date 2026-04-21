@@ -11,6 +11,7 @@ import { Synthesis } from "@/components/sections/synthesis";
 import { MetaplanetThesis } from "@/components/sections/metaplanet-thesis";
 import { CapitalStructure } from "@/components/sections/capital-structure";
 import { BtcYieldEngine } from "@/components/sections/btc-yield-engine";
+import { ScenarioAnalysis } from "@/components/sections/scenario-analysis";
 import { RisksCatalysts } from "@/components/sections/risks-catalysts";
 import { SourceAppendix } from "@/components/sections/source-appendix";
 import { TocSidebar } from "@/components/layout/toc-sidebar";
@@ -37,6 +38,7 @@ export default function Home() {
         <MetaplanetThesis />
         <CapitalStructure />
         <BtcYieldEngine />
+        <ScenarioAnalysis />
         <RisksCatalysts />
         <SourceAppendix />
         <SubscribeForm />
