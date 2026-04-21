@@ -24,13 +24,15 @@ export function MetaplanetThesis() {
           </p>
           <p>
             But the tax arbitrage is only the entry point. Metaplanet is building a
-            full-stack Bitcoin platform for Japan: a capital structure engine (MARS +
-            MERCURY) designed to compound BTC-per-share without diluting common
+            full-stack Bitcoin platform for Japan and Asia: a capital structure engine
+            (MARS + MERCURY) designed to compound BTC-per-share without diluting common
             shareholders, an income generation business using cash-secured puts to
             fund dividends from operations, an education and media subsidiary (Bitcoin
             Magazine Japan) onboarding a million Japanese into the Bitcoin ecosystem,
-            and a strategic stablecoin investment (JPYC) positioning the company at the
-            center of Japan&apos;s emerging digital asset infrastructure.
+            a strategic stablecoin investment (JPYC), and <strong className="text-ink-800">Project
+            NOVA</strong> - an institutional platform being built for broad institutional
+            Bitcoin adoption across Asia, positioning Metaplanet as core infrastructure
+            for how institutions in the region access, custody, and deploy Bitcoin.
           </p>
           <p>
             The thesis rests on the convergence of these structural advantages with
