@@ -7,8 +7,16 @@ export function Disclaimer() {
         </h3>
 
         <p>
+          <strong className="text-ink-500">No Affiliation:</strong> The author of this
+          research is not affiliated with, employed by, sponsored by, or endorsed by
+          Metaplanet, Inc., Strategy (formerly MicroStrategy), Real Vision, Global Macro
+          Investor, or any other company discussed herein. This is an independent,
+          personal research project with no corporate involvement or oversight.
+        </p>
+
+        <p>
           <strong className="text-ink-500">Conflict of Interest Disclosure:</strong> The
-          author of this research holds positions in Bitcoin (BTC) and Metaplanet, Inc.
+          author holds positions in Bitcoin (BTC) and Metaplanet, Inc.
           (TSE: 3350 / MPJPY / MTPLF). The author may buy, sell, or otherwise transact
           in these securities at any time without notice. This creates a direct financial
           conflict of interest in the subject matter discussed herein.
