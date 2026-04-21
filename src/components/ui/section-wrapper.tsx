@@ -29,7 +29,7 @@ export function SectionWrapper({
     >
       <div
         className={clsx(
-          "mx-auto px-6 py-16 md:py-24 lg:py-32",
+          "mx-auto px-6 py-12 md:py-16 lg:py-20",
           narrow ? "max-w-3xl" : "max-w-5xl"
         )}
       >
