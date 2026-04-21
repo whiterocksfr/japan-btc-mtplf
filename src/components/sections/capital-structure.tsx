@@ -571,7 +571,7 @@ export function CapitalStructure() {
               attract US investors who can get 3.7% from Treasuries. MARS can pay 1-8% and
               still generate enormous demand - because Japanese investors have endured
               near-zero yields for decades. The 10Y JGB yields ~1.95%. Cash earns negative
-              real returns of -2.7%. Morgan Stanley&apos;s Japan Wealth Management report projects
+              real returns of -2.7%. <a href="https://www.morganstanley.com/insights/articles/japan-economic-outlook-2025-pivotal-for-investors" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Morgan Stanley&apos;s Japan Wealth Management report</a> projects
               that Japanese households and institutions are in the early stages of the largest
               savings-to-investment shift in a generation, driven by persistent inflation
               destroying cash purchasing power. In this environment, even a 3-5% BTC-backed
