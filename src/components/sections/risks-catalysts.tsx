@@ -14,205 +14,174 @@ export function RisksCatalysts() {
       </div>
 
       {/* Risk Scenarios */}
-      <div className="max-w-3xl mx-auto mt-12 space-y-8">
-
-        {/* Primary Risk */}
-        <div className="rounded-lg border border-ink-200 bg-white p-6">
-          <div className="text-[0.6875rem] font-semibold uppercase tracking-wider text-red-600 mb-2">
-            Primary Risk
-          </div>
-          <h3 className="font-serif text-lg font-semibold text-ink-900 mb-3">
-            Genuine BOJ Hawkishness
-          </h3>
-          <ul className="space-y-2 text-base leading-relaxed text-ink-600">
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Requires sustained 4%+ inflation creating political toxicity</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Even then, Takaichi&apos;s policy stance is dovish</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>High debt/GDP limits how far rates can rise before budget crisis</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span><strong className="text-ink-800">Base rate probability: Low</strong></span>
-            </li>
-          </ul>
-        </div>
-
-        {/* Secondary Risk */}
-        <div className="rounded-lg border border-ink-200 bg-white p-6">
-          <div className="text-[0.6875rem] font-semibold uppercase tracking-wider text-amber-600 mb-2">
-            Secondary Risk
-          </div>
-          <h3 className="font-serif text-lg font-semibold text-ink-900 mb-3">
-            Global Risk-Off / Carry Trade Unwind
-          </h3>
-          <ul className="space-y-2 text-base leading-relaxed text-ink-600">
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>August 2024 unwind was a preview</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Structural pin: BOJ can&apos;t normalize meaningfully without destabilizing</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Carry trade liquidity spigot stays open longer than most expect</span>
-            </li>
-          </ul>
-        </div>
-
-        {/* Tertiary Risk */}
-        <div className="rounded-lg border border-ink-200 bg-white p-6">
-          <div className="text-[0.6875rem] font-semibold uppercase tracking-wider text-amber-600 mb-2">
-            Tertiary Risk
-          </div>
-          <h3 className="font-serif text-lg font-semibold text-ink-900 mb-3">
-            Takaichi Loses Power
-          </h3>
-          <ul className="space-y-2 text-base leading-relaxed text-ink-600">
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Currently 60%+ approval</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>LDP-Ishin coalition stable into 2026 election</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Opposition (CDPJ + Komeitō Centrist Reform Alliance) not monetarily hawkish either</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Even regime change unlikely to produce fundamentally different monetary posture given structural constraints</span>
-            </li>
-          </ul>
-        </div>
-
-        {/* Idiosyncratic Risks */}
-        <div className="rounded-lg border border-ink-200 bg-white p-6">
-          <div className="text-[0.6875rem] font-semibold uppercase tracking-wider text-ink-400 mb-2">
-            Idiosyncratic
-          </div>
-          <h3 className="font-serif text-lg font-semibold text-ink-900 mb-3">
-            Metaplanet-Specific Risks
-          </h3>
-          <ul className="space-y-2 text-base leading-relaxed text-ink-600">
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>mNAV compression if BTC treasury model becomes commoditized (other TSE issuers entering space)</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Regulatory changes to crypto tax treatment (could cut either way - 20% lower would reduce Metaplanet&apos;s arbitrage advantage)</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="flex-none text-ink-300">-</span>
-              <span>Governance/execution risk on continued capital raises at premium</span>
-            </li>
-          </ul>
+      <div className="max-w-5xl mx-auto mt-12">
+        <div className="overflow-x-auto">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Risk</th>
+                <th>Scenario</th>
+                <th>Assessment</th>
+                <th>Probability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">Primary</td>
+                <td>
+                  <strong className="text-ink-800">Genuine BOJ hawkishness.</strong>{" "}
+                  Requires sustained 4%+ inflation creating political toxicity.
+                  Takaichi&apos;s stance is dovish. Debt/GDP limits rate ceiling.
+                </td>
+                <td>Self-limiting. BOJ cannot sustain real tightening at 260% debt/GDP without triggering budget crisis.</td>
+                <td className="num">Low</td>
+              </tr>
+              <tr>
+                <td className="label">Secondary</td>
+                <td>
+                  <strong className="text-ink-800">Carry trade unwind.</strong>{" "}
+                  August 2024 was a preview. Leveraged yen positions unwind,
+                  risk assets sell off.
+                </td>
+                <td>Creates drawdowns, not trend changes. Every unwind in 20 years has been followed by resumed accommodation. Entry point, not refutation.</td>
+                <td className="num">Moderate</td>
+              </tr>
+              <tr>
+                <td className="label">Tertiary</td>
+                <td>
+                  <strong className="text-ink-800">Takaichi loses power.</strong>{" "}
+                  Currently 60%+ approval. LDP-Ishin coalition stable into 2026.
+                </td>
+                <td>Opposition (CDPJ + Komeitō Reform Alliance) is not monetarily hawkish either. Structural constraints override political leadership.</td>
+                <td className="num">Low</td>
+              </tr>
+              <tr>
+                <td className="label">Idiosyncratic</td>
+                <td>
+                  <strong className="text-ink-800">mNAV compression.</strong>{" "}
+                  Other TSE-listed BTC treasury companies enter the space,
+                  commoditizing the model.
+                </td>
+                <td>More corporate adoption validates the thesis and expands addressable capital. Scale and execution matter - Strategy&apos;s premium persisted despite US imitators.</td>
+                <td className="num">Moderate</td>
+              </tr>
+              <tr>
+                <td className="label">Idiosyncratic</td>
+                <td>
+                  <strong className="text-ink-800">Tax arbitrage neutralized.</strong>{" "}
+                  Japan reclassifies crypto from 55% miscellaneous to 20% capital gains.
+                </td>
+                <td>Cuts both ways. Reduces Metaplanet&apos;s structural advantage but massively expands BTC demand from 126M Japanese retail. Net portfolio impact may be positive.</td>
+                <td className="num">Moderate</td>
+              </tr>
+              <tr>
+                <td className="label">Idiosyncratic</td>
+                <td>
+                  <strong className="text-ink-800">Governance / execution risk.</strong>{" "}
+                  Capital raises fail or execute at unfavorable terms.
+                </td>
+                <td>Mitigated by current 8.1% leverage ratio (vs Strategy&apos;s 35%) and 420-year coverage multiple. Substantial headroom for execution variance.</td>
+                <td className="num">Low</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
       {/* Catalysts */}
-      <div className="max-w-3xl mx-auto mt-16">
+      <div className="max-w-5xl mx-auto mt-16">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-8">
           Catalysts to Watch
         </h3>
 
-        {/* Bullish Catalysts */}
-        <div className="rounded-lg border border-green-200 bg-green-50/50 p-6 mb-8">
-          <div className="text-[0.6875rem] font-semibold uppercase tracking-wider text-green-700 mb-4">
-            Bullish Signals (Increase Conviction)
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Bullish */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-4 pb-2 border-b-2 border-ink-200">
+              Bullish Signals (Increase Conviction)
+            </h4>
+            <ul className="space-y-3">
+              <CatalystItem emphasis>
+                TSE approval of MARS - unlocks the non-dilutive BTC Yield engine proven by STRC at $8.5B scale
+              </CatalystItem>
+              <CatalystItem>
+                First MARS issuance and capital deployment into BTC
+              </CatalystItem>
+              <CatalystItem>
+                BOJ slowing QT further beyond April 2026 plan
+              </CatalystItem>
+              <CatalystItem>
+                New supplementary budget announcements from Takaichi
+              </CatalystItem>
+              <CatalystItem>
+                NISA inflow data acceleration (quarterly reports)
+              </CatalystItem>
+              <CatalystItem>
+                Yen weakness through 160 without aggressive intervention
+              </CatalystItem>
+              <CatalystItem>
+                BOJ capitulation on 2026 rate hike expectations
+              </CatalystItem>
+              <CatalystItem>
+                Continued Sanseito polling strength (reinforces immigration ceiling)
+              </CatalystItem>
+              <CatalystItem>
+                Additional corporate Japan BTC treasury adoptions
+              </CatalystItem>
+              <CatalystItem>
+                Metaplanet mNAV expanding above 1.0x (currently 0.89x / 1.02x EV)
+              </CatalystItem>
+            </ul>
           </div>
-          <ul className="space-y-3 text-base leading-relaxed text-ink-600">
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span><strong className="text-ink-800">TSE approval of MARS</strong> (highest-conviction near-term catalyst - unlocks the non-dilutive BTC Yield engine proven by STRC at $8.5B scale)</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>First MARS issuance and capital deployment into BTC (proves the model works in Japan)</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>BOJ slowing QT further beyond April 2026 plan</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>New supplementary budget announcements from Takaichi</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>NISA inflow data (quarterly)</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>Yen weakness through 160 without aggressive intervention</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>BOJ explicit capitulation on 2026 rate hike expectations</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>Continued Sanseito polling strength (reinforces immigration ceiling)</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>Additional corporate Japan BTC treasury adoptions</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-green-300 bg-white" />
-              <span>Metaplanet mNAV expanding above 1.0x (currently 0.89x market cap / 1.02x EV - near or below NAV)</span>
-            </li>
-          </ul>
-        </div>
 
-        {/* Bearish Signals */}
-        <div className="rounded-lg border border-red-200 bg-red-50/50 p-6">
-          <div className="text-[0.6875rem] font-semibold uppercase tracking-wider text-red-700 mb-4">
-            Bearish Signals (Reduce Conviction / Adjust Sizing)
+          {/* Bearish */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-4 pb-2 border-b-2 border-ink-200">
+              Bearish Signals (Reduce Conviction)
+            </h4>
+            <ul className="space-y-3">
+              <CatalystItem>
+                BOJ balance sheet contraction accelerating beyond 5% annualized
+              </CatalystItem>
+              <CatalystItem>
+                Genuine BOJ forward guidance toward hawkishness
+              </CatalystItem>
+              <CatalystItem>
+                Takaichi approval collapse on inflation concerns
+              </CatalystItem>
+              <CatalystItem>
+                Yen strengthening through 140 sustainably
+              </CatalystItem>
+              <CatalystItem>
+                MOF intervention to strengthen yen
+              </CatalystItem>
+              <CatalystItem>
+                JGB market dislocation forcing emergency action
+              </CatalystItem>
+              <CatalystItem>
+                Crypto-specific tax changes neutralizing Metaplanet&apos;s arbitrage
+              </CatalystItem>
+            </ul>
           </div>
-          <ul className="space-y-3 text-base leading-relaxed text-ink-600">
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>BOJ balance sheet contraction accelerating beyond 5% annualized</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>Genuine BOJ forward guidance toward hawkishness</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>Takaichi approval collapse on inflation concerns</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>Yen strengthening through 140 sustainably</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>MOF intervention to strengthen yen</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>JGB market dislocation forcing emergency action</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="flex-none mt-0.5 w-5 h-5 rounded border border-red-300 bg-white" />
-              <span>Crypto-specific tax treatment changes that neutralize Metaplanet&apos;s arbitrage</span>
-            </li>
-          </ul>
         </div>
       </div>
     </SectionWrapper>
+  );
+}
+
+function CatalystItem({
+  children,
+  emphasis,
+}: {
+  children: React.ReactNode;
+  emphasis?: boolean;
+}) {
+  return (
+    <li className="flex gap-3 items-start text-sm leading-relaxed text-ink-600">
+      <span className="flex-none mt-1.5 w-1.5 h-1.5 rounded-full bg-ink-300" />
+      <span className={emphasis ? "font-medium text-ink-800" : ""}>
+        {children}
+      </span>
+    </li>
   );
 }
