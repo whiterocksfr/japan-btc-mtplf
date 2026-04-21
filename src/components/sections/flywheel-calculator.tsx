@@ -134,18 +134,22 @@ export function FlywheelCalculator() {
   // Cycle 1: MARS preferred raise
   const [marsRaise, setMarsRaise] = useState(DEFAULTS.marsRaise);
   const [marsRate, setMarsRate] = useState(DEFAULTS.marsRate);
+  const [marsPrice, setMarsPrice] = useState(DEFAULTS.btcPrice);
 
   // Cycle 2: Equity raise at mNAV premium
   const [equityRaise, setEquityRaise] = useState(DEFAULTS.equityRaise);
   const [equityMnav, setEquityMnav] = useState(DEFAULTS.equityMnav);
+  const [equityPrice, setEquityPrice] = useState(95000);
 
   // Cycle 3: Second MARS raise
   const [marsRaise2, setMarsRaise2] = useState(DEFAULTS.marsRaise2);
   const [marsRate2, setMarsRate2] = useState(DEFAULTS.marsRate2);
+  const [marsPrice2, setMarsPrice2] = useState(110000);
 
   // Cycle 4: Second equity raise
   const [equityRaise2, setEquityRaise2] = useState(DEFAULTS.equityRaise2);
   const [equityMnav2, setEquityMnav2] = useState(DEFAULTS.equityMnav2);
+  const [equityPrice2, setEquityPrice2] = useState(130000);
 
   // Valuation
   const [valuationMnav, setValuationMnav] = useState(1.5);
@@ -155,7 +159,7 @@ export function FlywheelCalculator() {
     const baseSats = Math.round((currentBtc / (currentShares * 1e6)) * 1e8);
 
     // Cycle 1: MARS (preferred, non-dilutive)
-    const c1BtcAdded = (marsRaise * 1e6) / btcPrice;
+    const c1BtcAdded = marsRaise > 0 ? (marsRaise * 1e6) / marsPrice : 0;
     const c1TotalBtc = currentBtc + c1BtcAdded;
     const c1Shares = currentShares; // no change
     const c1Sats = Math.round((c1TotalBtc / (c1Shares * 1e6)) * 1e8);
@@ -163,10 +167,10 @@ export function FlywheelCalculator() {
     const c1AnnualDiv = existingDiv + (marsRaise * marsRate) / 100;
 
     // Cycle 2: Equity at mNAV premium
-    const c2NavPerShare = (c1TotalBtc * btcPrice) / (c1Shares * 1e6);
+    const c2NavPerShare = (c1TotalBtc * equityPrice) / (c1Shares * 1e6);
     const c2SharePrice = c2NavPerShare * equityMnav;
-    const c2NewShares = (equityRaise * 1e6) / c2SharePrice / 1e6; // in millions
-    const c2BtcAdded = (equityRaise * 1e6) / btcPrice;
+    const c2NewShares = equityRaise > 0 ? (equityRaise * 1e6) / c2SharePrice / 1e6 : 0;
+    const c2BtcAdded = equityRaise > 0 ? (equityRaise * 1e6) / equityPrice : 0;
     const c2TotalBtc = c1TotalBtc + c2BtcAdded;
     const c2Shares = c1Shares + c2NewShares;
     const c2Sats = Math.round((c2TotalBtc / (c2Shares * 1e6)) * 1e8);
@@ -174,7 +178,7 @@ export function FlywheelCalculator() {
     const c2AnnualDiv = c1AnnualDiv; // equity has no dividend
 
     // Cycle 3: Second MARS (preferred, non-dilutive)
-    const c3BtcAdded = (marsRaise2 * 1e6) / btcPrice;
+    const c3BtcAdded = marsRaise2 > 0 ? (marsRaise2 * 1e6) / marsPrice2 : 0;
     const c3TotalBtc = c2TotalBtc + c3BtcAdded;
     const c3Shares = c2Shares; // no change
     const c3Sats = Math.round((c3TotalBtc / (c3Shares * 1e6)) * 1e8);
@@ -182,10 +186,10 @@ export function FlywheelCalculator() {
     const c3AnnualDiv = c2AnnualDiv + (marsRaise2 * marsRate2) / 100;
 
     // Cycle 4: Second equity raise
-    const c4NavPerShare = (c3TotalBtc * btcPrice) / (c3Shares * 1e6);
+    const c4NavPerShare = (c3TotalBtc * equityPrice2) / (c3Shares * 1e6);
     const c4SharePrice = c4NavPerShare * equityMnav2;
-    const c4NewShares = (equityRaise2 * 1e6) / c4SharePrice / 1e6;
-    const c4BtcAdded = (equityRaise2 * 1e6) / btcPrice;
+    const c4NewShares = equityRaise2 > 0 ? (equityRaise2 * 1e6) / c4SharePrice / 1e6 : 0;
+    const c4BtcAdded = equityRaise2 > 0 ? (equityRaise2 * 1e6) / equityPrice2 : 0;
     const c4TotalBtc = c3TotalBtc + c4BtcAdded;
     const c4Shares = c3Shares + c4NewShares;
     const c4Sats = Math.round((c4TotalBtc / (c4Shares * 1e6)) * 1e8);
@@ -200,8 +204,10 @@ export function FlywheelCalculator() {
     const dilutionPct =
       ((c4Shares - currentShares) / currentShares) * 100;
     const btcGrowthPct = (totalBtcAdded / currentBtc) * 100;
-    const newBtcNav = (c4TotalBtc * btcPrice) / 1e9;
-    const coverageYears = (c4TotalBtc * btcPrice) / (c4AnnualDiv * 1e6);
+    // Use the latest BTC price for final valuation (highest cycle price or explicit)
+    const finalBtcPrice = equityPrice2;
+    const newBtcNav = (c4TotalBtc * finalBtcPrice) / 1e9;
+    const coverageYears = (c4TotalBtc * finalBtcPrice) / (c4AnnualDiv * 1e6);
 
     return {
       baseSats,
@@ -262,12 +268,16 @@ export function FlywheelCalculator() {
     existingDiv,
     marsRaise,
     marsRate,
+    marsPrice,
     equityRaise,
     equityMnav,
+    equityPrice,
     marsRaise2,
     marsRate2,
+    marsPrice2,
     equityRaise2,
     equityMnav2,
+    equityPrice2,
   ]);
 
   return (
@@ -298,15 +308,6 @@ export function FlywheelCalculator() {
                 Baseline Assumptions
               </h4>
               <div className="space-y-5">
-                <SliderInput
-                  label="BTC Price"
-                  value={btcPrice}
-                  onChange={setBtcPrice}
-                  min={50000}
-                  max={300000}
-                  step={5000}
-                  prefix="$"
-                />
                 <SliderInput
                   label="Current BTC Holdings"
                   value={currentBtc}
@@ -343,6 +344,15 @@ export function FlywheelCalculator() {
               </h4>
               <div className="space-y-5">
                 <SliderInput
+                  label="BTC Price at Raise"
+                  value={marsPrice}
+                  onChange={setMarsPrice}
+                  min={50000}
+                  max={300000}
+                  step={5000}
+                  prefix="$"
+                />
+                <SliderInput
                   label="MARS Raise Amount"
                   value={marsRaise}
                   onChange={setMarsRaise}
@@ -370,6 +380,15 @@ export function FlywheelCalculator() {
                 Cycle 2: Equity Raise at mNAV Premium
               </h4>
               <div className="space-y-5">
+                <SliderInput
+                  label="BTC Price at Raise"
+                  value={equityPrice}
+                  onChange={setEquityPrice}
+                  min={50000}
+                  max={300000}
+                  step={5000}
+                  prefix="$"
+                />
                 <SliderInput
                   label="Equity Raise Amount"
                   value={equityRaise}
@@ -399,6 +418,15 @@ export function FlywheelCalculator() {
               </h4>
               <div className="space-y-5">
                 <SliderInput
+                  label="BTC Price at Raise"
+                  value={marsPrice2}
+                  onChange={setMarsPrice2}
+                  min={50000}
+                  max={300000}
+                  step={5000}
+                  prefix="$"
+                />
+                <SliderInput
                   label="MARS Raise Amount"
                   value={marsRaise2}
                   onChange={setMarsRaise2}
@@ -426,6 +454,15 @@ export function FlywheelCalculator() {
                 Cycle 4: Second Equity Raise
               </h4>
               <div className="space-y-5">
+                <SliderInput
+                  label="BTC Price at Raise"
+                  value={equityPrice2}
+                  onChange={setEquityPrice2}
+                  min={50000}
+                  max={300000}
+                  step={5000}
+                  prefix="$"
+                />
                 <SliderInput
                   label="Equity Raise Amount"
                   value={equityRaise2}
@@ -467,8 +504,8 @@ export function FlywheelCalculator() {
                   <ResultRow
                     key={i}
                     label={c.label}
-                    value={`${fmt(Math.round(c.totalBtc))} BTC / ${fmt(c.sats)} sats`}
-                    sublabel={`+${c.yield.toFixed(1)}% yield`}
+                    value={`+${fmt(Math.round(c.btcAdded))} BTC / ${fmt(c.sats)} sats`}
+                    sublabel={`${fmt(Math.round(c.totalBtc))} total / +${c.yield.toFixed(1)}% yield`}
                   />
                 ))}
               </div>
