@@ -173,8 +173,9 @@ export function ScenarioAnalysis() {
           model one event in isolation. The real power is the flywheel - each
           capital raise enables the next, and mNAV expansion unlocks accretive
           equity raises that compound BTC-per-share. This is the cycle Strategy
-          has demonstrated through its moving strike warrant program and ATM
-          preferred issuance.
+          has demonstrated through its ATM equity program and ATM preferred
+          issuance, and which Metaplanet replicates through its moving strike
+          warrant (stock acquisition rights) program adapted for the TSE.
         </p>
 
         <div className="overflow-x-auto">
@@ -262,20 +263,23 @@ export function ScenarioAnalysis() {
             raises are non-dilutive (preferred shares, no common share increase).
             This grows BTC-per-share directly. As BTC-per-share grows and/or BTC
             price appreciates, mNAV can expand above 1.0x. When mNAV exceeds 1.0x,
-            equity raises through the moving strike warrant program become
-            BTC-per-share accretive - because the equity is sold at a premium to
-            NAV, meaning more BTC is purchased per share issued than the dilution
-            costs. The expanded NAV from both raises then creates capacity for the
-            next, larger MARS issuance (leverage ratio stays low). Each cycle feeds
-            the next.
+            equity raises through Metaplanet&apos;s moving strike warrant program
+            (stock acquisition rights) become BTC-per-share accretive - because the
+            equity is sold at a premium to NAV, meaning more BTC is purchased per
+            share issued than the dilution costs. The expanded NAV from both raises
+            then creates capacity for the next, larger MARS issuance (leverage ratio
+            stays low). Each cycle feeds the next.
           </p>
           <p>
             <strong className="text-ink-800">Strategy proved this at scale.</strong>{" "}
-            Strategy&apos;s moving strike warrant program and ATM preferred issuance
-            operated this exact flywheel - alternating between equity raises at
-            mNAV premium and STRC preferred raises, each cycle growing BTC holdings
+            Strategy&apos;s ATM equity program and ATM preferred issuance (STRC)
+            operated this exact flywheel - alternating between common equity raises
+            at mNAV premium and preferred raises, each cycle growing BTC holdings
             while maintaining acceptable leverage. The result: 815,061 BTC accumulated,
-            9.5% BTC Yield YTD, $61.6B in reserves.
+            9.5% BTC Yield YTD, $61.6B in reserves. Metaplanet&apos;s equivalent
+            mechanism is the moving strike warrant program (through its 27th series
+            of stock acquisition rights), which serves the same function under
+            Japanese corporate law.
           </p>
           <p>
             <strong className="text-ink-800">The compounding asymmetry:</strong> In
