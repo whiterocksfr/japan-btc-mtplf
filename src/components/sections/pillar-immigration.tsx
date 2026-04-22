@@ -91,7 +91,7 @@ export function PillarImmigration() {
       </div>
 
       {/* 2025 Political Inflection */}
-      <div className="max-w-4xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           The 2025 Political Inflection Point
         </h3>
@@ -147,7 +147,7 @@ export function PillarImmigration() {
       </div>
 
       {/* Government Response */}
-      <div className="max-w-4xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
           Government Response
         </h3>

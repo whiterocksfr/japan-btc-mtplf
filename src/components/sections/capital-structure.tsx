@@ -558,7 +558,7 @@ export function CapitalStructure() {
       </div>
 
       {/* Institutional Demand */}
-      <div className="max-w-4xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           Institutional Demand: Who Is Buying and Who Will Buy
         </h3>

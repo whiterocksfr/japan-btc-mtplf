@@ -55,7 +55,7 @@ function formatPrice(n: number): string {
 
 export function ScenarioAnalysis() {
   return (
-    <SectionWrapper id="scenario-analysis" variant="muted">
+    <SectionWrapper id="scenario-analysis" variant="white">
       <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Quantitative Framework
@@ -164,7 +164,7 @@ export function ScenarioAnalysis() {
       </div>
 
       {/* Flywheel Mechanics */}
-      <div className="max-w-4xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           The BTC Treasury Company Flywheel
         </h3>
@@ -332,7 +332,7 @@ export function ScenarioAnalysis() {
       </div>
 
       {/* mNAV / BTC Price Sensitivity */}
-      <div className="max-w-4xl mx-auto mt-16">
+      <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-4">
           Valuation Sensitivity: BTC Price x mNAV Multiple
         </h3>

@@ -4,7 +4,7 @@ import { FedBalanceSheetChart } from "@/components/charts/fed-balance-sheet-char
 
 export function GlobalContext() {
   return (
-    <SectionWrapper id="global-context">
+    <SectionWrapper id="global-context" variant="muted">
       <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           The Global Context

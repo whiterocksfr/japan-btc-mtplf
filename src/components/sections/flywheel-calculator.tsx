@@ -335,7 +335,7 @@ export function FlywheelCalculator() {
   ]);
 
   return (
-    <SectionWrapper id="flywheel-calculator" variant="white">
+    <SectionWrapper id="flywheel-calculator" variant="muted">
       <div className="max-w-4xl mx-auto">
         <div className="text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-ink-400 mb-4">
           Interactive Model
