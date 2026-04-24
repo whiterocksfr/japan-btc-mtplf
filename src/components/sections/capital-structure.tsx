@@ -370,7 +370,7 @@ export function CapitalStructure() {
         <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600 mb-8">
           <p>
             Metaplanet operates a <strong className="text-ink-800">Bitcoin Income Generation business</strong> using
-            collateral-secured Bitcoin options (covered calls) to generate recurring operating
+            collateral-secured Bitcoin options (cash-secured puts) to generate recurring operating
             revenue. This business is operationally segregated from long-term BTC holdings -
             the company&apos;s long-term Bitcoin is not subject to derivative exposure and is
             intended to be held on a perpetual basis.
@@ -479,6 +479,215 @@ export function CapitalStructure() {
           </p>
           <p className="text-xs text-ink-400">
             Source: Metaplanet AGM 2026 Presentation (March 25, 2026, metaplanet.jp/en/presentations)
+          </p>
+        </div>
+      </div>
+
+      {/* EVO Bridge: Zero-Coupon Ordinary Bond Program */}
+      <div className="max-w-4xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          The EVO Bridge: Zero-Coupon Ordinary Bond Program
+        </h3>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+          <p>
+            Alongside its preferred stack, Metaplanet runs a revolving zero-coupon
+            ordinary bond program with a single counterparty - <strong className="text-ink-800">EVO FUND</strong>,
+            the same fund that subscribes to the company&apos;s moving-strike warrants
+            (stock acquisition rights). This program is not designed as permanent
+            leverage. It is designed as a <strong className="text-ink-800">pre-funding bridge</strong> that
+            lets the company buy Bitcoin today using cash that the warrants will
+            generate over the next several months.
+          </p>
+          <p>
+            The mechanics are unusual and worth making explicit:
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <strong className="text-ink-800">Zero interest, unsecured, unguaranteed.</strong> Every
+              series from #6 onward has been issued at par, with no coupon, no collateral,
+              and no guarantor. The only return to EVO is the right to redeem at par.
+            </li>
+            <li>
+              <strong className="text-ink-800">One-year stated maturity, but typically redeemed in weeks.</strong>
+              {" "}Bonds mature roughly 12 months from issuance, but contain an
+              auto-redemption clause: whenever cumulative proceeds EVO pays into a
+              paired warrant program reach an integer multiple of the bond&apos;s principal,
+              Metaplanet must redeem the matching portion at par on the next trading day.
+            </li>
+            <li>
+              <strong className="text-ink-800">Proceeds allocated 100% to Bitcoin.</strong> Every
+              series&apos; use-of-proceeds notice directs funds to immediate BTC accumulation.
+            </li>
+            <li>
+              <strong className="text-ink-800">Counterparty alignment.</strong> EVO is both the
+              bondholder and the warrant holder. As EVO exercises warrants at or above
+              the mNAV floor, the proceeds flow back to retire the bond it just funded.
+              The bond and the warrant are two legs of a single closed-loop financing.
+            </li>
+          </ul>
+          <p>
+            In plain terms: <strong className="text-ink-800">the bond front-loads the BTC purchase</strong>{" "}
+            so the company can buy into a specific market window, and the warrant
+            exercises settle the bill on a rolling basis as the stock trades above
+            1.01x mNAV. The bond converts a staged, market-dependent equity raise into
+            a single, upfront BTC acquisition.
+          </p>
+        </div>
+
+        {/* Program History */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          Series History (Selected)
+        </h4>
+        <div className="overflow-x-auto mb-4">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Series</th>
+                <th>Issued</th>
+                <th className="num">Amount</th>
+                <th className="num">Coupon</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">3rd</td>
+                <td>Oct 2024</td>
+                <td className="num">&yen;1.75B (~$12M)</td>
+                <td className="num">0.36%</td>
+                <td>Bought back / cancelled Jun 2025</td>
+              </tr>
+              <tr>
+                <td className="label">4th / 5th</td>
+                <td>Dec 2024</td>
+                <td className="num">&yen;4.5B+</td>
+                <td className="num">0.00%</td>
+                <td>Matured / redeemed</td>
+              </tr>
+              <tr>
+                <td className="label">6th</td>
+                <td>Feb 2025</td>
+                <td className="num">&yen;4.0B (~$26M)</td>
+                <td className="num">0.00%</td>
+                <td>Redeemed</td>
+              </tr>
+              <tr>
+                <td className="label">10th</td>
+                <td>Mar 2025</td>
+                <td className="num">&yen;2.0B (~$13M)</td>
+                <td className="num">0.00%</td>
+                <td>Redeemed</td>
+              </tr>
+              <tr>
+                <td className="label">12th</td>
+                <td>May 2025</td>
+                <td className="num">&yen;3.6B (~$25M)</td>
+                <td className="num">0.00%</td>
+                <td>Redeemed Oct 31, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">14th</td>
+                <td>May 2025</td>
+                <td className="num">~$21M</td>
+                <td className="num">0.00%</td>
+                <td>Redeemed Nov 7, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">16th</td>
+                <td>May 28, 2025</td>
+                <td className="num">~$50M</td>
+                <td className="num">0.00%</td>
+                <td>Early-redeemed</td>
+              </tr>
+              <tr>
+                <td className="label">17th</td>
+                <td>May 29, 2025</td>
+                <td className="num">~$21M</td>
+                <td className="num">0.00%</td>
+                <td>Early-redeemed</td>
+              </tr>
+              <tr>
+                <td className="label">18th</td>
+                <td>Jun 2025</td>
+                <td className="num">&yen;30B (~$210M)</td>
+                <td className="num">0.00%</td>
+                <td>Early-redeemed</td>
+              </tr>
+              <tr>
+                <td className="label">19th</td>
+                <td>H2 2025</td>
+                <td className="num">&yen;30B (~$207M)</td>
+                <td className="num">0.00%</td>
+                <td>Redeemed</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">20th</td>
+                <td>Apr 24, 2026</td>
+                <td className="num">&yen;8.0B (~$50M)</td>
+                <td className="num">0.00%</td>
+                <td>Outstanding (matures Apr 23, 2027 or earlier)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-ink-400 mb-8">
+          Sources: Metaplanet IR disclosures (April 24, 2026 &quot;Notice Regarding the
+          Issuance of the 20th Series of Ordinary Bonds&quot; and &quot;Notice Regarding
+          Change in Use of Proceeds&quot;);{" "}
+          <a href="https://metaplanet.jp/en/shareholders/disclosures" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">metaplanet.jp/en/shareholders/disclosures</a>;
+          press coverage of series 3, 6, 10, 12, 14, 16, 17, 18, 19 issuances and
+          early redemptions (Cointelegraph, CoinDesk, The Block, Bitcoin Magazine, TipRanks)
+        </p>
+
+        {/* 20th Series Mechanics */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          20th Series: The Live Bridge to the 27th Warrant
+        </h4>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+          <StatCard label="Bond Principal" value="¥8.0B" sublabel="~$50M, 0% coupon" accent />
+          <StatCard label="Maturity" value="Apr 23, 2027" sublabel="1 year, redeemable early" />
+          <StatCard label="Bondholder" value="EVO FUND" sublabel="Same entity as 27th SAR" />
+          <StatCard label="Use of Proceeds" value="100% BTC" sublabel="Front-loaded purchase" />
+        </div>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            On <strong className="text-ink-800">April 24, 2026</strong> Metaplanet issued its
+            20th series of ordinary bonds (JPY 8.0 billion, zero coupon) to EVO FUND,
+            with proceeds directed to Bitcoin. On the same day the company revised the
+            use of proceeds on the <strong className="text-ink-800">27th Series Stock Acquisition
+            Rights</strong> (&yen;37.135B headline raise, issued March 16, 2026) - carving
+            out &yen;8.0B specifically to redeem the new bond as warrant exercises arrive.
+          </p>
+          <p>
+            <strong className="text-ink-800">Net BTC allocation before the change:</strong> &yen;33.4B
+            from the 27th SAR plus &yen;131.8B from the 23rd/24th SARs = &yen;165.2B total
+            warrant-funded BTC purchasing capacity.{" "}
+            <strong className="text-ink-800">After the change:</strong> &yen;25.4B (27th) +
+            &yen;123.8B (23rd/24th after a parallel adjustment) + &yen;8.0B (20th bond, already
+            deployed into BTC) = <strong className="text-ink-800">&yen;157.2B warrant capacity plus
+            &yen;8.0B of BTC already purchased up-front</strong>. Same total dollar capacity,
+            different timing - BTC that would have been accumulated over April 2026-April
+            2028 is instead accumulated today.
+          </p>
+          <p>
+            This is the bond program&apos;s real function. In a market where Bitcoin can
+            move 30% in six weeks, the ability to deploy warrant-backed capital
+            <em> before </em>the warrants are exercised is a timing option worth owning.
+            The zero coupon means the option has no carrying cost, and the auto-redemption
+            clause means the program cannot accidentally build permanent debt - every yen
+            raised through the bond must be retired by a matching yen raised through the
+            warrant it is paired with.
+          </p>
+          <p>
+            <strong className="text-ink-800">Track record:</strong> Series 16, 17, and 18 -
+            issued in rapid succession in May-June 2025 totaling roughly $280M - were all
+            early-redeemed on schedule once the paired warrant exercises delivered. Series
+            19 followed the same pattern. The 20th series is the latest application of a
+            mechanism that has now cycled successfully through roughly &yen;70B+ of BTC-directed
+            capital without a single failed redemption.
           </p>
         </div>
       </div>

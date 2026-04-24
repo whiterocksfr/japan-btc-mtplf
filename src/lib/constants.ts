@@ -4,7 +4,7 @@ export const SITE = {
   description:
     "A comprehensive investment thesis examining Bitcoin, global monetary debasement, and Metaplanet as the optimal capture vehicle for Japanese capital migration.",
   url: "https://japan-btc-mtplf.vercel.app",
-  lastUpdated: "April 21, 2026",
+  lastUpdated: "April 24, 2026",
 } as const;
 
 export const SECTIONS = [
