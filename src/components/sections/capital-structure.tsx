@@ -483,6 +483,271 @@ export function CapitalStructure() {
         </div>
       </div>
 
+      {/* Moving Strike Warrants: Stock Acquisition Rights Program */}
+      <div className="max-w-4xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          Moving Strike Warrants: The Stock Acquisition Rights Program
+        </h3>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+          <p>
+            Moving-strike warrants - structured in Japan as &quot;Stock Acquisition
+            Rights with Exercise Price Adjustment Clause&quot; - are Metaplanet&apos;s
+            equity engine. They are the Japanese corporate-law equivalent of a US
+            at-the-market (ATM) program: the company allots a fixed maximum pool of
+            warrants to a counterparty (EVO FUND), the exercise price resets to
+            recent market price on a defined cadence, and the counterparty exercises
+            in tranches and immediately resells into the market as hedging permits.
+            Each exercise pays the exercise price × number of shares into the company,
+            which is then used to buy Bitcoin (or, in recent issues, to redeem
+            paired bonds that already bought the Bitcoin).
+          </p>
+          <p>
+            Across twelve months the program has evolved from a basic 3%-discount
+            ATM into one of the most shareholder-aligned warrant structures ever
+            issued on the TSE: no discount, then a premium, then a governance-gated
+            mNAV floor. The current 27th Series - announced March 16, 2026 and the
+            first warrant globally with a hard-coded &ldquo;exercise only when mNAV
+            &ge; 1.01x&rdquo; clause - was described by CEO Simon Gerovich as a
+            &quot;first-of-its-kind&quot; structure on X.
+          </p>
+        </div>
+
+        {/* Structural Evolution */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          Structural Evolution (12th → 27th Series)
+        </h4>
+        <div className="overflow-x-auto mb-4">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Series</th>
+                <th>Issued</th>
+                <th className="num">Max Shares</th>
+                <th className="num">Initial Strike</th>
+                <th className="num">Adj. Mechanism</th>
+                <th className="num">Floor</th>
+                <th>Key Innovation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">12th</td>
+                <td>Nov 28, 2024</td>
+                <td className="num">2,900,000</td>
+                <td className="num">&yen;3,288</td>
+                <td className="num">97% × 11-day VWAP (3% disc)</td>
+                <td className="num">&yen;1,500</td>
+                <td>First modern MS warrant; 6-month window</td>
+              </tr>
+              <tr>
+                <td className="label">13th-17th</td>
+                <td>Jan 28, 2025</td>
+                <td className="num">21,000,000</td>
+                <td className="num">&yen;5,555</td>
+                <td className="num">100% × prior-day close (no disc)</td>
+                <td className="num">&yen;2,555</td>
+                <td>&quot;21 Million Plan&quot;; 5-tranche split; exercise suspension clause; 2-year window</td>
+              </tr>
+              <tr>
+                <td className="label">18th</td>
+                <td>Apr 11, 2025</td>
+                <td className="num">-</td>
+                <td className="num">-</td>
+                <td className="num">-</td>
+                <td className="num">-</td>
+                <td>Paid stock options to directors/officers (incentive, not fundraise)</td>
+              </tr>
+              <tr>
+                <td className="label">19th</td>
+                <td>May 26, 2025</td>
+                <td className="num">3,600,000</td>
+                <td className="num">-</td>
+                <td className="num">Fixed (~&yen;255/unit issue price)</td>
+                <td className="num">-</td>
+                <td>Paid stock options to external collaborators: <strong className="text-ink-800">Eric Trump &amp; David Bailey</strong> (~&yen;382M notional)</td>
+              </tr>
+              <tr>
+                <td className="label">20th-22nd</td>
+                <td>Jun 6, 2025</td>
+                <td className="num">555,000,000</td>
+                <td className="num">&yen;1,388</td>
+                <td className="num">100% / 101% / 102% × 3-day avg</td>
+                <td className="num">&yen;777</td>
+                <td>&quot;555 Million Plan&quot;; 3-tranche; first series with <strong className="text-ink-800">premium adjustment</strong> (101%/102%)</td>
+              </tr>
+              <tr>
+                <td className="label">23rd-24th</td>
+                <td>Dec 8, 2025</td>
+                <td className="num">210,000,000</td>
+                <td className="num">(market)</td>
+                <td className="num">Adj + suspension clauses</td>
+                <td className="num">(set)</td>
+                <td>Acquisition &amp; cancellation of 20th-22nd + replacement issuance (market restructuring)</td>
+              </tr>
+              <tr>
+                <td className="label">25th</td>
+                <td>Feb 13, 2026</td>
+                <td className="num">(shares)</td>
+                <td className="num">(market)</td>
+                <td className="num">Bundled with new common shares</td>
+                <td className="num">-</td>
+                <td>New shares + SAR via third-party allotment (direct share issuance)</td>
+              </tr>
+              <tr>
+                <td className="label">26th</td>
+                <td>Mar 31, 2026</td>
+                <td className="num">(shares)</td>
+                <td className="num">(market)</td>
+                <td className="num">Bundled with new common shares</td>
+                <td className="num">-</td>
+                <td>New shares + SAR via third-party allotment</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">27th</td>
+                <td>Apr 1, 2026</td>
+                <td className="num">100,000,000</td>
+                <td className="num">(market)</td>
+                <td className="num">Adj + <strong className="text-ink-800">mNAV &ge; 1.01x</strong> + Floor adj + Suspension</td>
+                <td className="num">(floor-adj)</td>
+                <td><strong className="text-ink-800">First-of-its-kind mNAV clause</strong>: exercise only permitted when stock trades above 1.01x mNAV. Suspension of 23rd/24th simultaneously. ~$234M estimated raise.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-ink-400 mb-8">
+          Source: each series&apos; &quot;Notice Regarding Issuance of the Nth Series of
+          Stock Acquisition Rights&quot; filed by Metaplanet Inc., and the
+          companion &quot;Notice Regarding Completion of Payment&quot; disclosures.
+          Pre-Bitcoin-treasury warrants (9th, Feb 2023, &yen;20 strike, &yen;1.35B raise,
+          originally for WEB3/Metaverse) and the 11th Series gratis allotment (Sep
+          2024, &yen;555 strike to all shareholders, &yen;10.05B raise) are not shown
+          here because they predate the moving-strike template.
+        </p>
+
+        {/* The Two Plans */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          The Two Named Plans
+        </h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div className="border-l-2 border-ink-200 pl-4 py-1">
+            <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
+              21 Million Plan
+            </div>
+            <div className="mt-1 font-serif text-lg font-semibold text-ink-900">
+              13th-17th Series (Jan-May 2025)
+            </div>
+            <p className="mt-2 text-sm text-ink-600">
+              210M potential shares, ¥5,555 initial strike at 37.67% premium over
+              market, no discount on adjustments, ¥2,555 floor. Full exercise
+              completed <strong className="text-ink-800">May 19, 2025</strong> - three
+              months into a two-year window. Share price rose from ¥416 on
+              announcement (Jan 28) to ¥783 at full exercise (May 20), a 88% move.
+              Total capital raised: roughly &yen;93.3B. Target: 21,000 BTC by end of
+              2026 (later revised upward under the 555 plan).
+            </p>
+          </div>
+          <div className="border-l-2 border-accent pl-4 py-1">
+            <div className="text-xs font-semibold uppercase tracking-wider text-accent">
+              555 Million Plan
+            </div>
+            <div className="mt-1 font-serif text-lg font-semibold text-ink-900">
+              20th-22nd Series (Jun 2025 onward)
+            </div>
+            <p className="mt-2 text-sm text-ink-600">
+              555M potential shares - 2.6x the 21 Million Plan. ¥1,388 initial strike
+              at 1.83% premium over market. Adjustment at 100/101/102% of 3-day
+              average (21st/22nd are <em>premium</em> - no discount, and positive
+              spread). ¥777 floor. Target: <strong className="text-ink-800">100,000
+              BTC by end of 2026, 210,000 BTC by end of 2027</strong> - 1% of the
+              total 21M Bitcoin supply. Expected proceeds at initial strike: roughly
+              &yen;767B (~$4.8B at current FX). The plan gives its name to the
+              555M-per-class authorized share count approved for MARS/MERCURY at the
+              December 2025 EGM.
+            </p>
+          </div>
+        </div>
+
+        {/* 27th Series: The mNAV Clause */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          27th Series: The mNAV Clause (The Big Innovation)
+        </h4>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+          <StatCard label="Units Issued" value="1,000,000" sublabel="100M potential shares" accent />
+          <StatCard label="mNAV Floor" value="≥ 1.01x" sublabel="Exercise only above NAV" accent />
+          <StatCard label="Estimated Raise" value="~$234M" sublabel="Per Gerovich/X" />
+          <StatCard label="Payment Complete" value="Apr 1, 2026" sublabel="Effective immediately" />
+        </div>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600">
+          <p>
+            The 27th Series is the most important structural advance in the
+            Japanese-language warrant market since moving-strike instruments became
+            common. It combines four clauses that together solve the central
+            complaint against moving-strike warrants - that they can dilute
+            shareholders below NAV in a falling market:
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <strong className="text-ink-800">mNAV Clause:</strong> The allottee
+              cannot exercise unless Metaplanet&apos;s market cap is 1.01x or more of
+              Bitcoin NAV. If the stock trades below NAV, the warrants are frozen.
+            </li>
+            <li>
+              <strong className="text-ink-800">Floor Exercise Price Adjustment
+              Clause:</strong> The minimum exercise price itself can be adjusted,
+              preventing the lower-bound from becoming a dilutive trap if BTC NAV
+              rises faster than the stock price.
+            </li>
+            <li>
+              <strong className="text-ink-800">Exercise Suspension Clause:</strong>{" "}
+              Metaplanet can unilaterally halt exercise at any time with a short
+              notice period (inherited from the 13th-series template).
+            </li>
+            <li>
+              <strong className="text-ink-800">Exercise Price Adjustment
+              Clause:</strong> The daily reset mechanism that keeps the strike
+              close to market price, preventing stale pricing.
+            </li>
+          </ul>
+          <p>
+            The practical effect: warrants can only fund BTC accumulation when doing
+            so is <em>accretive</em> to BTC-per-share. When the stock trades below
+            NAV, no new shares are issued and existing shareholders are not diluted.
+            When the stock trades above NAV, every exercise increases BTC-per-share
+            because the warrant issues shares above BTC-per-share book value. This
+            is the Japanese-law implementation of Strategy&apos;s informal
+            &quot;accretive ATM&quot; rule, but hard-coded into the warrant
+            contract rather than left to managerial discretion.
+          </p>
+          <p>
+            When the 27th Series was issued, Metaplanet simultaneously suspended
+            exercise of the 23rd and 24th Series (which lack the mNAV clause),
+            effectively migrating the active warrant pool onto the new template.
+            The 20th Series ordinary bond issued April 24, 2026 is paired against
+            27th-Series exercise proceeds, closing the bond-warrant bridge loop with
+            the mNAV-gated template.
+          </p>
+          <p className="text-xs text-ink-400">
+            Source: Metaplanet IR, &quot;Notice Regarding the Issuance of the 27th
+            Series of Stock Acquisition Rights with Exercise Price Adjustment Clause,
+            mNAV Clause, Floor Exercise Price Adjustment Clause, and Exercise
+            Suspension Clause&quot; (March 16, 2026); payment completion April 1,
+            2026. Simon Gerovich on{" "}
+            <a
+              href="https://x.com/gerovich"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ink-600"
+            >
+              X
+            </a>{" "}
+            (&quot;first-of-its-kind mNAV clause&quot;).
+          </p>
+        </div>
+      </div>
+
       {/* EVO Bridge: Zero-Coupon Ordinary Bond Program */}
       <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
