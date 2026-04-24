@@ -115,18 +115,28 @@ export function MetaplanetThesis() {
       {/* Key Stats */}
       <div className="max-w-4xl mx-auto mt-12">
         <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
-          Key Structural Features (as of April 21, 2026)
+          Key Structural Features (as of April 24, 2026)
         </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
           <StatCard label="BTC Holdings" value="40,177" sublabel="$3.05B NAV, avg cost $104,107" accent />
+          <StatCard label="2027 Target" value="210,000" sublabel="555 Million Plan (Jun 2025)" accent />
           <StatCard label="Market Cap" value="$2.71B" sublabel="Enterprise Value: $3.10B" />
-          <StatCard label="BTC Yield YTD" value="+2.87%" sublabel="1,007.5 BTC accreted, $76.52M" />
-          <StatCard label="BSE Return" value="+1,684%" sublabel="Since BTC strategy adoption" accent />
+          <StatCard label="BSE Return" value="+1,684%" sublabel="Since BTC strategy adoption" />
         </div>
 
         <p className="mb-4 text-xs text-ink-400">
-          Source: <a href="https://analytics.metaplanet.jp/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">analytics.metaplanet.jp</a> (April 21, 2026)
+          Sources:{" "}
+          <a
+            href="https://analytics.metaplanet.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-ink-600"
+          >
+            analytics.metaplanet.jp
+          </a>{" "}
+          (April 24, 2026); Metaplanet disclosure &quot;Notice Regarding the Formulation of
+          the &apos;555 Million Plan: Targeting 210,000 Bitcoin by 2027&apos;&quot; (June 6, 2025).
         </p>
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
@@ -143,7 +153,10 @@ export function MetaplanetThesis() {
             <strong className="text-ink-800">CEO:</strong> Simon Gerovich (keynotes at Strategy World, Bitcoin for Corporations; fireside with Michael Saylor Dec 2025)
           </p>
           <p>
-            <strong className="text-ink-800">Subsidiaries:</strong> Bitcoin Japan Inc. (adoption/education), Bitcoin Magazine Japan (exclusive license), The Bitcoin Hotel (Royal Oak Gotanda, Tokyo)
+            <strong className="text-ink-800">Subsidiaries:</strong> Bitcoin Japan Inc. (adoption/education), Bitcoin Magazine Japan (exclusive license), Wen Tokyo K.K. (operator of The Bitcoin Hotel / Royal Oak Gotanda), Metaplanet Ventures K.K. (established March 12, 2026)
+          </p>
+          <p>
+            <strong className="text-ink-800">Stated target:</strong> 210,000 BTC by the end of 2027 under the &quot;555 Million Plan&quot; formulated June 6, 2025 - a roughly 5x increase from the current 40,177 BTC position. The plan is named for the 555M-per-class authorized share count approved at the December 22, 2025 EGM for MARS (Class A) and MERCURY (Class B) preferred stock, which is the issuance capacity sized to fund the target.
           </p>
         </div>
       </div>

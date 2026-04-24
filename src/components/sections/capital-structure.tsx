@@ -491,157 +491,338 @@ export function CapitalStructure() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600 mb-8">
           <p>
-            Alongside its preferred stack, Metaplanet runs a revolving zero-coupon
-            ordinary bond program with a single counterparty - <strong className="text-ink-800">EVO FUND</strong>,
-            the same fund that subscribes to the company&apos;s moving-strike warrants
-            (stock acquisition rights). This program is not designed as permanent
-            leverage. It is designed as a <strong className="text-ink-800">pre-funding bridge</strong> that
-            lets the company buy Bitcoin today using cash that the warrants will
-            generate over the next several months.
-          </p>
-          <p>
-            The mechanics are unusual and worth making explicit:
-          </p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong className="text-ink-800">Zero interest, unsecured, unguaranteed.</strong> Every
-              series from #6 onward has been issued at par, with no coupon, no collateral,
-              and no guarantor. The only return to EVO is the right to redeem at par.
-            </li>
-            <li>
-              <strong className="text-ink-800">One-year stated maturity, but typically redeemed in weeks.</strong>
-              {" "}Bonds mature roughly 12 months from issuance, but contain an
-              auto-redemption clause: whenever cumulative proceeds EVO pays into a
-              paired warrant program reach an integer multiple of the bond&apos;s principal,
-              Metaplanet must redeem the matching portion at par on the next trading day.
-            </li>
-            <li>
-              <strong className="text-ink-800">Proceeds allocated 100% to Bitcoin.</strong> Every
-              series&apos; use-of-proceeds notice directs funds to immediate BTC accumulation.
-            </li>
-            <li>
-              <strong className="text-ink-800">Counterparty alignment.</strong> EVO is both the
-              bondholder and the warrant holder. As EVO exercises warrants at or above
-              the mNAV floor, the proceeds flow back to retire the bond it just funded.
-              The bond and the warrant are two legs of a single closed-loop financing.
-            </li>
-          </ul>
-          <p>
-            In plain terms: <strong className="text-ink-800">the bond front-loads the BTC purchase</strong>{" "}
-            so the company can buy into a specific market window, and the warrant
-            exercises settle the bill on a rolling basis as the stock trades above
-            1.01x mNAV. The bond converts a staged, market-dependent equity raise into
-            a single, upfront BTC acquisition.
+            Alongside its preferred stack, Metaplanet runs a revolving ordinary bond
+            program with a single counterparty - <strong className="text-ink-800">EVO FUND</strong>,
+            the same Cayman-based fund that subscribes to the company&apos;s moving-strike
+            warrants (stock acquisition rights). Over 20 series across three years the
+            program has evolved from small secured borrowings into the company&apos;s core
+            BTC-acquisition bridge: zero-coupon, unsecured, and paired one-for-one with
+            warrant exercises. Every disclosure and every PDF is filed on{" "}
+            <a
+              href="https://metaplanet.jp/en/disclosures"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              metaplanet.jp/en/disclosures
+            </a>.
           </p>
         </div>
 
-        {/* Program History */}
+        {/* Era Summary */}
         <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
-          Series History (Selected)
+          Three Structural Eras
+        </h4>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div className="border-l-2 border-ink-200 pl-4 py-1">
+            <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
+              Era 1 · Pre-Treasury
+            </div>
+            <div className="mt-1 font-serif text-lg font-semibold text-ink-900">
+              Series 1 (Apr 2023)
+            </div>
+            <p className="mt-2 text-sm text-ink-600">
+              A single &yen;200M unsecured private placement at 1.0% coupon, issued
+              before Metaplanet adopted Bitcoin as treasury. Early-redeemed Oct 4, 2023.
+            </p>
+          </div>
+          <div className="border-l-2 border-ink-200 pl-4 py-1">
+            <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
+              Era 2 · Guaranteed
+            </div>
+            <div className="mt-1 font-serif text-lg font-semibold text-ink-900">
+              Series 2-3 (Jun-Nov 2024)
+            </div>
+            <p className="mt-2 text-sm text-ink-600">
+              &yen;2.75B combined, 0.36-0.50% coupon, personally guaranteed by CEO
+              Simon Gerovich with a first-priority mortgage on Hotel Royal Oak Gotanda
+              (owned by subsidiary Wen Tokyo K.K.). First BTC-purpose bonds.
+            </p>
+          </div>
+          <div className="border-l-2 border-accent pl-4 py-1">
+            <div className="text-xs font-semibold uppercase tracking-wider text-accent">
+              Era 3 · Zero-Coupon Bridge
+            </div>
+            <div className="mt-1 font-serif text-lg font-semibold text-ink-900">
+              Series 4-20 (Dec 2024 - Apr 2026)
+            </div>
+            <p className="mt-2 text-sm text-ink-600">
+              0% coupon, unsecured, unguaranteed. Every series paired with a specific
+              warrant program; auto-redeemed as EVO exercises warrants. Series 19 (&yen;30B)
+              explicitly refinanced out the last guaranteed bond and removed the Hotel
+              Gotanda mortgage.
+            </p>
+          </div>
+        </div>
+
+        {/* Mechanics */}
+        <div className="space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+          <p>The modern Era 3 mechanics:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <strong className="text-ink-800">Zero interest, unsecured, unguaranteed.</strong>{" "}
+              Every series from #4 onward has been issued at par, with no coupon, no
+              collateral, and no guarantor. The only return to EVO is the right to
+              redeem at par.
+            </li>
+            <li>
+              <strong className="text-ink-800">Six-month to one-year stated maturity, typically redeemed in weeks.</strong>{" "}
+              Each series contains an auto-redemption clause: whenever cumulative
+              proceeds EVO pays into a paired warrant program reach an integer multiple
+              of the bond&apos;s face value, Metaplanet redeems the matching portion at par
+              on the next trading day.
+            </li>
+            <li>
+              <strong className="text-ink-800">Proceeds allocated 100% to Bitcoin.</strong>{" "}
+              Every series&apos; use-of-proceeds notice directs funds to immediate BTC
+              accumulation.
+            </li>
+            <li>
+              <strong className="text-ink-800">Clause evolution.</strong> Series 4-15 each
+              named specific paired SAR series. Starting with series 16 (May 28, 2025)
+              the redemption trigger was generalized to &quot;any future fundraising in
+              which the Bondholder is the allottee,&quot; which is the template used for
+              the 20th series today.
+            </li>
+            <li>
+              <strong className="text-ink-800">Multi-currency.</strong> Series 1-10 were
+              JPY-denominated. Series 11, 13-18 were issued in USD (for a combined
+              $352M), coinciding with Metaplanet&apos;s dollar-denominated BTC purchasing.
+              Series 19 and 20 returned to JPY.
+            </li>
+          </ul>
+        </div>
+
+        {/* Full Program History */}
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+          Complete Series History (1-20)
         </h4>
         <div className="overflow-x-auto mb-4">
           <table className="data-table">
             <thead>
               <tr>
-                <th>Series</th>
+                <th>#</th>
                 <th>Issued</th>
                 <th className="num">Amount</th>
+                <th className="num">Face/Bond</th>
                 <th className="num">Coupon</th>
-                <th>Status</th>
+                <th>Maturity</th>
+                <th>Structure / Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="label">3rd</td>
-                <td>Oct 2024</td>
-                <td className="num">&yen;1.75B (~$12M)</td>
+                <td className="label">1</td>
+                <td>Apr 12, 2023</td>
+                <td className="num">&yen;200M</td>
+                <td className="num">&yen;5M</td>
+                <td className="num">1.00%</td>
+                <td>Apr 11, 2025</td>
+                <td>Unsecured private placement; early-redeemed Oct 4, 2023</td>
+              </tr>
+              <tr>
+                <td className="label">2</td>
+                <td>Jun 26, 2024</td>
+                <td className="num">&yen;1,000M</td>
+                <td className="num">&yen;50M</td>
+                <td className="num">0.50%</td>
+                <td>Jun 25, 2025</td>
+                <td>Guaranteed (CEO + Hotel Gotanda mortgage)</td>
+              </tr>
+              <tr>
+                <td className="label">3</td>
+                <td>Nov 18, 2024</td>
+                <td className="num">&yen;1,750M</td>
+                <td className="num">&yen;43.75M</td>
                 <td className="num">0.36%</td>
-                <td>Bought back / cancelled Jun 2025</td>
+                <td>Nov 17, 2025</td>
+                <td>Guaranteed; bought back &amp; cancelled Jun 30, 2025</td>
               </tr>
               <tr>
-                <td className="label">4th / 5th</td>
-                <td>Dec 2024</td>
-                <td className="num">&yen;4.5B+</td>
+                <td className="label">4</td>
+                <td>Dec 17, 2024</td>
+                <td className="num">&yen;4,500M</td>
+                <td className="num">&yen;250M</td>
                 <td className="num">0.00%</td>
-                <td>Matured / redeemed</td>
+                <td>Jun 16, 2025</td>
+                <td>First unsecured zero-coupon; paired with 12th SAR</td>
               </tr>
               <tr>
-                <td className="label">6th</td>
-                <td>Feb 2025</td>
-                <td className="num">&yen;4.0B (~$26M)</td>
+                <td className="label">5</td>
+                <td>Dec 20, 2024</td>
+                <td className="num">&yen;5,000M</td>
+                <td className="num">&yen;250M</td>
                 <td className="num">0.00%</td>
-                <td>Redeemed</td>
+                <td>Jun 16, 2025</td>
+                <td>12th SAR pair</td>
               </tr>
               <tr>
-                <td className="label">10th</td>
-                <td>Mar 2025</td>
-                <td className="num">&yen;2.0B (~$13M)</td>
+                <td className="label">6</td>
+                <td>Feb 13, 2025</td>
+                <td className="num">&yen;4,000M</td>
+                <td className="num">&yen;250M</td>
                 <td className="num">0.00%</td>
-                <td>Redeemed</td>
+                <td>Aug 12, 2025</td>
+                <td>13th-17th SARs; full early redemption Feb 21, 2025</td>
               </tr>
               <tr>
-                <td className="label">12th</td>
-                <td>May 2025</td>
-                <td className="num">&yen;3.6B (~$25M)</td>
+                <td className="label">7</td>
+                <td>Feb 27, 2025</td>
+                <td className="num">&yen;2,000M</td>
+                <td className="num">&yen;50M</td>
                 <td className="num">0.00%</td>
-                <td>Redeemed Oct 31, 2025</td>
+                <td>Aug 26, 2025</td>
+                <td>13th-17th SARs</td>
               </tr>
               <tr>
-                <td className="label">14th</td>
-                <td>May 2025</td>
-                <td className="num">~$21M</td>
+                <td className="label">8</td>
+                <td>Mar 12, 2025</td>
+                <td className="num">&yen;2,000M</td>
+                <td className="num">&yen;50M</td>
                 <td className="num">0.00%</td>
-                <td>Redeemed Nov 7, 2025</td>
+                <td>Sep 11, 2025</td>
+                <td>14th-17th SARs; early redeemed Mar 26, 2025</td>
               </tr>
               <tr>
-                <td className="label">16th</td>
+                <td className="label">9</td>
+                <td>Mar 18, 2025</td>
+                <td className="num">&yen;2,000M</td>
+                <td className="num">&yen;50M</td>
+                <td className="num">0.00%</td>
+                <td>Sep 17, 2025</td>
+                <td>14th-17th SARs; early redeemed Apr 7, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">10</td>
+                <td>Mar 31, 2025</td>
+                <td className="num">&yen;2,000M</td>
+                <td className="num">&yen;50M</td>
+                <td className="num">0.00%</td>
+                <td>Sep 30, 2025</td>
+                <td>14th-17th SARs; early redeemed May 2, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">11</td>
+                <td>Apr 15, 2025</td>
+                <td className="num">$10M</td>
+                <td className="num">$250K</td>
+                <td className="num">0.00%</td>
+                <td>Oct 14, 2025</td>
+                <td>First USD bond; early redeemed May 2, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">12</td>
+                <td>May 2, 2025</td>
+                <td className="num">&yen;3,600M</td>
+                <td className="num">&yen;90M</td>
+                <td className="num">0.00%</td>
+                <td>Oct 31, 2025</td>
+                <td>15th-17th SARs; early redeemed May 9, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">13</td>
+                <td>May 7, 2025</td>
+                <td className="num">$25M</td>
+                <td className="num">$625K</td>
+                <td className="num">0.00%</td>
+                <td>Nov 6, 2025</td>
+                <td>15th-17th SARs; early redeemed May 13, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">14</td>
+                <td>May 8, 2025</td>
+                <td className="num">$21.25M</td>
+                <td className="num">$625K</td>
+                <td className="num">0.00%</td>
+                <td>Nov 7, 2025</td>
+                <td>15th-16th SARs; early redeemed May 15, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">15</td>
+                <td>May 13, 2025</td>
+                <td className="num">$15M</td>
+                <td className="num">$375K</td>
+                <td className="num">0.00%</td>
+                <td>Nov 12, 2025</td>
+                <td>15th-16th SARs; early redeemed May 20, 2025</td>
+              </tr>
+              <tr>
+                <td className="label">16</td>
                 <td>May 28, 2025</td>
-                <td className="num">~$50M</td>
+                <td className="num">$50M</td>
+                <td className="num">$1.25M</td>
                 <td className="num">0.00%</td>
-                <td>Early-redeemed</td>
+                <td>Nov 27, 2025</td>
+                <td>Generalized trigger; redeemed Jun 25, 2025</td>
               </tr>
               <tr>
-                <td className="label">17th</td>
+                <td className="label">17</td>
                 <td>May 29, 2025</td>
-                <td className="num">~$21M</td>
+                <td className="num">$21M</td>
+                <td className="num">$525K</td>
                 <td className="num">0.00%</td>
-                <td>Early-redeemed</td>
+                <td>Nov 28, 2025</td>
+                <td>Generalized trigger; redeemed Jun 25, 2025</td>
               </tr>
               <tr>
-                <td className="label">18th</td>
-                <td>Jun 2025</td>
-                <td className="num">&yen;30B (~$210M)</td>
+                <td className="label">18</td>
+                <td>Jun 16, 2025</td>
+                <td className="num">$210M</td>
+                <td className="num">$5M</td>
                 <td className="num">0.00%</td>
-                <td>Early-redeemed</td>
+                <td>Dec 12, 2025</td>
+                <td>Largest single issue; redeemed Jun 25, 2025</td>
               </tr>
               <tr>
-                <td className="label">19th</td>
-                <td>H2 2025</td>
-                <td className="num">&yen;30B (~$207M)</td>
+                <td className="label">19</td>
+                <td>Jun 30, 2025</td>
+                <td className="num">&yen;30,000M</td>
+                <td className="num">&yen;750M</td>
                 <td className="num">0.00%</td>
-                <td>Redeemed</td>
+                <td>Dec 29, 2025</td>
+                <td>Financed 3rd-series buyback; paired with 20th-22nd SARs; fully redeemed Dec 29, 2025</td>
               </tr>
               <tr className="highlight">
-                <td className="label">20th</td>
+                <td className="label">20</td>
                 <td>Apr 24, 2026</td>
-                <td className="num">&yen;8.0B (~$50M)</td>
+                <td className="num">&yen;8,000M</td>
+                <td className="num">&yen;200M</td>
                 <td className="num">0.00%</td>
-                <td>Outstanding (matures Apr 23, 2027 or earlier)</td>
+                <td>Apr 23, 2027</td>
+                <td>Outstanding; paired with 27th SAR</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p className="text-xs text-ink-400 mb-8">
-          Sources: Metaplanet IR disclosures (April 24, 2026 &quot;Notice Regarding the
-          Issuance of the 20th Series of Ordinary Bonds&quot; and &quot;Notice Regarding
-          Change in Use of Proceeds&quot;);{" "}
-          <a href="https://metaplanet.jp/en/shareholders/disclosures" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600">metaplanet.jp/en/shareholders/disclosures</a>;
-          press coverage of series 3, 6, 10, 12, 14, 16, 17, 18, 19 issuances and
-          early redemptions (Cointelegraph, CoinDesk, The Block, Bitcoin Magazine, TipRanks)
+          Source: each series&apos; &quot;Notice Regarding the Issuance of the Nth Series of
+          Ordinary Bonds,&quot; filed by Metaplanet Inc. on the corresponding payment
+          date. Full PDF archive at{" "}
+          <a
+            href="https://metaplanet.jp/en/disclosures"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-ink-600"
+          >
+            metaplanet.jp/en/disclosures
+          </a>.
         </p>
 
+        {/* Series 19 Callout */}
+        <Callout>
+          <strong className="text-ink-800">The 19th series was the transition.</strong>{" "}
+          On June 30, 2025 Metaplanet issued &yen;30B in zero-coupon unsecured bonds and
+          used part of the proceeds to buy back and cancel the 3rd series - the last
+          remaining guaranteed bond. In Metaplanet&apos;s own words: &quot;the Company has
+          agreed to refinance the 3rd Bonds, which bear interest and are secured by
+          collateral, with the New Bonds, which are non-interest-bearing and unsecured.&quot;
+          That single filing retired the CEO&apos;s personal guarantee and the
+          first-priority mortgage on Hotel Royal Oak Gotanda. From that day forward the
+          entire Metaplanet debt stack has been unsecured, unguaranteed, and zero coupon.
+        </Callout>
+
         {/* 20th Series Mechanics */}
-        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3">
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-3 mt-10">
           20th Series: The Live Bridge to the 27th Warrant
         </h4>
 
@@ -655,22 +836,25 @@ export function CapitalStructure() {
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
             On <strong className="text-ink-800">April 24, 2026</strong> Metaplanet issued its
-            20th series of ordinary bonds (JPY 8.0 billion, zero coupon) to EVO FUND,
-            with proceeds directed to Bitcoin. On the same day the company revised the
-            use of proceeds on the <strong className="text-ink-800">27th Series Stock Acquisition
-            Rights</strong> (&yen;37.135B headline raise, issued March 16, 2026) - carving
-            out &yen;8.0B specifically to redeem the new bond as warrant exercises arrive.
+            20th series of ordinary bonds (JPY 8.0 billion, zero coupon, face value
+            &yen;200M per bond) to EVO FUND, with proceeds directed to Bitcoin. On the
+            same day the company revised the use of proceeds on the{" "}
+            <strong className="text-ink-800">27th Series Stock Acquisition Rights</strong>{" "}
+            (&yen;37.135B headline raise, issued March 16, 2026) - carving out &yen;8.0B
+            specifically to redeem the new bond as warrant exercises arrive.
           </p>
           <p>
-            <strong className="text-ink-800">Net BTC allocation before the change:</strong> &yen;33.4B
-            from the 27th SAR plus &yen;131.8B from the 23rd/24th SARs = &yen;165.2B total
-            warrant-funded BTC purchasing capacity.{" "}
+            <strong className="text-ink-800">Net BTC allocation before the change:</strong>{" "}
+            &yen;33.4B from the 27th SAR plus &yen;131.8B from the 23rd/24th SARs = &yen;165.2B
+            total warrant-funded BTC purchasing capacity.{" "}
             <strong className="text-ink-800">After the change:</strong> &yen;25.4B (27th) +
             &yen;123.8B (23rd/24th after a parallel adjustment) + &yen;8.0B (20th bond, already
-            deployed into BTC) = <strong className="text-ink-800">&yen;157.2B warrant capacity plus
-            &yen;8.0B of BTC already purchased up-front</strong>. Same total dollar capacity,
-            different timing - BTC that would have been accumulated over April 2026-April
-            2028 is instead accumulated today.
+            deployed into BTC) ={" "}
+            <strong className="text-ink-800">
+              &yen;157.2B warrant capacity plus &yen;8.0B of BTC already purchased up-front
+            </strong>
+            . Same total dollar capacity, different timing - BTC that would have been
+            accumulated over April 2026-April 2028 is instead accumulated today.
           </p>
           <p>
             This is the bond program&apos;s real function. In a market where Bitcoin can
@@ -682,12 +866,13 @@ export function CapitalStructure() {
             warrant it is paired with.
           </p>
           <p>
-            <strong className="text-ink-800">Track record:</strong> Series 16, 17, and 18 -
-            issued in rapid succession in May-June 2025 totaling roughly $280M - were all
-            early-redeemed on schedule once the paired warrant exercises delivered. Series
-            19 followed the same pattern. The 20th series is the latest application of a
-            mechanism that has now cycled successfully through roughly &yen;70B+ of BTC-directed
-            capital without a single failed redemption.
+            <strong className="text-ink-800">Track record:</strong> Nineteen prior series,
+            nineteen full redemptions on or ahead of schedule. Series 16-18 alone (issued
+            May-June 2025, combined $281M in USD face value) were all retired at par by
+            June 25, 2025 as the paired warrant exercises delivered. Series 19 (&yen;30B)
+            redeemed on schedule Dec 29, 2025. In aggregate the program has already
+            cycled roughly &yen;66B + $352M of BTC-directed capital through EVO without a
+            single missed redemption.
           </p>
         </div>
       </div>
