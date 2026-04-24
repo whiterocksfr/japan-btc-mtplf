@@ -369,7 +369,7 @@ export function CapitalStructure() {
 
         <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600 mb-8">
           <p>
-            Metaplanet operates a <strong className="text-ink-800">Bitcoin Income Generation business</strong> using
+            Metaplanet operates a <strong className="text-ink-800">Bitcoin Income Generation business</strong>{" "}using
             collateral-secured Bitcoin options (cash-secured puts) to generate recurring operating
             revenue. This business is operationally segregated from long-term BTC holdings -
             the company&apos;s long-term Bitcoin is not subject to derivative exposure and is
@@ -433,7 +433,7 @@ export function CapitalStructure() {
 
         <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">The dividend coverage math:</strong> Metaplanet&apos;s
+            <strong className="text-ink-800">The dividend coverage math:</strong>{" "}Metaplanet&apos;s
             current MERCURY annual dividend commitment is $7.26M. The Bitcoin Income Generation
             business alone produced ~$71.9M in trailing twelve-month revenue. Combined with
             revenue from Bitcoin Japan Inc., Bitcoin Magazine Japan, The Bitcoin Hotel, and
@@ -472,7 +472,7 @@ export function CapitalStructure() {
             is the highest-conviction near-term catalyst for this thesis.</strong>
           </p>
           <p>
-            <strong className="text-ink-800">Strategic leverage headroom:</strong> At 13%
+            <strong className="text-ink-800">Strategic leverage headroom:</strong>{" "}At 13%
             amplification ratio vs Strategy&apos;s 35%, Metaplanet could nearly triple its capital
             structure obligations and still be less leveraged than Strategy. Every dollar raised
             buys more BTC, which expands NAV, which creates capacity for more issuance.
@@ -690,13 +690,13 @@ export function CapitalStructure() {
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong className="text-ink-800">mNAV Clause:</strong> The allottee
+              <strong className="text-ink-800">mNAV Clause:</strong>{" "}The allottee
               cannot exercise unless Metaplanet&apos;s market cap is 1.01x or more of
               Bitcoin NAV. If the stock trades below NAV, the warrants are frozen.
             </li>
             <li>
               <strong className="text-ink-800">Floor Exercise Price Adjustment
-              Clause:</strong> The minimum exercise price itself can be adjusted,
+              Clause:</strong>{" "}The minimum exercise price itself can be adjusted,
               preventing the lower-bound from becoming a dilutive trap if BTC NAV
               rises faster than the stock price.
             </li>
@@ -707,7 +707,7 @@ export function CapitalStructure() {
             </li>
             <li>
               <strong className="text-ink-800">Exercise Price Adjustment
-              Clause:</strong> The daily reset mechanism that keeps the strike
+              Clause:</strong>{" "}The daily reset mechanism that keeps the strike
               close to market price, preventing stale pricing.
             </li>
           </ul>
@@ -1112,7 +1112,7 @@ export function CapitalStructure() {
             <strong className="text-ink-800">Net BTC allocation before the change:</strong>{" "}
             &yen;33.4B from the 27th SAR plus &yen;131.8B from the 23rd/24th SARs = &yen;165.2B
             total warrant-funded BTC purchasing capacity.{" "}
-            <strong className="text-ink-800">After the change:</strong> &yen;25.4B (27th) +
+            <strong className="text-ink-800">After the change:</strong>{" "}&yen;25.4B (27th) +
             &yen;123.8B (23rd/24th after a parallel adjustment) + &yen;8.0B (20th bond, already
             deployed into BTC) ={" "}
             <strong className="text-ink-800">
@@ -1131,7 +1131,7 @@ export function CapitalStructure() {
             warrant it is paired with.
           </p>
           <p>
-            <strong className="text-ink-800">Track record:</strong> Nineteen prior series,
+            <strong className="text-ink-800">Track record:</strong>{" "}Nineteen prior series,
             nineteen full redemptions on or ahead of schedule. Series 16-18 alone (issued
             May-June 2025, combined $281M in USD face value) were all retired at par by
             June 25, 2025 as the paired warrant exercises delivered. Series 19 (&yen;30B)
@@ -1400,7 +1400,7 @@ export function CapitalStructure() {
         <div className="space-y-3">
           <div className="border border-ink-100 rounded-sm p-4">
             <p className="text-sm leading-relaxed text-ink-600">
-              <strong className="text-ink-800">90%+ alternatives adoption:</strong> Over
+              <strong className="text-ink-800">90%+ alternatives adoption:</strong>{" "}Over
               90% of Japanese institutional investors have already incorporated
               alternative investments into their portfolios. GPIF (world&apos;s largest
               pension, $1.87T) is actively building an alternatives database as it
@@ -1413,7 +1413,7 @@ export function CapitalStructure() {
           </div>
           <div className="border border-ink-100 rounded-sm p-4">
             <p className="text-sm leading-relaxed text-ink-600">
-              <strong className="text-ink-800">Domestic market dominance:</strong> Foreign
+              <strong className="text-ink-800">Domestic market dominance:</strong>{" "}Foreign
               investors hold only 4% of outstanding Japanese bonds. This is an
               overwhelmingly domestic market, which means the $10T+ institutional
               TAM is almost entirely Japanese capital - concentrated, accessible,
@@ -1425,7 +1425,7 @@ export function CapitalStructure() {
           </div>
           <div className="border border-ink-100 rounded-sm p-4">
             <p className="text-sm leading-relaxed text-ink-600">
-              <strong className="text-ink-800">Authorized scale:</strong> At the December
+              <strong className="text-ink-800">Authorized scale:</strong>{" "}At the December
               2025 EGM, shareholders approved doubling authorized shares to ~555
               million per class for both MARS (Class A) and MERCURY (Class B). This
               signals that Metaplanet&apos;s board and shareholder base are planning for
@@ -1438,7 +1438,7 @@ export function CapitalStructure() {
           </div>
           <div className="border border-ink-100 rounded-sm p-4">
             <p className="text-sm leading-relaxed text-ink-600">
-              <strong className="text-ink-800">Asia-Pacific TAM beyond Japan:</strong> Emerging
+              <strong className="text-ink-800">Asia-Pacific TAM beyond Japan:</strong>{" "}Emerging
               East Asia local currency bonds outstanding total $26.3 trillion. Asian
               corporate debt (bonds, syndicated loans, and private credit) stands at
               $13.9 trillion. If MARS and MERCURY gain traction with Japanese institutions,

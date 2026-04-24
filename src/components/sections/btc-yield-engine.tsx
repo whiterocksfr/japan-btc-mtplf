@@ -240,7 +240,7 @@ export function BtcYieldEngine() {
         <p className="text-base leading-relaxed text-ink-600">
           Where did the $3.5B come from in two weeks? Not from common share issuance
           (shares barely moved). The capital came overwhelmingly from <strong className="text-ink-800">STRC
-          preferred equity</strong> and debt instruments. STRC holders receive their 11.50%
+          preferred equity</strong>{" "}and debt instruments. STRC holders receive their 11.50%
           annual dividend. Common shareholders receive BTC Yield accretion. The preferred
           absorbs capital from yield-seeking investors and converts it into BTC
           accumulation - without diluting common shareholders&apos; BTC-per-share exposure.
@@ -305,7 +305,7 @@ export function BtcYieldEngine() {
         </ol>
 
         <p className="mt-8 text-base leading-relaxed text-ink-600">
-          <strong className="text-ink-800">The critical insight:</strong> Steps 6-8 are
+          <strong className="text-ink-800">The critical insight:</strong>{" "}Steps 6-8 are
           the STRC-proven innovation that transforms this from a simple &quot;buy and hold
           BTC&quot; story into a compounding engine. Strategy demonstrated that preferred
           equity can fund $3.5B in BTC purchases in two weeks with 0.6% common share

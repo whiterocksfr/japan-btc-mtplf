@@ -145,7 +145,7 @@ export function ScenarioAnalysis() {
 
         <div className="mt-6 space-y-3 text-sm leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">Key takeaway:</strong> Even in the
+            <strong className="text-ink-800">Key takeaway:</strong>{" "}Even in the
             Full Scale scenario ($2B raise at 6%), MARS adds ~20,000 BTC (+49.8%
             BTC Yield) while coverage remains over 100 years. Compare to STRC&apos;s
             11.50% dividend rate - MARS at 5-6% delivers the same BTC accumulation
@@ -297,7 +297,7 @@ export function ScenarioAnalysis() {
         {/* What Strategy Proved */}
         <div className="space-y-3 text-sm leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">What Strategy proved:</strong> Strategy
+            <strong className="text-ink-800">What Strategy proved:</strong>{" "}Strategy
             operated this flywheel across multiple mNAV regimes. When mNAV was above
             2.0x (late 2024-early 2025), they aggressively issued common equity via ATM,
             producing BTC Yield of 74.3% in 2024. When mNAV compressed toward 1.0x in
@@ -306,7 +306,7 @@ export function ScenarioAnalysis() {
             815,061 BTC, 9.5% BTC Yield YTD in 2026, $61.6B in reserves.
           </p>
           <p>
-            <strong className="text-ink-800">Metaplanet&apos;s equivalent:</strong> Metaplanet
+            <strong className="text-ink-800">Metaplanet&apos;s equivalent:</strong>{" "}Metaplanet
             uses moving strike warrants (stock acquisition rights, through the 27th
             series) as its equity instrument - the Japanese corporate law equivalent
             of an ATM program. These warrants are issued to a counterparty (EVO Fund)
@@ -316,7 +316,7 @@ export function ScenarioAnalysis() {
             instrument - the non-dilutive fuel that works at any mNAV level.
           </p>
           <p>
-            <strong className="text-ink-800">The compounding asymmetry:</strong> Preferred
+            <strong className="text-ink-800">The compounding asymmetry:</strong>{" "}Preferred
             raises carry zero dilution. Equity raises at mNAV premium produce
             accretion that exceeds dilution. The combination means BTC holdings can
             grow substantially faster than the share count. Metaplanet&apos;s 2025 results
@@ -438,7 +438,7 @@ export function ScenarioAnalysis() {
 
         <div className="text-sm leading-relaxed text-ink-600 space-y-3">
           <p>
-            <strong className="text-ink-800">Reading the matrix:</strong> If BTC
+            <strong className="text-ink-800">Reading the matrix:</strong>{" "}If BTC
             reaches $150K and the market assigns a 1.5x mNAV multiple (below
             Strategy&apos;s current 1.26x, which itself is below Strategy&apos;s historical
             highs above 3.0x), Metaplanet&apos;s market cap would be approximately $9.0B
@@ -447,7 +447,7 @@ export function ScenarioAnalysis() {
             would further increase NAV.
           </p>
           <p>
-            <strong className="text-ink-800">The asymmetry:</strong> BTC price
+            <strong className="text-ink-800">The asymmetry:</strong>{" "}BTC price
             appreciation and mNAV expansion are multiplicative, not additive. A 2x
             move in BTC price combined with mNAV expanding from 1.0x to 2.0x
             produces a 4x move in market cap. This is the leverage that the

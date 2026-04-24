@@ -164,13 +164,13 @@ export function GlobalContext() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">ECB:</strong> Main refinancing rate at 2.15%. European sovereign debt ranges from ~95% (UK) to 138% (Italy) to 151% (Greece). The ECB cannot allow Italian yields to blow out without triggering an existential eurozone crisis.
+            <strong className="text-ink-800">ECB:</strong>{" "}Main refinancing rate at 2.15%. European sovereign debt ranges from ~95% (UK) to 138% (Italy) to 151% (Greece). The ECB cannot allow Italian yields to blow out without triggering an existential eurozone crisis.
           </p>
           <p>
-            <strong className="text-ink-800">PBOC:</strong> Shifted to &quot;appropriately loose&quot; stance in September 2024 - first change in 14 years. Deployed a $1.4T local government debt relief package. China&apos;s fertility rate at 1.09 (worse than Japan), population shrank by 3.39M in 2025.
+            <strong className="text-ink-800">PBOC:</strong>{" "}Shifted to &quot;appropriately loose&quot; stance in September 2024 - first change in 14 years. Deployed a $1.4T local government debt relief package. China&apos;s fertility rate at 1.09 (worse than Japan), population shrank by 3.39M in 2025.
           </p>
           <p>
-            <strong className="text-ink-800">BOE:</strong> UK debt/GDP at ~93-95%. Same structural constraints. Same direction: easing.
+            <strong className="text-ink-800">BOE:</strong>{" "}UK debt/GDP at ~93-95%. Same structural constraints. Same direction: easing.
           </p>
           <p>
             Every central bank that attempts tightening discovers the same thing the BOJ discovered: the debt load makes sustained real tightening impossible. The ratchet only turns one direction.

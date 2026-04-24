@@ -203,7 +203,7 @@ export function PillarSavings() {
             shift from savings to equities.
           </p>
           <p>
-            <strong className="text-ink-800">Why this time is different:</strong> Prior
+            <strong className="text-ink-800">Why this time is different:</strong>{" "}Prior
             savings-to-investment pushes (the 1996 Big Bang reform, Abe-era initiatives) failed
             because they lacked tax incentives <em>and</em> the underlying economics still favored
             cash. Now both conditions are met simultaneously for the first time - a tax wrapper that

@@ -36,16 +36,16 @@ export function BitcoinFoundation() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">Gold:</strong> When prices rise, marginal mines become profitable, exploration budgets increase, and supply expands. Above-ground gold stock grows ~1.5-1.7% per year (3,672 tonnes mined in 2025 alone - a record high). Over a century, gold&apos;s supply has roughly quintupled.
+            <strong className="text-ink-800">Gold:</strong>{" "}When prices rise, marginal mines become profitable, exploration budgets increase, and supply expands. Above-ground gold stock grows ~1.5-1.7% per year (3,672 tonnes mined in 2025 alone - a record high). Over a century, gold&apos;s supply has roughly quintupled.
           </p>
           <p>
-            <strong className="text-ink-800">Real estate:</strong> When property values rise, developers build. Zoning changes. Vertical expansion adds supply on the same footprint. Land is fixed, but usable real estate is not.
+            <strong className="text-ink-800">Real estate:</strong>{" "}When property values rise, developers build. Zoning changes. Vertical expansion adds supply on the same footprint. Land is fixed, but usable real estate is not.
           </p>
           <p>
-            <strong className="text-ink-800">Equities:</strong> Companies issue shares. Stock splits happen. New IPOs expand the total supply of equity. Even individual companies can dilute at will.
+            <strong className="text-ink-800">Equities:</strong>{" "}Companies issue shares. Stock splits happen. New IPOs expand the total supply of equity. Even individual companies can dilute at will.
           </p>
           <p>
-            <strong className="text-ink-800">Bitcoin:</strong> 21,000,000. Ever. The supply cap was set on January 3, 2009 and has executed with mathematical precision for 17 years. No CEO can issue more. No board can vote to dilute. No government can mandate expansion. No miner can cheat the protocol. It has never been altered. It almost certainly never will.
+            <strong className="text-ink-800">Bitcoin:</strong>{" "}21,000,000. Ever. The supply cap was set on January 3, 2009 and has executed with mathematical precision for 17 years. No CEO can issue more. No board can vote to dilute. No government can mandate expansion. No miner can cheat the protocol. It has never been altered. It almost certainly never will.
           </p>
         </div>
       </div>
@@ -146,25 +146,25 @@ export function BitcoinFoundation() {
         <div className="space-y-6">
           <AdoptionTier title="Nation-State Level">
             <ul className="space-y-2 text-sm text-ink-600">
-              <li><strong>United States:</strong> Strategic Bitcoin Reserve signed March 6, 2025 (~200,000 BTC from forfeiture). BITCOIN Act (S.954) proposes 1M BTC acquisition.</li>
-              <li><strong>El Salvador:</strong> First legal tender adoption (Sep 2021). Holds ~6,100-7,565 BTC.</li>
-              <li><strong>Bhutan:</strong> ~12,062 BTC via hydroelectric mining (~40% of GDP).</li>
-              <li><strong>US States:</strong> New Hampshire, Texas, Arizona signed Bitcoin reserve legislation.</li>
+              <li><strong>United States:</strong>{" "}Strategic Bitcoin Reserve signed March 6, 2025 (~200,000 BTC from forfeiture). BITCOIN Act (S.954) proposes 1M BTC acquisition.</li>
+              <li><strong>El Salvador:</strong>{" "}First legal tender adoption (Sep 2021). Holds ~6,100-7,565 BTC.</li>
+              <li><strong>Bhutan:</strong>{" "}~12,062 BTC via hydroelectric mining (~40% of GDP).</li>
+              <li><strong>US States:</strong>{" "}New Hampshire, Texas, Arizona signed Bitcoin reserve legislation.</li>
             </ul>
           </AdoptionTier>
 
           <AdoptionTier title="Corporate Treasury">
             <ul className="space-y-2 text-sm text-ink-600">
-              <li><strong>Strategy (MSTR):</strong> 815,061 BTC (~$61.6B at cost). World's largest corporate holder.</li>
-              <li><strong>Metaplanet (3350):</strong> 40,177 BTC (~$4.18B at cost). Asia's leading BTC treasury company.</li>
+              <li><strong>Strategy (MSTR):</strong>{" "}815,061 BTC (~$61.6B at cost). World's largest corporate holder.</li>
+              <li><strong>Metaplanet (3350):</strong>{" "}40,177 BTC (~$4.18B at cost). Asia's leading BTC treasury company.</li>
             </ul>
           </AdoptionTier>
 
           <AdoptionTier title="Institutional">
             <ul className="space-y-2 text-sm text-ink-600">
-              <li><strong>BlackRock IBIT:</strong> Fastest-growing ETF in history. ~$63B cumulative inflows.</li>
-              <li><strong>Total US Spot BTC ETFs:</strong> ~$55-58B across 11 products (approved Jan 10, 2024). Trading volume surpassed $2T.</li>
-              <li><strong>Pension funds:</strong> Wisconsin SWIB (~$340M), Michigan pension fund entered via ARKB.</li>
+              <li><strong>BlackRock IBIT:</strong>{" "}Fastest-growing ETF in history. ~$63B cumulative inflows.</li>
+              <li><strong>Total US Spot BTC ETFs:</strong>{" "}~$55-58B across 11 products (approved Jan 10, 2024). Trading volume surpassed $2T.</li>
+              <li><strong>Pension funds:</strong>{" "}Wisconsin SWIB (~$340M), Michigan pension fund entered via ARKB.</li>
             </ul>
           </AdoptionTier>
         </div>

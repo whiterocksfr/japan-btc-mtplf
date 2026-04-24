@@ -141,22 +141,22 @@ export function MetaplanetThesis() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">Tickers:</strong> 3350 (TSE), MPJPY (ADR), MTPLF (OTC), DN3 (Frankfurt)
+            <strong className="text-ink-800">Tickers:</strong>{" "}3350 (TSE), MPJPY (ADR), MTPLF (OTC), DN3 (Frankfurt)
           </p>
           <p>
-            <strong className="text-ink-800">Capital structure:</strong> EV mNAV 1.02x | Basic Shares 1.27B | Diluted Shares 1.62B | Sats/Basic Share 3,153 | 27th series stock acquisition rights with 350.3M convertible securities/options outstanding
+            <strong className="text-ink-800">Capital structure:</strong>{" "}EV mNAV 1.02x | Basic Shares 1.27B | Diluted Shares 1.62B | Sats/Basic Share 3,153 | 27th series stock acquisition rights with 350.3M convertible securities/options outstanding
           </p>
           <p>
             <strong className="text-ink-800">MERCURY preferred equity</strong> (Class B Preferred Shares) - $148.2M notional, 4.90% dividend
           </p>
           <p>
-            <strong className="text-ink-800">CEO:</strong> Simon Gerovich (keynotes at Strategy World, Bitcoin for Corporations; fireside with Michael Saylor Dec 2025)
+            <strong className="text-ink-800">CEO:</strong>{" "}Simon Gerovich (keynotes at Strategy World, Bitcoin for Corporations; fireside with Michael Saylor Dec 2025)
           </p>
           <p>
-            <strong className="text-ink-800">Subsidiaries:</strong> Bitcoin Japan Inc. (adoption/education), Bitcoin Magazine Japan (exclusive license), Wen Tokyo K.K. (operator of The Bitcoin Hotel / Royal Oak Gotanda), Metaplanet Ventures K.K. (established March 12, 2026)
+            <strong className="text-ink-800">Subsidiaries:</strong>{" "}Bitcoin Japan Inc. (adoption/education), Bitcoin Magazine Japan (exclusive license), Wen Tokyo K.K. (operator of The Bitcoin Hotel / Royal Oak Gotanda), Metaplanet Ventures K.K. (established March 12, 2026)
           </p>
           <p>
-            <strong className="text-ink-800">Stated target:</strong> 210,000 BTC by the end of 2027 under the &quot;555 Million Plan&quot; formulated June 6, 2025 - a roughly 5x increase from the current 40,177 BTC position. The plan is named for the 555M-per-class authorized share count approved at the December 22, 2025 EGM for MARS (Class A) and MERCURY (Class B) preferred stock, which is the issuance capacity sized to fund the target.
+            <strong className="text-ink-800">Stated target:</strong>{" "}210,000 BTC by the end of 2027 under the &quot;555 Million Plan&quot; formulated June 6, 2025 - a roughly 5x increase from the current 40,177 BTC position. The plan is named for the 555M-per-class authorized share count approved at the December 22, 2025 EGM for MARS (Class A) and MERCURY (Class B) preferred stock, which is the issuance capacity sized to fund the target.
           </p>
         </div>
       </div>

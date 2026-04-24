@@ -73,17 +73,17 @@ export function PillarImmigration() {
 
         <div className="max-w-4xl mx-auto mt-8 space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">Key flow data (2024):</strong> 177,000 new long-term
+            <strong className="text-ink-800">Key flow data (2024):</strong>{" "}177,000 new long-term
             and permanent immigrants (+8.6% YoY), with 63% classified as labor migrants. The
             government issued 167K student permits, 102K temporary/seasonal labor permits, and
             165K trainee permits.
           </p>
           <p>
-            <strong className="text-ink-800">Top source countries (2025):</strong> China 22.8%,
+            <strong className="text-ink-800">Top source countries (2025):</strong>{" "}China 22.8%,
             Vietnam 16.7%, South Korea 10.4%, Nepal 6.9% (+17.2% growth), Indonesia (+15.4% growth).
           </p>
           <p>
-            <strong className="text-ink-800">The scale of the gap:</strong> Japan would need ~6.74
+            <strong className="text-ink-800">The scale of the gap:</strong>{" "}Japan would need ~6.74
             million foreign workers by 2040 (4x the 2020 level) just to hit 1.24% GDP growth. The
             projected labor shortage exceeds 11 million workers by 2040.
           </p>
@@ -128,15 +128,15 @@ export function PillarImmigration() {
             </h4>
             <ul className="space-y-2 text-sm text-ink-600">
               <li>
-                <strong>NHK poll:</strong> 79% support &quot;stronger administrative measures
+                <strong>NHK poll:</strong>{" "}79% support &quot;stronger administrative measures
                 against foreigners&quot;
               </li>
               <li>
-                <strong>Asahi Shimbun (Nov 2025):</strong> 56% believe Japan needs fewer
+                <strong>Asahi Shimbun (Nov 2025):</strong>{" "}56% believe Japan needs fewer
                 visitors/immigrants; 66% back PM Takaichi&apos;s tougher stance
               </li>
               <li>
-                <strong>Yomiuri Shimbun (Dec 2025):</strong> 59% oppose foreign laborers
+                <strong>Yomiuri Shimbun (Dec 2025):</strong>{" "}59% oppose foreign laborers
               </li>
             </ul>
           </div>
@@ -154,29 +154,29 @@ export function PillarImmigration() {
 
         <div className="space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">Coalition shift:</strong> Takaichi dissolved the
+            <strong className="text-ink-800">Coalition shift:</strong>{" "}Takaichi dissolved the
             LDP-Komeito alliance and formed a new coalition with Ishin no Kai (conservative),
             moving the governing center rightward on immigration.
           </p>
           <p>
-            <strong className="text-ink-800">May 2025:</strong> Launched the &quot;Zero Illegal
+            <strong className="text-ink-800">May 2025:</strong>{" "}Launched the &quot;Zero Illegal
             Immigrants Plan for the Safety and Security of the People.&quot;
           </p>
           <p>
-            <strong className="text-ink-800">July 2025:</strong> Cabinet Secretariat established the
+            <strong className="text-ink-800">July 2025:</strong>{" "}Cabinet Secretariat established the
             &quot;Office for a Society of Well-Ordered and Harmonious Coexistence with Foreign
             Nationals.&quot;
           </p>
           <p>
-            <strong className="text-ink-800">FY26 budget:</strong> Single-entry visa fees proposed
+            <strong className="text-ink-800">FY26 budget:</strong>{" "}Single-entry visa fees proposed
             to rise from ¥3,000 to ¥15,000 (a 5x increase).
           </p>
           <p>
-            <strong className="text-ink-800">New requirements:</strong> Japanese language proficiency
+            <strong className="text-ink-800">New requirements:</strong>{" "}Japanese language proficiency
             test proposed for permanent residency.
           </p>
           <p>
-            <strong className="text-ink-800">Enforcement:</strong> Deportations at government expense
+            <strong className="text-ink-800">Enforcement:</strong>{" "}Deportations at government expense
             doubled in June-August 2025.
           </p>
         </div>

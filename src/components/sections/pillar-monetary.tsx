@@ -145,7 +145,7 @@ export function PillarMonetary() {
 
         <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-600">
           <p>
-            <strong className="text-ink-800">Stealth liquidity support:</strong> The Ministry of
+            <strong className="text-ink-800">Stealth liquidity support:</strong>{" "}The Ministry of
             Finance is conducting buy-back auctions of low-yield ultra-long JGBs - the first
             20-year JGB buy-back since September 2008, and the first 30-year JGB buy-back since
             October 2008.
