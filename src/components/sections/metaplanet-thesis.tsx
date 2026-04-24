@@ -19,8 +19,25 @@ export function MetaplanetThesis() {
             the only publicly listed, pure-play Bitcoin treasury company on the
             Tokyo Stock Exchange - giving Japanese retail and institutional investors
             access to BTC exposure through the same brokerage accounts they use for
-            any other Japanese equity, at a 20% capital gains tax rate instead of the
-            55% rate applied to direct cryptocurrency holdings.
+            any other Japanese equity, with NISA eligibility, stock-category loss
+            offsetting, and a 20% capital gains tax rate.
+          </p>
+          <p>
+            <strong className="text-ink-800">Regulatory state of play (April 2026):</strong>{" "}
+            Japan&apos;s Cabinet approved an amendment to the Financial Instruments and
+            Exchange Act (FIEA) on April 10, 2026 that reclassifies 105 crypto assets
+            (including Bitcoin) from payment instruments under the Payment Services
+            Act to financial products under FIEA, brings them under insider-trading
+            and annual-disclosure rules, and applies a flat 20% capital-gains rate
+            to &quot;specified&quot; crypto assets on FSA-registered exchanges (with a
+            3-year loss carryforward starting in the 2026 tax year). The bill is
+            pending National Diet passage and is expected to take effect in fiscal
+            year 2027. The direct effect is to narrow - but not eliminate -
+            Metaplanet&apos;s tax-rate arbitrage against direct BTC. The more important
+            effect is structural: insider-trading rules, mandatory disclosures, and
+            a tax regime on par with equities make Japan the first major market to
+            institutionalize crypto at the regulatory layer, which directly expands
+            the addressable pool for a TSE-listed Bitcoin treasury.
           </p>
           <p>
             But the tax arbitrage is only the entry point. Metaplanet is building a
@@ -78,10 +95,16 @@ export function MetaplanetThesis() {
             </thead>
             <tbody>
               <tr>
-                <td className="label">Direct BTC purchase</td>
-                <td><strong className="text-ink-800">55% max</strong> (miscellaneous income)</td>
+                <td className="label">Direct BTC purchase (today)</td>
+                <td><strong className="text-ink-800">Up to 55%</strong> (miscellaneous income; progressive)</td>
                 <td>No</td>
                 <td>Exchanges only</td>
+              </tr>
+              <tr>
+                <td className="label">Direct BTC purchase (post-FIEA, FY2027+)</td>
+                <td><strong className="text-ink-800">20%</strong> on specified assets on FSA-registered exchanges only; NFTs, DeFi yield, unlisted tokens remain miscellaneous income</td>
+                <td>No</td>
+                <td>Exchanges only; still requires self-custody or exchange custody</td>
               </tr>
               <tr>
                 <td className="label">Japanese equities broadly</td>

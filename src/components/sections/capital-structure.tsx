@@ -1173,13 +1173,36 @@ export function CapitalStructure() {
 
           <div className="border border-ink-100 rounded-sm p-5">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-2">
-              JPYC - Stablecoin Investment
+              Metaplanet Ventures K.K. & JPYC Investment
             </h4>
             <p className="text-sm leading-relaxed text-ink-600">
-              Metaplanet has made a strategic investment in JPYC, a Japanese yen-pegged
-              stablecoin. This positions Metaplanet at the intersection of Bitcoin and
-              the emerging Japanese stablecoin infrastructure - with a stated &quot;Year Zero
-              2028&quot; target for broader integration of BTC and stablecoin rails in Japan.
+              On March 12, 2026 Metaplanet established{" "}
+              <strong className="text-ink-800">Metaplanet Ventures K.K.</strong>, a
+              wholly-owned subsidiary capitalized at approximately &yen;4 billion
+              (~$27M) and mandated to deploy into regulated Bitcoin and digital-asset
+              infrastructure in Japan over a 2-3 year horizon. Its inaugural
+              investment was a participation in the{" "}
+              <strong className="text-ink-800">JPYC Series B</strong> round (total
+              round ~$30M / &yen;2.6B, closed Mar 2026). JPYC Inc. is the issuer of{" "}
+              <strong className="text-ink-800">JPYC</strong> - Japan&apos;s first
+              FSA-approved yen-pegged stablecoin, launched October 2025, classified
+              as an Electronic Payment Instrument under the revised Payment Services
+              Act, fully reserved in yen deposits and JGBs, and live on Ethereum,
+              Avalanche and Polygon. The venture arm also runs an incubator for
+              early-stage BTC infrastructure startups and a grants program for
+              open-source developers.
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-600">
+              The broader yen-stablecoin market is moving in parallel:{" "}
+              <strong className="text-ink-800">JPYSC</strong> (SBI Holdings +
+              Startale, trust-bank backed via SBI Shinsei) targets a Q2 2026 launch,
+              and <strong className="text-ink-800">Project Pax</strong> (MUFG, SMBC,
+              Mizuho) has announced a target of &yen;1 trillion in B2B stablecoin
+              issuance by 2028. The thesis from Metaplanet&apos;s side: when Japan&apos;s
+              FIEA amendment takes effect (FY2027), domestic Bitcoin adoption will
+              require custody, settlement, compliance and payment-rail
+              infrastructure that does not yet exist at scale - and Metaplanet
+              Ventures wants to own a piece of the layer that gets built.
             </p>
           </div>
 
@@ -1213,6 +1236,106 @@ export function CapitalStructure() {
         <p className="mt-6 text-sm leading-relaxed text-ink-400">
           Sources: Metaplanet AGM 2026 Presentation, metaplanet.jp/en/business-lines,
           bitcoin.jp/en
+        </p>
+      </div>
+
+      {/* Japan Regulatory Environment */}
+      <div className="max-w-4xl mx-auto mt-12">
+        <h3 className="font-serif text-xl font-semibold text-ink-900 mb-6">
+          Japan&apos;s Regulatory Environment (April 2026)
+        </h3>
+
+        <div className="space-y-4 text-base leading-relaxed text-ink-600 mb-8">
+          <p>
+            Japan is in the middle of the largest overhaul of its digital-asset
+            regulatory regime since the post-Mt. Gox Payment Services Act (PSA) of
+            2017. Three pieces move in parallel: reclassification of crypto as
+            financial instruments under FIEA, a flat 20% capital-gains tax for
+            specified crypto assets, and a licensed yen-stablecoin framework. One
+            piece moves in the opposite direction - a JPX consultation that could
+            block Metaplanet&apos;s October 2026 TOPIX inclusion. We treat all four as
+            material to the thesis.
+          </p>
+        </div>
+
+        <div className="overflow-x-auto mb-6">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Reform</th>
+                <th>Status</th>
+                <th>Effective</th>
+                <th>Thesis impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="label">FIEA crypto reclassification</td>
+                <td>
+                  Cabinet-approved April 10, 2026. Bill submitted to National Diet.
+                  Applies to 105 crypto assets including BTC, ETH, XRP.
+                  Adds insider-trading ban, annual disclosure requirements,
+                  renames exchanges as &quot;crypto asset trading operators,&quot;
+                  raises unregistered-operation penalties to 10 years prison /
+                  &yen;10M fine.
+                </td>
+                <td>FY2027 (April 2027+) if ratified</td>
+                <td>Structurally positive. Brings institutional-grade market rules, which is a precondition for most Japanese institutional capital to allocate.</td>
+              </tr>
+              <tr>
+                <td className="label">20% flat tax on specified crypto</td>
+                <td>
+                  Included in the 2026 Tax Reform package. 15% national + 5% local.
+                  Applies to specified assets on FSA-registered exchanges.
+                  3-year loss carryforward starting 2026 tax year. NFTs, DeFi yield,
+                  unlisted tokens remain miscellaneous income.
+                </td>
+                <td>2026 tax year (transactions); full framework with FIEA</td>
+                <td>Mixed for Metaplanet. Narrows the pure tax-rate arbitrage vs direct BTC (55% → 20%), but massively expands the addressable retail pool - most of which will still prefer a TSE-listed vehicle with NISA eligibility, stock-category loss offsetting, and a standard brokerage account over self-custody.</td>
+              </tr>
+              <tr>
+                <td className="label">Licensed yen-stablecoin framework</td>
+                <td>
+                  Payment Services Act revised June 2023 to classify fiat-pegged
+                  stablecoins as Electronic Payment Instruments. JPYC launched
+                  October 2025 as the first FSA-approved yen stablecoin (100%
+                  reserves, Ethereum/Avalanche/Polygon). JPYSC (SBI/Startale,
+                  trust-bank-backed) targeting Q2 2026. Project Pax (MUFG, SMBC,
+                  Mizuho) targets &yen;1T B2B issuance by 2028.
+                </td>
+                <td>Live now, scaling through 2028</td>
+                <td>Direct play via Metaplanet Ventures K.K.&apos;s participation in the JPYC Series B. Positions Metaplanet in the infrastructure layer that Japanese institutional BTC adoption will run on top of.</td>
+              </tr>
+              <tr className="highlight">
+                <td className="label">JPX TOPIX consultation (risk)</td>
+                <td>
+                  Japan Exchange Group opened consultation early April 2026
+                  proposing to block or remove firms with more than 50% of assets
+                  in crypto from TOPIX and related JPX indices. Metaplanet&apos;s
+                  October 2026 TOPIX inclusion would be directly affected.
+                  CEO Gerovich responded April 5, 2026: &quot;we respect the process
+                  and intend to engage&quot; - emphasizing Project NOVA, operating
+                  subsidiaries, and the 216,000+ Japanese shareholder base as
+                  evidence Metaplanet is not a pure passive crypto vehicle.
+                </td>
+                <td>Consultation open; no final decision timeline</td>
+                <td>Material downside risk: a final rule excluding Metaplanet from TOPIX would cut off passive index flows and could trigger forced selling. Does not affect FTSE Japan Index / FTSE All-World inclusion (in place since October 2025).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-ink-400">
+          Sources: Japan Cabinet Office FIEA amendment (April 10, 2026); PwC Japan{" "}
+          <a
+            href="https://www.pwc.com/jp/en/taxnews-financial-services.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-ink-600"
+          >
+            Financial Services Tax News - 2026 Tax Reform Proposals
+          </a>
+          ; JPX consultation materials; CoinDesk, Finance Magnates, Bitcoin Magazine
+          (April 2026 coverage); Metaplanet IR statement (April 5, 2026).
         </p>
       </div>
 

@@ -68,11 +68,29 @@ export function RisksCatalysts() {
               <tr>
                 <td className="label">Idiosyncratic</td>
                 <td>
-                  <strong className="text-ink-800">Tax arbitrage neutralized.</strong>{" "}
-                  Japan reclassifies crypto from 55% miscellaneous to 20% capital gains.
+                  <strong className="text-ink-800">Tax arbitrage narrows (now underway).</strong>{" "}
+                  Japan&apos;s Cabinet approved a FIEA amendment on April 10, 2026
+                  that reclassifies 105 crypto assets as financial instruments and
+                  applies a flat 20% capital-gains rate (15% national + 5% local)
+                  on &quot;specified&quot; assets held on FSA-registered exchanges,
+                  with a 3-year loss carryforward starting in the 2026 tax year.
+                  Pending National Diet passage; effective FY2027.
                 </td>
-                <td>Cuts both ways. Reduces Metaplanet&apos;s structural advantage but massively expands BTC demand from 126M Japanese retail. Net portfolio impact may be positive.</td>
+                <td>Cuts both ways and is a net positive in our view. The pure tax-rate arbitrage (55% → 20% for direct BTC) compresses, but Metaplanet&apos;s other structural advantages persist: NISA eligibility, ability to offset losses against other equities, operational business layer (BTC Income Generation, Project NOVA), and access via standard brokerage accounts for investors who would never self-custody. The reform also massively expands the addressable retail demand pool.</td>
                 <td className="num">Moderate</td>
+              </tr>
+              <tr>
+                <td className="label">Idiosyncratic</td>
+                <td>
+                  <strong className="text-ink-800">TOPIX exclusion / index-flow risk.</strong>{" "}
+                  Japan Exchange Group opened a consultation in early April 2026
+                  proposing to block or remove firms with greater than 50% of
+                  assets in crypto from TOPIX and related JPX indices.
+                  Metaplanet&apos;s scheduled October 2026 TOPIX inclusion would be
+                  directly affected.
+                </td>
+                <td>Real and material: a TOPIX exclusion would cut off passive flows from index-tracking funds and pensions benchmarked to TOPIX, and could trigger forced selling by index-tracking funds already holding. Mitigants: (i) Metaplanet is publicly engaging the consultation rather than resisting it, framing Project NOVA and its operating subsidiaries as evidence the company is not a pure asset vehicle; (ii) 216,000+ Japanese shareholders have joined the cap table, giving the company direct retail support independent of index flows; (iii) the company is already in the FTSE Japan Index and FTSE All-World Index (October 2025 upgrade), which are unaffected; (iv) final JPX decision timeline unclear — consultation is open.</td>
+                <td className="num">Moderate-High</td>
               </tr>
               <tr>
                 <td className="label">Idiosyncratic</td>
@@ -131,6 +149,18 @@ export function RisksCatalysts() {
               <CatalystItem>
                 Metaplanet mNAV expanding above 1.0x (currently 0.89x / 1.02x EV)
               </CatalystItem>
+              <CatalystItem>
+                FIEA crypto reclassification passing the National Diet - brings institutional-grade market rules (insider-trading ban, mandatory disclosures) and unlocks institutional crypto allocation
+              </CatalystItem>
+              <CatalystItem>
+                20% flat tax on specified crypto assets taking effect - expands Japanese retail demand, including indirectly via BTC-linked TSE equity
+              </CatalystItem>
+              <CatalystItem>
+                JPX dropping or softening the proposed 50%-crypto TOPIX exclusion rule, keeping Metaplanet&apos;s October 2026 TOPIX inclusion on track
+              </CatalystItem>
+              <CatalystItem>
+                JPYC and other licensed yen-stablecoin rails scaling (Project Pax, JPYSC) - validates Metaplanet Ventures&apos; infrastructure thesis
+              </CatalystItem>
             </ul>
           </div>
 
@@ -159,7 +189,13 @@ export function RisksCatalysts() {
                 JGB market dislocation forcing emergency action
               </CatalystItem>
               <CatalystItem>
-                Crypto-specific tax changes neutralizing Metaplanet&apos;s arbitrage
+                JPX finalizing the 50%-crypto TOPIX exclusion rule and applying it to block Metaplanet&apos;s October 2026 inclusion (or trigger removal from other JPX indices)
+              </CatalystItem>
+              <CatalystItem>
+                FIEA amendment passes but with restrictive scope that excludes BTC from the &quot;specified crypto&quot; list qualifying for 20% tax treatment
+              </CatalystItem>
+              <CatalystItem>
+                A high-profile Japanese exchange hack or enforcement action against a stablecoin issuer, triggering a political backlash that delays the tax and regulatory reforms
               </CatalystItem>
             </ul>
           </div>
